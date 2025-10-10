@@ -1,0 +1,39 @@
+# 📋 Youtube - Cheat Sheet
+
+**YouTube Content ID Cheat Sheet**
+
+## KEY TERMS (most important definitions)
+
+* **Content ID**: A system for identifying copyrighted content on YouTube
+* **Acoustic fingerprint**: A unique digital signature created from audio samples used to identify copyrighted content
+* **Hash function**: An algorithm that creates a unique digital signature from data, used by Content ID to compare with reference files
+
+## ALGORITHMS (names and what they do)
+
+* **Content ID process**:
+	+ Identifies copyrighted content on YouTube using acoustic fingerprints and hash functions
+	+ Uses spectrograms and finite-state transducers to create a unique digital signature
+* **Hash function**: Creates a unique digital signature from data, used by Content ID
+
+## FORMULAS (if any)
+
+* **Storage needs calculation**:
+	+ Storage needs = (Number of videos) x (Average video size) x (Number of profiles)
+	+ Example: 320PB (1 billion videos x 86MB average size x 4 profiles)
+
+## MUST-KNOW FACTS
+
+* YouTube storage needs estimated to be at least 320PB, with a growth rate of 35 PB per year
+* Number of videos uploaded to YouTube approximately 1 billion
+* Average video size approximately 86MB
+* Cost of storing 1GB of data has decreased exponentially over time, according to Kryder's Law
+
+## QUICK REFERENCE
+
+* **YouTube Content ID**:
+	+ Identifies copyrighted content using acoustic fingerprints and hash functions
+	+ Uses spectrograms and finite-state transducers
+* **Kryder's Law**: Cost of storing 1GB of data has decreased exponentially over time
+* **Storage needs calculation**: Storage needs = (Number of videos) x (Average video size) x (Number of profiles)
+
+This cheat sheet provides a concise overview of the key terms, algorithms, and must-know facts related to YouTube Content ID. It is designed to be easily scannable and reviewable quickly for an

@@ -1,0 +1,34 @@
+# Querying - Quick Reference
+
+**Querying Quick Reference Card**
+
+**Key Terms and Definitions:**
+
+1. **Boolean Query**: A query that uses logical operators like AND, OR, NOT to search for specific terms.
+2. **AND Operator**: Used to search for pages containing all the specified terms.
+3. **OR Operator**: Used to search for pages containing any of the specified terms.
+4. **NOT Operator**: Used to exclude pages containing specific terms.
+5. **Query Box**: A search box that accepts Boolean queries.
+
+**Important Formulas or Algorithms:**
+
+* None
+
+**Essential Facts to Remember:**
+
+1. Search engines like Google, Yahoo, and Bing offer an "Advanced Search" page where users can enter a Boolean query.
+2. The Advanced Search page allows users to specify multiple criteria such as site, language, file type, and more.
+3. Users can use the AND, OR, and NOT operators to refine their search results.
+4. The "site:" operator is used to search within a specific website or domain.
+5. The "NOT" operator is used to exclude pages containing specific terms.
+
+**Tips:**
+
+* Use quotes to search for exact phrases.
+* Use the - symbol to exclude specific terms.
+* Use the OR operator to search for multiple terms.
+
+**Reference URLs:**
+
+* Google Advanced Search: <https://www.google.com/advanced_search>
+* Bing Advanced Search: <https://help.bing.microsoft.com/#apex/bing/en-US/10002

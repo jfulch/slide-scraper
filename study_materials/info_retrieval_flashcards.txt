@@ -1,0 +1,65 @@
+# 🃏 Info Retrieval - Flashcards
+
+Here are 20 flashcard pairs based on the lecture content:
+
+**Q1: What is Information Retrieval (IR)?**
+A1: A computer science subject that deals with indexing documents and retrieving relevant documents given a query.
+
+**Q2: What was the "killer app" in IR?**
+A2: Searching for pages on the World Wide Web.
+
+**Q3: Who were the leading researchers in IR in the 1960s-70s?**
+A3: Prof. Salton and his students at Cornell University.
+
+**Q4: What were some of the early text retrieval systems?**
+A4: Boolean and vector-space models.
+
+**Q5: What is a document database system?**
+A5: A large collection of documents stored in a database, often used by companies like Lexis-Nexis and Dialog.
+
+**Q6: What was MEDLINE?**
+A6: A National Library of Medicine health information database.
+
+**Q7: What was Archie?**
+A7: An early search engine that indexed FTP'able documents on the Internet.
+
+**Q8: What were some popular search engines in the 1990s?**
+A8: Lycos, Yahoo, and Altavista.
+
+**Q9: What is a Recommender System?**
+A9: A computer program that attempts to predict items a user may be interested in based on their profile.
+
+**Q10: Examples of Recommender Systems include...**
+A10: YouTube, Amazon's recommendation system, and Google's personalized search results.
+
+**Q11: What is Automated Text Categorization & Clustering?**
+A11: A system that groups news articles into categories.
+
+**Q12: What was the purpose of NIST TREC (Text REtrieval Conferences)?**
+A12: To evaluate and improve IR systems through organized competitions.
+
+**Q13: What is Link Analysis in Web Search?**
+A13: A technique used by Google to analyze links between web pages for ranking purposes.
+
+**Q14: Why did Google limit its search results to 1000 per page?**
+A14: For speed reasons, to prevent slow loading times.
+
+**Q15: What is Collaborative Filtering?**
+A15: An algorithm used in Recommender Systems that predicts user preferences based on the behavior of similar users.
+
+**Q16: What is Vector-Space Model?**
+A16: A mathematical model for representing documents as vectors in a high-dimensional space, allowing for efficient retrieval.
+
+**Q17: What is Boolean Retrieval?**
+A17: A model that uses logical operators (AND, OR, NOT) to retrieve documents based on keyword matches.
+
+**Q18: What is the main difference between Vector-Space and Boolean models?**
+A18: The former represents documents as vectors, while the latter uses logical operators for retrieval.
+
+**Q19: Who sponsored NIST TREC?**
+A19: National Institute of Standards and Technology (NIST).
+
+**Q20: How many unique records does Dialog store?**
+A20: Over 1.4 billion.
+
+Let me know if you'd like me to create more!

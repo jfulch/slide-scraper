@@ -1,0 +1,33 @@
+# 📋 Se-Evaluation - Cheat Sheet
+
+**KEY TERMS**
+
+* **Precision**: Number of relevant documents retrieved / Total number of documents retrieved
+* **Recall**: Number of relevant documents retrieved / Total number of relevant documents in the collection
+* **Click-through Rate (CTR)**: Percentage of users who click on a result after searching
+* **Search Engine Algorithm**: Rules and processes used to rank search results
+* **Knowledge Graph**: Database storing information about entities, relationships, and attributes
+
+**ALGORITHMS**
+
+* Search Engine Algorithm (e.g., Google's): Crawling, indexing, query processing, ranking
+* Click-through Rate calculation: Count clicks / Total impressions
+* Query Log Analysis: Collect data, analyze trends, improve search engine performance
+
+**FORMULAS**
+
+* Precision = Number of relevant documents retrieved / Total number of documents retrieved
+* Recall = Number of relevant documents retrieved / Total number of relevant documents in the collection
+
+**MUST-KNOW FACTS**
+
+* Google processes over 40,000 search queries every second
+* Average person spends around 1 hour per day searching online
+* Click-through rates vary greatly depending on result position
+
+**QUICK REFERENCE**
+
+* Relevance: How well a document matches a user's search query
+* Ranking: Ordering search results based on relevance and other factors
+* Search Engine Optimization (SEO): Techniques to improve web page visibility and ranking
+* Knowledge Graph: Provides information about entities, relationships, and attributes

@@ -1,0 +1,36 @@
+# 📋 Se-Basics - Cheat Sheet
+
+**Search Engine Cheat Sheet**
+
+## KEY TERMS (most important definitions)
+
+* **Search Engine**: Software system that retrieves and displays data from a database or web server in response to user queries.
+* **Index**: Collection of documents or web pages stored by a search engine for quick retrieval.
+* **Crawler**: Program that automatically searches for and extracts data from the web.
+* **Algorithm**: Set of instructions used to solve a problem or perform a specific task in a search engine.
+
+## ALGORITHMS (names and what they do)
+
+* **Crawling Process**: Updates a search engine's index with fresh data by identifying new or updated web pages, extracting links, titles, and content.
+* **Indexing Process**: Enables fast and efficient searching of web pages by storing crawled data in an index for quick retrieval.
+
+## MUST-KNOW FACTS
+
+* Google: 2021 revenue $257B; Baidu: 2021 revenue $31B
+* Only Google and Bing have the resources to maintain a large index of the web.
+* An up-to-date index is essential for a search engine's performance.
+
+## QUICK REFERENCE
+
+* **Search Engine**: Retrieves data from database or web server in response to user queries.
+* **Index**: Collection of documents or web pages stored by a search engine.
+* **Crawler**: Program that extracts data from the web.
+* **Algorithm**: Set of instructions used to solve a problem or perform a specific task.
+* **Crawling Process**: Updates index with fresh data.
+* **Indexing Process**: Enables fast and efficient searching.
+
+**Key Takeaways**
+
+* Search engines use crawlers to extract data, store it in an index, and display relevant results.
+* An up-to-date index is essential for search engine performance.
+* Google and Bing are the only search engines with large indexes of the web.

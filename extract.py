@@ -1,13 +1,15 @@
 #!/usr/bin/env python3
 """
 Slide Image Scraper
-Downloads all slide images from a USC CS572 lecture presentation.
+Downloads all slide images from USC CS572 lecture presentations.
+Supports both HTML presentations and PDF files.
 
 Usage:
     python extract.py <URL> <LECTURE_NAME>
     
 Example:
     python extract.py "https://bytes.usc.edu/cs572/f25-6-AIR/lectures/querying/index.html#(2)" "querying"
+    python extract.py "https://bytes.usc.edu/cs572/f25-6-AIR/lectures/SEBasics/SearchEngineBasics.pdf" "se-basics"
 """
 
 import os
@@ -19,6 +21,12 @@ from urllib.parse import urljoin, urlparse
 from bs4 import BeautifulSoup
 from pathlib import Path
 import time
+
+try:
+    import fitz  # PyMuPDF
+    PDF_SUPPORT = True
+except ImportError:
+    PDF_SUPPORT = False
 
 def create_lecture_directory(lecture_name):
     """Create the slides directory and lecture subdirectory if they don't exist."""
@@ -34,18 +42,30 @@ def create_lecture_directory(lecture_name):
     lecture_dir.mkdir(exist_ok=True)
     return lecture_dir
 
-def get_page_content(url):
-    """Fetch the HTML content from the given URL."""
+def is_pdf_url(url):
+    """Check if the URL points to a PDF file."""
+    parsed_url = urlparse(url)
+    return parsed_url.path.lower().endswith('.pdf')
+
+def download_file(url):
+    """Download content from the given URL."""
     try:
         headers = {
             'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
         }
         response = requests.get(url, headers=headers)
         response.raise_for_status()
-        return response.text
+        return response
     except requests.RequestException as e:
-        print(f"Error fetching page: {e}")
+        print(f"Error fetching content from {url}: {e}")
         return None
+
+def get_page_content(url):
+    """Fetch the HTML content from the given URL."""
+    response = download_file(url)
+    if response:
+        return response.text
+    return None
 
 def extract_image_urls(html_content, base_url):
     """Extract all image URLs from the HTML content."""
@@ -73,6 +93,42 @@ def extract_image_urls(html_content, base_url):
             image_urls.append(full_url)
     
     return list(set(image_urls))  # Remove duplicates
+
+def convert_pdf_to_images(pdf_content, lecture_dir):
+    """Convert PDF pages to images and save them."""
+    if not PDF_SUPPORT:
+        print("PDF support not available. Please install PyMuPDF:")
+        print("pip install PyMuPDF")
+        return 0
+    
+    try:
+        # Open PDF from memory
+        pdf_document = fitz.open(stream=pdf_content, filetype="pdf")
+        
+        successful_conversions = 0
+        
+        for page_num in range(pdf_document.page_count):
+            page = pdf_document[page_num]
+            
+            # Convert page to image (PNG)
+            # Higher resolution for better quality
+            mat = fitz.Matrix(2.0, 2.0)  # 2x zoom for better quality
+            pix = page.get_pixmap(matrix=mat)
+            
+            # Save as PNG
+            filename = f"slide_{page_num + 1:03d}.png"
+            file_path = lecture_dir / filename
+            
+            pix.save(file_path)
+            print(f"Converted page {page_num + 1} to: {filename}")
+            successful_conversions += 1
+        
+        pdf_document.close()
+        return successful_conversions
+        
+    except Exception as e:
+        print(f"Error converting PDF to images: {e}")
+        return 0
 
 def download_image(url, lecture_dir, index=None):
     """Download a single image from the given URL."""
@@ -126,9 +182,31 @@ def download_image(url, lecture_dir, index=None):
         print(f"Error downloading {url}: {e}")
         return False
 
-def scrape_slide_images(url, lecture_name):
-    """Main function to scrape all slide images from the presentation."""
-    print(f"Scraping images from: {url}")
+def process_pdf_file(url, lecture_name):
+    """Process a PDF file by converting each page to an image."""
+    print(f"Processing PDF from: {url}")
+    print(f"Lecture: {lecture_name}")
+    
+    # Create lecture directory
+    lecture_dir = create_lecture_directory(lecture_name)
+    print(f"Saving images to: {lecture_dir.absolute()}")
+    
+    # Download PDF
+    print("Downloading PDF...")
+    response = download_file(url)
+    if not response:
+        print("Failed to download PDF")
+        return
+    
+    # Convert PDF to images
+    print("Converting PDF pages to images...")
+    successful_conversions = convert_pdf_to_images(response.content, lecture_dir)
+    
+    print(f"\nCompleted! Successfully converted {successful_conversions} PDF pages to images.")
+
+def process_html_presentation(url, lecture_name):
+    """Process an HTML presentation by extracting and downloading images."""
+    print(f"Processing HTML presentation from: {url}")
     print(f"Lecture: {lecture_name}")
     
     # Create lecture directory
@@ -166,6 +244,13 @@ def scrape_slide_images(url, lecture_name):
     
     print(f"\nCompleted! Successfully downloaded {successful_downloads}/{len(image_urls)} images.")
 
+def scrape_slide_images(url, lecture_name):
+    """Main function to process slides from either HTML presentations or PDF files."""
+    if is_pdf_url(url):
+        process_pdf_file(url, lecture_name)
+    else:
+        process_html_presentation(url, lecture_name)
+
 def main():
     """Parse command line arguments and run the scraper."""
     parser = argparse.ArgumentParser(
@@ -174,6 +259,7 @@ def main():
         epilog="""
 Examples:
   python extract.py "https://bytes.usc.edu/cs572/f25-6-AIR/lectures/querying/index.html#(2)" "querying"
+  python extract.py "https://bytes.usc.edu/cs572/f25-6-AIR/lectures/SEBasics/SearchEngineBasics.pdf" "se-basics"
   python extract.py "https://example.com/lecture.html" "information-retrieval"
         """
     )

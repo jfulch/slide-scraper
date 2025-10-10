@@ -1,0 +1,321 @@
+Extracted Text from Text_Processing Lecture Slides
+============================================================
+
+Slide: s1.png
+------------------------------
+¢ The path from IR to text classification:
+— You have an information need to monitor, say:
+¢ Unrest in the Niger delta region
+— You want to rerun an appropriate query periodically to find new
+news items on this topic
+— You will be sent new documents that are found
+* Le., it’ s not ranking but classification (relevant vs. not relevant)
+¢ Such queries are called standing queries
+— Long used by “information professionals”
+— A modern mass instantiation is Google Alerts
+¢ Standing queries are (hand-written) text classifiers
+
+Slide: s2.png
+------------------------------
+From: Google Alerts
+Subject: Google Alert - stanford -neuro-linguistic nlp OR "Natural Language Processing" OR
+parser OR tagger OR ner OR “named entity" OR segmenter OR classifier OR
+dependencies OR “core nip" OR corenip OR phrasal
+Date: May 7, 2012 8:54:53 PM PDT
+To: Christopher Manning
+3 new results for stanford -neuro-linguistic nlp OR "Natural Language
+Web Processing” OR parser OR tagger OR ner OR “named entity" OR segmenter
+OR classifier OR dependencies OR “core nip" OR corenlp OR phrasal
+Twitter / Stanford NLP Group: @Robertoross If you only n ...
+@Robertoross If you only need tokenization, java -mx2m edu.stanford.nlp. process.PTBTokenizer file.txt runs in 2MB
+on a whole file for me.... 9:41 PM Apr 28th ...
+twitter.com/stanfordnip/status/196459102770171905
+[Java] LexicalizedParser |p = LexicalizedParser.loadModel(“edu ...
+loadModel("edu/stanford/nIp/models/lexparser/englishPCFG.ser.gz”);. String[] sent = { “This”, “is”, "an", "
+“sentence”, "." };. Tree parse = Ip.apply(Arrays.
+pastebin.comvaz14R9nd
+More Problems with Statistical NLP || kuroShin.org
+Tags: nip, ai, coursera, stanford, nip-class, cky, nitk, reinventing the wheel, ... Programming Assignment 6 for
+Stanford's nip-class is to implement a CKY parser .
+www. kuroShin.org/story/2012/5/5/11011/68221
+Tip: Use quotes ("like this") around a set of words in your query to match them exactly. Learn more.
+Delete this alert.
+Create another alert.
+Manage your alerts.
+
+Slide: s3.png
+------------------------------
+From: "" <takworlld@hotmail.com>
+Subject: real estate is the only way... gem oalvgkay
+Anyone can buy real estate with no money down
+Stop paying rent TODAY !
+There is no need to spend hundreds or even thousands for similar courses
+Iam 22 years old and I have already purchased 6 properties using the
+methods outlined in this truly INCREDIBLE ebook.
+Change your life NOW !
+Click Below to order:
+http://www.wholesaledaily.com/sales/nmd.htm
+
+Slide: s4.png
+------------------------------
+¢ Given:
+— A representation of a document d
+¢ Issue: how to represent text documents.
+¢ Usually some type of high-dimensional space — bag of words
+— A fixed set of classes:
+C= {Cp Cy... Cf
+¢ Determine:
+— The category of d by generating a classification
+function, say y(d)
+— We want to build classification functions (“classifiers”).
+
+Slide: s5.png
+------------------------------
+Test
+Data:
+Classes:
+Training
+Data:
+“planning
+language
+cet proof
+NI a intelligence”
+(Programming) (HCl)
+Garb.Coll. || Multimedia
+learning planning programming garbage
+intelligence temporal semantics collection
+algorithm reasoning language memory
+reinforcement plan proof... optimization
+network... language... region...
+
+Slide: s6.png
+------------------------------
+¢ Manual classification
+— Used by the original Yahoo! Directory
+— Looksmart, about.com, ODP, PubMed
+— Accurate when job is done by experts
+— Consistent when the problem size and team is small
+— Difficult and expensive to scale
+« Means we need automatic classification methods for big
+problems
+
+Slide: s7.png
+------------------------------
+¢ Hand-coded rule-based classifiers
+— One technique used by news agencies,
+intelligence agencies, etc.
+— Widely deployed in government and enterprises
+— Vendors provide “IDE” for writing such rules
+
+Slide: s8.png
+------------------------------
+¢ Hand-coded rule-based classifiers
+— Commercial systems have complex query
+languages
+— Accuracy is can be high if a rule has been
+carefully refined over time by a subject expert
+— Building and maintaining these rules is
+expensive
+
+Slide: s9.png
+------------------------------
+* Given:
+— A document d
+— A fixed set of classes:
+C= {Cp Cy... Cf
+— A training set D of documents each with a label in C
+* Determine:
+— A learning method or algorithm which will enable us to
+learn a classifier y
+— For a test document d, we assign it the class
+y(d) EC
+
+Slide: s10.png
+------------------------------
+¢ Supervised learning
+— Naive Bayes (simple, common)
+— k-Nearest Neighbors (simple, powerful)
+— Support-vector machines (newer, generally more
+powerful)
+— ... plus many other methods
+— No free lunch: requires hand-classified training data
+— But data can be built up (and refined) by amateurs
+¢ Many commercial systems use a mixture of
+methods
+
+Slide: s11.png
+------------------------------
+I love this movie! It's sweet,
+but with satirical humor. The
+dialogue is great and the
+adventure scenes are fun... It
+manages to be whimsical and
+romantic while laughing at the
+conventions of the fairy tale
+genre. I would recommend it to
+just about anyone. I've seen it
+several times, and I'm always
+happy to see it again whenever
+I have a friend who hasn't seen
+it yet.
+
+Slide: s12.png
+------------------------------
+great
+love
+recommend
+laugh
+happy
+
+Slide: s13.png
+------------------------------
+* Supervised learning classifiers can use any sort of
+feature
+— URL, email address, punctuation, capitalization,
+dictionaries, network features
+¢ In the simplest bag of words view of documents
+— We use only word features
+— we use all of the words in the text (not a subset)
+
+Slide: s14.png
+------------------------------
+¢ Text collections have a large number of features
+— 10,000 — 1,000,000 unique words ... and more
+¢ Selection may make a particular classifier feasible
+— Some classifiers can’ t deal with 1,000,000 features
+¢ Reduces training time
+— Training time for some methods is quadratic or worse in the
+number of features
+¢ Makes runtime models smaller and faster
+¢ Can improve generalization (performance)
+— Eliminates noise features
+— Avoids overfitting
+
+Slide: s15.png
+------------------------------
+¢ The simplest feature selection method:
+— Just use the most common terms
+— No particular foundation
+— But it make sense why this works
+¢ They are the words that can be well-estimated and
+are most often available as evidence
+— In practice, this is often 90% as good as better
+methods
+— Smarter feature selection — future lecture
+
+Slide: s16.png
+------------------------------
+¢ Naive Bayes has found a home in spam
+filtering
+— Paul Graham’ s A Plan for Spam
+* http://www.paulgraham.com/spam.html
+— Widely used in spam filters
+— But many features beyond words:
+¢ black hole lists, etc.
+* particular hand-crafted text patterns
+
+Slide: s24.png
+------------------------------
+* Each document is a vector, one component for
+each term (= word).
+* Normally normalize vectors to unit length.
+¢ High-dimensional vector space:
+— Terms are axes
+— 10,000+ dimensions, or even 100,000+
+— Does are vectors in this space
+* How can we do classification in this space?
+
+Slide: s25.png
+------------------------------
+¢ In vector space classification, training set
+corresponds to a labeled set of points
+(equivalently, vectors)
+e Premise 1: Documents in the same class form a
+contiguous region of space
+¢ Premise 2: Documents from different classes don’t
+overlap (much)
+¢ Learning a classifier: build surfaces to delineate
+classes in the space
+
+Slide: s27.png
+------------------------------
+@ e @
+e @
+e @
+@ v
+a @
+e e
+@ Government
+e @Sci
+e Science
+e @ Arts
+
+Slide: s28.png
+------------------------------
+@ Government
+®@Science
+@ Arts
+
+Slide: s29.png
+------------------------------
+i= Dw)
+¢ Where D, is the set of all documents that belong to
+class c and v(d) is the vector space representation of
+¢ Note that centroid will in general not be a unit
+vector even when the inputs are unit vectors.
+
+Slide: s30.png
+------------------------------
+¢ Rocchio forms a simple representative for
+each class: the centroid/prototype
+¢ Classification: nearest prototype/centroid
+
+Slide: s34.png
+------------------------------
+e kNN = k Nearest Neighbor
+¢ To classify a document d:
+¢ Define k-neighborhood as the k nearest neighbors of
+¢ Pick the majority class label in the k-neighborhood
+e For larger k can roughly estimate P(c|d) as #(c)/k
+
+Slide: s35.png
+------------------------------
+@ Government
+®@Science
+@ Arts
+
+Slide: s36.png
+------------------------------
+e Learning: just store the labeled training examples D
+¢ Testing instance x (under 1NN):
+— Compute similarity between x and all examples in D.
+— Assign x the category of the most similar example in D.
+© Does not compute anything beyond storing the examples
+Also called:
+— Case-based learning
+— Memory-based learning
+— Lazy learning
+¢ Rationale of kNN: contiguity hypothesis
+
+Slide: s37.png
+------------------------------
+e Using only the closest example (1NN) subject to errors due
+to:
+— Asingle atypical example.
+— Noise (i.e., an error) in the category label of a single
+training example.
+¢ More robust: find the k examples and return the majority
+category of these k
+e kis typically odd to avoid ties; 3 and 5 are most common
+
+Slide: s39.png
+------------------------------
+¢ No feature selection necessary
+No training necessary
+Scales well with large number of classes
+— Don’t need to train n classifiers for n classes
+Classes can influence each other
+— Small changes to one class can have ripple effect
+¢ Done naively, very expensive at test time
+In most cases it’s more accurate than NB or Rocchio
+

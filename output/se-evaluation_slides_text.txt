@@ -1,0 +1,541 @@
+Extracted Text from Se-Evaluation Lecture Slides
+============================================================
+
+Slide: slide_001.png
+------------------------------
+Search Engine Evaluation
+
+Slide: slide_002.png
+------------------------------
+¢ Defining precision/recall
+¢ Mean Average Precision
+¢ Harmonic Mean and F Measure
+¢ Discounted Cumulative Gain
+¢ Elements of Good Search Results
+* Google's Search Quality Guidelines
+* Using log files for evaluation
+¢ A/B Testing
+
+Slide: slide_003.png
+------------------------------
+University of Southern C
+SEB) - of x
+@ Bing It On - Take the Bing x . . . .
+Np worn bingnoncom ecm This site is no longer active, but we
+EE apps te Bookmarks [} CSCI571Home Page [} CSCI572 Home Page [fl] Computer Science D » Co Other bookmarks can simulate the exp eriment
+Bing It On
+lb Bing vs Google
+battle earch engine fe
+Try it yourself!
+here are some queries:
+bette - ac versus de current
+- best bottled water
+& - worst hotel inSanta Monica
+soins - how many gears do I need on a bicycle
+Hillary Clinton raciser - Clint Eastwood’s best ‘movie
+ccc
+
+Slide: slide_004.png
+------------------------------
+¢ How do we measure the quality of search engines?
+¢ Precision = #(relevant items retrieved)
+divided by
+#(all retrieved items)
+¢ Recall = #(relevant items retrieved)
+divided by
+#(all relevant items)
+
+Slide: slide_005.png
+------------------------------
+Pe Tatevant [Nonrclevant
+Retrieved True positive (tp) False positive (fp)
+Not retrieved False negative (fn) True negative (tn)
+Precision = tp/(tp + fp)
+Recall = tp/(tp + fn)
+= The accuracy of an engine is defined as:
+the fraction of these classifications that are correct
+(tp + tn) / (tp + fp + fn + tn)
+For web applications,
+Precision is more important than Recall
+
+Slide: slide_006.png
+------------------------------
+A is set of relevant documents,
+you may not be able
+B is set of retrieved documents to see them, but
+Aand B have a bar
+Relevant Non-Relevant over them and it
+. denotes the
+Retrieved ANB ANB jomEn set
+Not Retrieved ANB ANB
+|ANB
+Recall = ———
+| A|
+|ANB
+Precision = ———
+https://en.wikipedia.org/wiki/Precision_and_recall
+
+Slide: slide_007.png
+------------------------------
+Se& 8.358C
+¢ You can get high recall (but low precision) by
+retrieving all docs for all queries!
+— arather foolish strategy
+¢ In a good system, precision decreases as the
+number of docs retrieved (or recall) increases
+— This is not a theorem, but a result with strong empirical
+confirmation
+— E.g. viewing multiple pages of Google results often does
+not improve precision at all
+
+Slide: slide_008.png
+------------------------------
+¢ There are three Pythagorean means
+— 1. arithmetic mean, 2. geometric mean, 3. harmonic mean
+— of course we all know how to compute the arithmetic mean
+— the geometric mean is the nth root of the product of n numbers
+¢ The harmonic mean tends strongly toward the least element of the list making it
+useful in analyzing search engine results
+¢ To find the harmonic mean of a set of » numbers
+1. add the reciprocals of the numbers in the set
+2. divide the sum by n
+3. take the reciprocal of the result
+* eg. for the numbers 3, 6, 9, and 12
+The arithmetic mean is: (3+6+9+12)/4 = 7.5
+— The geometric mean is: nth-root(3*6*9* 12) = 4"-root(1944) = 6.64
+The harmonic mean is: (1/3+1/6+1/9+1/12)=(.33+.16+.11+.08)/4=0.17 and 1/0.17 = 5.88
+
+Slide: slide_009.png
+------------------------------
+¢ The harmonic mean of the precision and the recall is often
+used as an aggregated performance score for the evaluation of
+algorithms and systems: called the
+F-score (or F-measure).
+¢ Harmonic mean of recall and precision is defined as
+F= 1 —_ _2RP
+“~~ ll 1 —
+s(a+5) (R+P)
+— harmonic mean emphasizes the importance of small
+values, whereas the arithmetic mean is affected more by
+outliers that are unusually large
+¢ More general form of F-Measure
+— fis a parameter that controls the relative
+importance of recall and precision
+Fg = (6? +1)RP/(R+6°P)
+
+Slide: slide_010.png
+------------------------------
+Calculating Recall/Precision
+at Fixed Positions
+Recall:
+[| [| [| [| [| [| = the relevant documents
+1/6 =0.17
+Precision: ; e.g.
+nine =, SU BBBBUUUB
+/ 8 Google
+Steps
+Recall: Recall 0.17 0.17 0.33 0.5 0.67 0.83 0.83 0.83 0.83 1.0 Result
+1/6 = 0.17 Precision 1.0 0.5 0.67 0.75 0.8 0.83 0.71 0.63 0.56 0.6
+Precision:
+1/2=0.5
+e.g.
+Recall: . Bing
+cot ere = (J UUSEEU
+aon: Recall 0.0 0.17 0.17 0.17 0.33 0.5 0.67 0.67 0.83 1.0
+Precision 0.0 0.5 0.330.25 0.4 0.5 0.57 0.5 0.56 06
+Recall:
+3/6 = 0.5
+Precision:
+3/4 = 0.75 Recall=#RelevitemsRetr/allRelevitems
+Prec=#RelevitemsRetr/allltemsRetr
+
+Slide: slide_011.png
+------------------------------
+| | | LJ [] B = the relevant documents
+computes the Ranking #1 B LJ B B B LJ | | B
+sum of the Recall 0.17 0.17 0.33 0.5 0.67 0.83 0.83 0.83 0.83 1.0
+precisions of Precision 1.0 0.5 0.67 0.75 0.8 0.83 0.71 0.63 0.56 0.6
+the relevant
+Ranking #2 JEUUEEEUSE
+documents
+Recall 0.0 0.17 0.17 0.17 0.33 0.5 0.67 0.67 0.83 1.0
+Precision 0.0 0.5 0.33 0.25 0.4 0.5 0.57 0.5 0.56 0.6
+++Ranking #1: (1.0 + 0.67 + 0.75 + 0.8 + 0.83 + 0.6) /6 = 0.78
+t_+Ranking #2: (0.5 + 0.4 + 0.5 + 0.57 + 0.56 + 0.6)/6 = 0.52
+Conclusion: Ranking #1 for this query is best
+
+Slide: slide_012.png
+------------------------------
+[J J [J LJ] [J = relevant documents for query 1
+ere BUBUUSUUSS
+Recall 0.2 0.2 04 04 04 06 06 06 08 1.0
+Precision 1.0 0.5 0.67 0.5 0.4 0.5 0.43 0.38 0.44 0.5
+[J [J [J = relevant documents for query 2
+entre? | |B UUBUBUU
+Recall 0.0 0.33 0.33 0.33 0.67 0.67 1.0 1.0 1.0 1.0
+Precision 0.0 0.5 0.33 0.25 0.4 0.33 0.43 0.38 0.33 0.3
+Average precision across
+the two queries for relevant
+docs is:
+(1+ .67+.54+ 444+ 5+
+5+ .4+ .43)/8 = 0.55
+
+Slide: slide_013.png
+------------------------------
+¢ Mean average precision (MAP) for a set of queries is the
+mean of the average precision scores for each query.
+ea AveP(q)
+where Q is the number of queries
+¢ Summarize rankings from multiple queries by averaging
+average precision
+MAP =
+* This is the most commonly used measure in research papers
+¢ Assumes user is interested in finding many relevant documents
+for each query
+* Requires many relevance judgments in text collection
+ccc
+
+Slide: slide_014.png
+------------------------------
+University of Southern C
+B B a § | = relevant documents for query 1
+ones SOSCOSCOMS
+Recall 0.2 0.2 04 04 04 06 06 06 O08 1.0
+Precision 1.0 0.5 0.67 05 04 0.5 0.43 0.38 0.44 0.5
+8 § 8 = relevant documents for query 2
+oie OS OOSOSOOO
+Recall 0.0 0.33 0.33 0.33 0.67 0.67 1.0 1.0 1.0 1.0
+Precision 0.0 0.5 0.33 0.25 0.4 0.33 0.43 0.38 0.33 0.3
+average precision query 1 = (1.0+0.67+0.5 + 0.44 + 0.5)/5 = 0.62
+average precision query 2 = (0.5 + 0.4 + 0.43)/3 = 0.44
+mean average precision = (0.62 + 0.44)/2 = 0.53
+
+Slide: slide_015.png
+------------------------------
+=Mean Average Precision (MAP)
+= Some negative aspects
+— If arelevant document never gets retrieved, we
+assume the precision corresponding to that relevant
+doc to be zero (this is actually reasonable)
+— Each query counts equally
+— MAP assumes user is interested in finding many
+relevant documents for each query
+— MAP requires many relevance judgments in the
+document collection
+
+Slide: slide_016.png
+------------------------------
+Se& 8.358C
+¢ Should average over large document collection and
+query ensembles
+¢ Need human relevance assessments
+— But people aren’t always reliable assessors
+¢ Assessments have to be binary
+— Nuanced assessments?
+* Heavily skewed by collection/authorship
+— Results may not translate from one domain to another
+ccc
+
+Slide: slide_017.png
+------------------------------
+* The premise of DCG is that highly relevant documents appearing lower in a
+search result list should be penalized as the graded relevance value is reduced
+logarithmically proportional to the position of the result.
+¢ The discounted CG accumulated at a particular rank position p is defined as
+P P
+rel; rel;
+DCG, = ——— = rel, + —_—_
+mG) » mit)
+where rel; is the graded relevance of the result at position i
+* Gain is accumulated starting at the top of the ranking and may be reduced, or
+discounted, at lower ranks
+* Typical discount is 1/log (rank)
+— With base 2, the discount at rank 4 is 1/2, and at rank 8 it is 1/3
+¢ An alternative formulation of DCG places stronger emphasis on retrieving
+relevant documents: P grel; 4
+DCG, = 5» ——_—
+
+Slide: slide_018.png
+------------------------------
+we want high weights for high
+rank documents, because
+searchers are likely to inspect
+them, and low weights for
+Discount examples
+low rank documents that Discount1 Discount2 Discount1 —_Discount2
+searchers are unlikely to ever Rank Grade [4/rank] [log2(rank + 1)] Grade Grade
+see.
+The discount factor is 1 4 1.000 1.000 4.000 4,000
+commonly chosen
+as log2(rank + 1) and is used 2 3 0.500 0634 1.500 1.893
+to divide the relevance grade.
+Using a logarithm for the 3 2 0.333 0.500 0.667 1.000
+position penalty makes the
+decay effect more gradual
+compared to using the 4 1 0.250 0.431 0.250 0.431
+position itself.
+5 1 0.200 0.387 0.200 0.387
+
+Slide: slide_019.png
+------------------------------
+Metrics table
+Scale Metric Measures Drawbacks
+Binary The relevance of — Doesn't account
+the entire results for position
+set (gridded
+results display)
+Binary Average Precision Relevance toa Large impact of
+(AP) user scanning low-rank results
+results
+sequentially
+Graded Cumulative Gain Information gain Same as Precision
+(CG) fromaresults doesn't factor in
+set position
+Graded Discount Information gain Difficult to
+Cumulative Gain with positional compare across
+(DCG) weighting queries
+Graded normalized DCG How close the No longer shows
+(nDCG) results aretothe information gain
+best possible
+Finally see https://en.wikipedia.org/wiki/Evaluation_measures_(information_retrieval)
+_ _
+
+Slide: slide_020.png
+------------------------------
+= Search engines have test collections of queries and hand-ranked results
+" Recall is difficult to measure on the web
+= Search engines often use precision at top k positions, e.g., k = 10
+=... or measures that reward you more for getting rank / right than for getting
+rank /0 right.
+= Search engines also use non-relevance-based measures
+* Click-through on first result
+Not very reliable if you look at a single click-through ...
+but pretty reliable in the aggregate.
+= Studies of user behavior in the lab
+= A/B testing
+
+Slide: slide_021.png
+------------------------------
+University of Southern C
+* Google relies on raters, working General Guidelines sour a
+in many countries and
+languages around the world
+(0.0 The Search Experience
+(0.1 The Purpose of Search Quality Rating
+¢ The data they generate is rolled
+up Statistically to give
+— aview of the quality of search
+results and search experience
+over time, and
+Ye 20
+ics of High Quality Pages 20
+nt of High Qualty Main Content a
+0: Who is Responsible and Customer Service a
+iveness s/Trustworthiness (E-A-T) 2
+— an ability to measure the
+effect of proposed changes to
+Google’s search algorithms
+http://csci572.com/papers/2020_10searchqualityevaluatorguidelines.pdf
+
+Slide: slide_022.png
+------------------------------
++ This document gives evaluators examples and guidelines
+for appropriate ratings.
+* the evaluator looks at a search query and a result that could
+be returned. They rate the relevance of the result for that
+query on a scale described within the document.
+The six rating scale categories
+= —- ox
+[) searchqualityevaluatorgu' x
+Cc. www-scf..edu, ‘ F : za =
+pps Yr Bookmarks [} CSCI571 HomePage [} CSCI572 Home Page [J Computer Science D » (5 Other bookmarks
+Rating Scale Description *
+Vital A special rating category. See Section 4.1 of the Rating Guidelines.
+Useful A page that is very helpful for most users.
+Relevant ‘A page that is helpful for many or some users.
+i ‘A page that is not very helpful for most users, but is somewhat related to the query. Some or few users
+Slightly Relevant would find this page helpful
+Off-Topic or Useless _| A page that is helpful for very few or no users.
+A page that cannot be evaluated. A complete description can be found in Section 4.6 of the Rating
+Guidelines.
+
+Slide: slide_023.png
+------------------------------
+1. Precision Evaluations
+People use the Guidelines to rate
+search results
+2. Side-by-Side Experiments 118,812
+people are shown two different oe 7 y
+joogle.com A=
+Je 0) CSCISTE Home Page Computer Science D... [BJ TS-Software [> Horowits Fay » Co Other bookmarks
+10,391
+sets of search results and asked —
+which they prefer hoaal
+3. Live Traffic Experiments 665
+the search algorithm is altered
+for a small number of actual users
+4. Full Launch
+A final analysis by Google engineers
+and the improvement is released
+
+Slide: slide_024.png
+------------------------------
+¢ A/B testing is comparing two versions of a web page to see which one
+performs better. You compare two web pages by showing the two variants
+(let's call them A and B) to similar visitors at the same time. The one that
+gives a better conversion rate, wins!
+Purpose: Test a single innovation
+Prerequisite: You have a large search engine up and running.
+Have most users use old system
+Divert a small proportion of traffic (e.g., 1%) to an experiment to
+evaluate an innovation
+5. Evaluate with an automatic measure like click through on first result
+FYN >
+we directly see if the innovation does improve user happiness
+This is the evaluation methodology large search engines trust the most
+ccc
+
+Slide: slide_025.png
+------------------------------
+USING USER CLICKS FOR
+EVALUATION
+
+Slide: slide_026.png
+------------------------------
+RESUL
+cikM 2008
+STOR’
+Turn on search history
+jembering your
+Tum history on
+ALL RESULTS 4 Ores
+CIKM 2008 | Home
+Napa Valley Marriott Hotel & Spa: Napa Valley, California October 26-30, 2008
+ccikm2008.0rg - Cach: <
+Papers Program Committee
+Themes News
+Important Dates Napa Valley
+Banquet Posters
+‘Show more results from cikm2008.org
+Conference on Information and Knowledge Management. (ckg———_|
+Provides an intemational forum for presentation and discussion of research on information and
+knowledge management, as well as recent advances on data and knowledge bases
+wwrw.cikm.org - Cach
+Conference on Information and Knowledge Management. (cikmoz#——_|
+‘SAIC Headquarters, McLean, Virginia, USA, 4-8 November 2002
+‘www. cikm.org/2002
+ACM CIKM 2007 - Lisbon, Portugal Mi ——_
+News and announcements: 12/02 - Best interdisciplinary paper award at CIKM 2007 went to Fei Wu
+and Daniel Weld for Autonomously Semantifying Wikipedia.
+www ful pt/cikm2007 ed page
+CIKM 2009 | Home MM
+CIKM 2009 (The 18th ACM Conference on Information and Knowledge Management) will be
+held on November 2-6, 2009, Hong Kong. Since 1992, CIKM has successfully brought together
+‘www.comp polyu.edu.hk/conference/cikm2009 - Cached
+Conference on Information and Knowledge Management (CIKM) ¢——_______1
+CIKM Conference on Information and Knowledge Management The Conference on
+Information and Knowledge Management (CIKM) provides an international forum for presentation
+and
+cikmconference.org - Cached page
+# of clicks received
+20 40 60
+There is strong position bias, so absolute click rates unreliable
+
+Slide: slide_027.png
+------------------------------
+L RESULT:
+CIKM 2008 | Home
+Napa Valley Marriott Hotel & Spa: Napa Valley, California October 26-30, 2008
+‘cikm2008.org
+iki 2008
+Papers Program Committee
+Themes News
+Important Dates Napa Valley
+Tum on search history Banquet Posters
+tart remembering you Ww more results from cikm2008. org
+searche: 8
+’s click
+even conference on infomation and Knowedge Management User’s clic
+Provides an intemational forum for presentation and discussion of research on information and
+knowledge management, as well as recent advances on data and knowledge bases
+nw clin sequence
+Conference on Information and Knowledge Management (CIKM'02)
+‘SAIC Headquarters, McLean, Virginia, USA, 4-9 November 2002
+www.cikm.org/2002
+ACM CIKM 2007 - Lisbon, Portugal
+News and announcements: 12/02 - Best interdisciplinary paper award at CIKM 2007 went to Fei Wu
+and Daniel Weld for Autonomously Semantifying Wikipedia.
+www ful pt/cikm2007
+CIKM 2009 | Home
+CIKM 2009 (The 18h ACM Conference on Information and Knowledge Management) will be
+held on November 2-6, 2008, Hong Kong. Since 1992, CIKM has successfully brought together
+www.comp polyu. edu. hk/conference/cikm200:
+Conference on Information and Knowledge Management (CIKM)
+CIKM Conference on Information and Knowledge Management The Conferey
+Information and Knowledge Management (CIKM) provides an international fordm for presentation
+and
+cikmconference.org
+Hard to conclude Result] > Result3
+Probably can conclude Result3 > Result2
+ccc
+
+Slide: slide_028.png
+------------------------------
+¢ Used for both tuning and evaluating search engines
+— also for various techniques such as query suggestion
+* Typical contents of the query log files
+— User identifier or user session identifier
+— Query terms - stored exactly as user entered them
+— List of URLs of results, their ranks on the result list,
+and whether they were clicked on
+— Timestamp(s) - records the time of user events such as
+query submission, clicks
+ccc
+
+Slide: slide_029.png
+------------------------------
+¢ Clicks are not relevance judgments
+— although they are correlated
+— biased by a number of factors such as
+rank on result list
+¢ Can use clickthough data to predict
+preferences between pairs of documents
+— appropriate for tasks with multiple
+levels of relevance, focused on user
+relevance
+— various “policies” used to generate
+preferences
+
+Slide: slide_030.png
+------------------------------
+Display improvements
+* immediate answers
+* autocomplete anticipations
+Extensions to More Data
+* results from books
+* results from news
+The page below discusses the many aspects that
+go into producing search results at Google
+https://www.google.com/search/howsearchworks
+¢ results from images Answers from the Directions and
+Knowledge Graph traffic
+* results from patents
+* results from air schedules > >
+New Input forms
+. search by voice Direct answers Featured snippets
+* search by image
+. . . . > >
+information retrieval improvements
+° snippets Rich lists Answers before
+* spelling correction penliratoets
+* translations 5 5
+* People Also Ask boxes
+* use of synonyms
+«use of knowledge graph
+
+Slide: slide_031.png
+------------------------------
+¢ See wikipedia on
+¢ https://en.wikipedia.org/wiki/Comparison_of_web
+_Search_engines
+

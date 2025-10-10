@@ -1,0 +1,65 @@
+# 🃏 Web Serving Basics - Flashcards
+
+Here are 20 flashcard pairs based on the lecture content:
+
+**Q1: What percentage of the world's population uses the internet today?**
+A1: 63.1%
+
+**Q2: How many people use the internet worldwide today?**
+A2: 5.03 billion
+
+**Q3: What is the name of the Chinese search engine that is a Top 10 Internet Property by Global Monthly Unique Visitors?**
+A3: Baidu
+
+**Q4: Which company owns Tencent, a Chinese holding company of Internet properties?**
+A4: None (Tencent is a separate entity)
+
+**Q5: What percentage of mobile time spent in China is on Tencent and its affiliated apps?**
+A5: 71%
+
+**Q6: How many minutes per day does the average user spend on mobile internet in China?**
+A6: ~200 minutes
+
+**Q7: Who is Mary Meeker, mentioned in the lecture as a source of early slides?**
+A7: Formerly of Kleiner Perkins Caufield and Byers (KPCB)
+
+**Q8: What does KPCB stand for?**
+A8: Kleiner Perkins Caufield and Byers
+
+**Q9: What is the name of the Chinese e-commerce company mentioned in the lecture?**
+A9: Alibaba
+
+**Q10: What percentage of users of Top 10 Global Internet Properties are outside of America?**
+A10: >86%
+
+**Q11: How many mobile internet users does China have, according to the lecture?**
+A11: 817 million
+
+**Q12: What is the name of the Chinese messaging app that is a part of Tencent's ecosystem?**
+A12: WeChat (also known as QQ)
+
+**Q13: Which company has the most popular mobile browser in China, according to the lecture?**
+A13: UCWeb Browser
+
+**Q14: What is the name of the video streaming service owned by Baidu?**
+A14: None (Baidu Tieba and Baidu Maps are mentioned, but not a specific video streaming service)
+
+**Q15: What is the purpose of the chart in slide 003?**
+A15: To show the share of population using the internet in different regions
+
+**Q16: Which company has the most popular mobile music app in China, according to the lecture?**
+A16: QQ Music (owned by Tencent)
+
+**Q17: What is the name of the Chinese online encyclopedia mentioned in the lecture?**
+A17: Sohu.com Inc. (also known as Wikipedia-like platform)
+
+**Q18: How many monthly unique visitors does Google have, according to the lecture?**
+A18: Not specified
+
+**Q19: Which company has a significant presence in China's mobile internet market, according to the lecture?**
+A19: Tencent and Alibaba
+
+**Q20: What is the name of the Chinese video streaming service that is part of Baidu's ecosystem?**
+A20: None (Baidu Video is not mentioned)
+
+Note: I've tried to make the questions specific and answers concise, but if you'd like me to revise or add anything, please let me know!

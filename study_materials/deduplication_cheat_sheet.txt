@@ -1,0 +1,36 @@
+# 📋 Deduplication - Cheat Sheet
+
+**SIMILARITY SEARCH CHEAT SHEET**
+
+## KEY TERMS (most important definitions)
+
+* **Jaccard Coefficient**: Measure of similarity between two sets, defined as intersection size divided by union size.
+* **Hamming Distance**: Number of positions at which two strings differ in a sequence alignment.
+* **SimHash**: Hash function that produces similar outputs for similar inputs, used to estimate document similarity.
+* **Fingerprint**: Compact representation of a document's content.
+
+## ALGORITHMS (names and what they do)
+
+* **SimHash Algorithm**: Estimates document similarity by producing similar outputs for similar inputs.
+* **Permutation Algorithm**: Preserves Hamming distance by permuting bits.
+
+## FORMULAS
+
+* **Jaccard Coefficient Formula**: J = |A ∩ B| / |A ∪ B|
+* **Hamming Distance Formula**: HD = number of positions at which two strings differ
+
+## MUST-KNOW FACTS
+
+* Typical values for f and k: f=64, k=3 (for SimHash)
+* Bitwise Hamming distance between similar items can be small.
+
+## QUICK REFERENCE
+
+* Similarity search: Finding documents similar to a given query document.
+* Clustering: Grouping similar documents together based on content.
+* Key concepts:
+	+ Jaccard Coefficient
+	+ Hamming Distance
+	+ SimHash
+	+ Fingerprint
+	+ Permutation Algorithm

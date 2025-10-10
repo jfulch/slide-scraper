@@ -1,0 +1,1226 @@
+Extracted Text from Querying Lecture Slides
+============================================================
+
+Slide: s1.png
+------------------------------
+ity of Southern California
+The Power of
+Google’s Query Box
+
+Slide: s2.png
+------------------------------
+Query: “apple AND orchard BUT NOT computer” still returns Apple Computer results
+Google Yahoo
+Bing
+Notice
+Related
+searches
+
+Slide: s3.png
+------------------------------
+iversity of Southern Californi
+Google Advanced Search
+€ Cc ft
+© csc1s72 Home Page © csct 71 Home Page ©) csctIs1 Home Page ©) Els Horowitz Home P.
+© www.googlele/advanced_search?q=site:wwrw.ncrijesite=Researchahise
+Search engines typically offer an
+“Advanced Search” page where
+users Can enter, in effect, a Boolean
+query; e.g. Here is Google’s “advanced
+search” screen
+Google Advanced Search Advanced Search Tips | About Google
+sitewww.neri.ie
+Find web pages that have...
+ANDing.a set of words
+Exact phrase
+ORing a set of words
+all these words
+this exact wording or phrase
+one or more of these words
+But don't show pages that have...
+any of these unwanted words:
+NOT words
+Need more tools?
+Reading level: no reading level displ. ¥
+reading level
+This option does not
+apply in Google Instant
+any language v
+Language:
+language
+file type
+File type
+any format ¥
+Search within a site or domain: {www.ncri.ie
+(e.g. youtube com, edu)
+Date, usave rights, region, and more
+‘Advanced Search
+hltps://help.bing.microsoft.com/#apex/bing/en-US/10002/-1
+
+Slide: s4.png
+------------------------------
+*@ 0 sooo : ® eo
+on @ wespaze @ Bowe ‘woo ° ° = = :
+Google ry
+Google apple orchard -computer x $a
+Advanced Search
+Find pages with,
+Apple Orchard -Computer
+Lostzaares: r
+Nationalorest
+ol these word se orchard
+‘angeles
+ational Forest
+none of these words computor
+* ° Channel
+lslands
+National Park
+‘Then narrow your
+result by. Rating > Hours
+vo srreoen : Little Orchard Music
+5.0 4 He (8) - Orchar °
+last update a = Topanga, CA. (31
+© "Great place. enjoyed
+Directions
+chard Music
+Apple Farm Collections
+No reviews - Fam
+Sherman Oaks, CA. (818) 788-1529
+Whalley’s Orchard
+sage rights: ot ied by ean 44 4% (60) - Produce market °
+Literack, CA - (661) 480-6454
+"They also have the best Puts, grapes, apples, and peaches.”
+
+Slide: s5.png
+------------------------------
+¢ Ifyou search for more than one keyword at a time, Google/Bing will
+automatically search for pages that contain ALL of your keywords
+— This is called “implicit AND”
+¢ A search for
+disney disneyland pirates
+is the same as searching for
+disney AND disneyland AND pirates
+(without the ANDs needed)
+* Google sometimes returns pages that don’t contain all of your query
+terms
+
+Slide: s6.png
+------------------------------
+¢ To search for phrases, just put your
+phrase in quotes.
+¢ For example,
+disney disneyland “pirates of the
+caribbean”
+¢ This would show you all the pages in
+Google’s index that contain the word
+disney AND the word disneyland
+AND the exact phrase “pirates of
+the Caribbean” (of course, without
+the quotes)
+Google
+disney fantasyland “pirates of the caribbean”
+<lsneywors disney. go.com :
+8 of the
+fide smell is space mountain closed disney wold
+fide drop space mountain map
+pirates ofthe caribbean ride shanghai star wars at epeot
+Pirates of the Caribbean (attraction) - Wikipedia
+themed Shoot the Chute attraction at Disneyland, Wat
+Disney World's Magic
+‘Shanghai Disneyland
+yo Disneyland, Disneyland Park at Disneyland Paris, and
+History Modifications - Adaptations Soundtrack
+
+Slide: s7.png
+------------------------------
+Ge GLE
+“general principles of electricity" $a
+A Vide
+°"| General principles of electricity supply systems
+wer ide-online.com./pas.Generalprincipes_of electricity. supplysystems.pat +
+‘mover which mey be
+General principles of electricity supply systems | EEP | Transmission
+https:/wivw.pinterest.com/pin/35888128254768417/
+Electric Power Substation... Volts, alternating, amperage, blackout, bul, cable, communications,
+connection, construction, current, danger, distribution, electrical electricity, energes, equipment, factory,
+fuel, fuse, generation, generator, igh i, industry, insulation, insulators, on, ines ink, metal, mult
+‘generation, nobody
+articles - Mentor EBS
+www.mentorebs.sV/ARTICLES
+To give the answer to tis question, we need knowledge ofthe general principles of electricity pricing in
+the electricity market. What we have a mind here isthe market price of electiy Le. the price at which
+electricity fs sold to suppliers by producers, not the ate in the end-user market, The later, naturally,
+indirectly has to
+Electricity - Guides.turnitin.com
+https//guidesturitn.com >.» Prompt Library» Secondary Education *
+"0" C:\ Physics Dept History\1965Curriculum.wpd
+blogs mtu.edu/physics/files/2000/01/Curriculum1965.pdf >
+PH336. Electric and Magnetic Measurements. (0-3-3) s (altemate years) ......4.A continuation of
+work begun in PH316-317, tended for those who wish to pureue further the theory and practice of
+precise electric and magnetic measurements. Types of allthe principal instruments used in modern
+electrical methods are
+With quotes Greg GLE
+general principles of electricity $a
+Even materials that conduct electricity resist the flow of electrons. The unit of
+‘electrical resistance is an ohm. The pressure needed to make one coulomb per
+second (one ampere) flow through a conductor having a resistance of one ohm is.
+one vot... The quantity of electric charge is measured in coulombs.
+The Principles of Electricity - Energizer
+wv energizer com/science-center/the principles of electricity
+People also
+What is the law of electricity?
+What is the basic principle of the electric generator?
+What is the basic principle of magnetism?
+What is the theory of electricity?
+‘The Basic Principles of Electricity | Anixter
+hitps://woww anixterconv/en_us/resources/.the-basic principles ofelectictyhtml »
+The Vok. The pressure that put on fee electrons that cauzes them to ow ie
+‘The Principles of Electricity - Energizer
+ve energizercomv/science-center/the-principles of electricity +
+wn. The pressure needed to make one coulomb pe ne ampere) flow trough
+Without quotes
+
+Slide: s8.png
+------------------------------
+Google Stemming
+and Stop Words
+* The query [child bicycle helmet] finds pages that contain
+words that are similar to some or all of your search terms,
+— eg., “child,” “children,” or “children's,” “bicycle,” “bicycles,”
+“bicycle's,” “bicycling,” or “bicyclists,” and “helmet” or “helmets.”
+— Google calls this feature word variations or automatic stemming
+* Google will often ignore Stop Words
+— However, a query with only Stop Words, e.g. [the who] gets treated
+as significant, returning pages for the Rock Group, the Who
+¢ Google limits queries to 32 words
+— Google will return nonsense results for this nonsense query
+— aardvark aback abacus abalone abandon abashed abbey abbreviate
+abdicate abdomen abduct aberration abhor abide ability abject able
+abnormal aboard abode abolish abolitionist abort about above abrade
+abridge abroad abrupt abscond absent absinthe
+
+Slide: s9.png
+------------------------------
+* Google favors results that have your search terms near each other
+— The query [snake grass] finds pages about plants;
+— The query [snake in the grass] finds pages about sneaky people
+* Google gives higher priority to pages that have the terms in the same
+order as in your query
+* Google is NOT case sensitive; it shows both upper- and lowercase
+results
+— [Red Cross ], [ red cross ], and [ RED CROSS ] return the same results.
+* Google ignores some punctuation and special characters, including ! ? ,
+sT1@/#<>
+— Exceptions: C++, or math symbols in Google calculator
+
+Slide: s10.png
+------------------------------
+University of Southern Ca
+GeorgeW. ; ae acawmamewiee GeorgeW. <
+Bush ™ Bush
+bush and Bush yield the same results
+as does “apple” and “Apple”
+
+Slide: s11.png
+------------------------------
+° a e 5
+disney
+[Ad -bps://wvew deneypls.con
+Disney+ - Start Streaming
+Disney Chann
+Classic favorites, New rele throwbacks, Exclusive Orginal series. From
+Disney+
+Disneys, Hulu, and ESPN+
+The Utimate Streaming Tio
+ers someting for everyone
+Marvel Movie Home
+a, That, and More! Steam Your Favorites Today
+‘Stream Disney Throwbacks
+htpsv/wwwisneycom
+Disney.com | The official home for all things Disney
+Video Princess Disney News The Cast of Disneys Jungle.
+hntps:dsneyworld disney go.com
+Walt Disney World Resort in Orlando, Florida
+rlando, FL, Plan your fly vaca waren for
+Disney
+Google
+QAI eNews (imag
+itp cney com
+The Walt < Disney.com | The official home for all things Disney
+Disney The fica webot for a hinge Disney tome par, esos, movies, programs, chracos
+Compan amos videos, musi, hopping, nd more!
+pany Vio: Pincass ney News The Cast of Disney's ung
+© _ tewatiteneycompe
+e “reo Walt Disney World Resort in Orlando, Florida
+Burbank colfonia Wipe” © Top stories
+stock rie: 1S (NYSE) $1
+£0: Bob Capek Feb 25,2
+Headguarters: Burbank A=
+Founded: October 16, 1923,
+THEVERGE ede Ene TE WAL STREET OCR
+Subsidiaries: Hulu, Pinay, sh
+Resort, MORE $ Disney sues for control
+Founders: Walt Disney, Roy they Mantel ceariee
+Films produced
+a .
+disney
+Disney Sues to Keep
+Complete Rights to
+Marvel Characters
+Disney Isnt Investigating
+Handling of Sexual
+‘Assault Allegations, Aer
+‘ABC News Boss Urge.
+Disney
+* @
+TheWalt
+Disney
+Company
+© _thewatatneycom
+‘The Walt Disney C
+afomia, Wikip
+Stock price: DIS (NYSE
+CEO: Bob Chapek (Fab 2
+Headquarters: Burbank
+Founded: October 16,19
+Subsidiaries: Hulu, Pur,
+Resort, MORE
+Founders: Wait Disney, Re
+Films produced
+
+Slide: s12.png
+------------------------------
+aioe Boolean OR
+* The Boolean OR operator is acceptable in Google
+queries, placed between keywords, and OR is always in
+all caps
+¢ For example,
+disney disneyland OR “pirates of the caribbean”
+¢ This would show you pages in Google’s index that
+contain the word disney AND the word
+(disneyland OR the phrase pirates of the
+caribbean )
+¢ OR has higher precedence than AND
+
+Slide: s13.png
+------------------------------
+All query terms are implicitly ANDed
+OR has higher precedence than AND
+Three examples (a, b, c stand for query terms):
+.abORc dis treated as a AND (b OR c) AND d
+. aOR b c OR dis treated as (a OR b) AND (c OR d)
+. aOR “b c” dis treated as (a OR (“b c”’)) AND d
+and see
+https://support.google.com/websearch/answer/2466433?hl=en
+https://help.bing.microsoft.com/#apex/bing/en-US/10002/-1
+
+Slide: s14.png
+------------------------------
+* Google offers full-word wildcard
+queries
++ For example, if you search
+Google for
+* it’s ta * world,
+* Google shows you all of the pages
+in its database that contain the
+phrase, e.g. “it’s a small world”
+... and “it’s a nano world” ...
+and “it’s a Linux world” ... and
+so on
+¢ The + before a is required
+because it is a stop word and
+Eas
+Bits +2" word Googe x
+© > © fi |G hitpsy/www.google.com: eABe=
+‘Apps [) CSCISTL Home Page [} CSCIS72 Home Page fl] Computer Science D. Sag ts tet
+Google _ its +a* wor Mo |
+1 Web
+| Mad World with
+\ It's a Free World... - Wikipedia, the free encyclopedia
+hits Free World. >
+Children Song: It Is A Small
+With lyrics) - YouTube
+=Xkyptali_Y =
+Frendship to everyone. Just a mountains so much. And the
+‘ocean is so what. ts a small world air al. Repeat (2) Repeat (1)
+Repeat (2
+] a Wonderful World (1939) - IMDb
+would otherwise be ignored tmapcamono0 40) =
+* This query works the same in isecracking classic scripted by screwball master Ben Hecht stars. P
+Bing Its a Mad, Mad Mad. Mad World - IMDb
+wee
++ There must be a space after the ‘ °
++a .
+
+Slide: s15.png
+------------------------------
+Query modifiers Search
+. Search Operators
+* daterange: Service
+* filetype: allinanchor:, allintext:, allintitle:, allinur
+¢ inanchor: Web Search | filetype:, i inanchor:, info:, intext ntitle:
+* related:
+¢ intext:
+¢ intitle: Image Search | allintitle:, allinurl:, filetype:, inurl:, intitle:
+¢ inurl: allintext:, allintitle:, author:, group:, insubject:, intext:,
+Groups
+* site: intitle:
+D allintext:, allintitle:, allinurl:, ext:, filetype:, intext:,
+i irectory
+Alternative query types intities, inurl:
+* cache:
++ allintext:, allintitle:, allinurl:, intext:, intitle:, inurl:,
+* link: 11 llintitle:, allinurl intitl 1
+unk: News 1 .
+ocation:, source:
++ related:
++ info: Product .
+allintext:, allintitle:
+Other information needs Search
++ stocks:
+http://www.googleguide.com/advanced_operators_reference.html
+See also
+https://help.bing.microsoft.com/#apex/bing/en-US/10001/-1
+
+Slide: s16.png
+------------------------------
+HTML HTML ae HTML
+1. Google search for "html" 2. click on "Search Tools" and 3. click on Any Time and select
+om - a "Any Time" appears Custom Range
+Googe :
+4. calendar appears, enter dates 5. Final Result
+
+Slide: s17.png
+------------------------------
+Pirates
+filetype: restricts your
+results to files ending in a
+specific file suffix, e.g
+"doc" (or .xls, .ppt. etc.),
+and shows you only files
+created with the
+corresponding program
+There can be no space
+between filetype: and
+the file extension
+The “dot” in the file
+extension — .doc — is
+optional
+filetype:doc will NOT return
+docx
+
+Slide: s18.png
+------------------------------
+Pirates
+PIRATES
+inanchor: will restrict the results to
+pages containing the query terms you
+specify in the anchor text or links to
+the page.
+For example,
+[ restaurants inanchor:gourmet |
+will return pages in which the anchor
+text on links to the pages contain the
+word “gourmet” and the page
+contains the word “restaurants.”
+allinanchor: restricts results to pages
+containing all query terms you specify
+in the anchor text on links to the
+For example, [ allinanchor: best museums sydney Page.
+will return only pages in which the anchor text on links to the pages contain the
+99 «6
+words “best,” “museums,” and “sydney.”
+
+Slide: s19.png
+------------------------------
+G pirates intert“dieney.com x
+€ > © G https/www.google.com,
+EE Apps gk Bookmarks [} CSCI571 Home Page [) CSCI572 Home Page
+le _ pirates intext""disney.com" u
+Pirates of the Caribbean | Official Website | Disney
+pirates disney.com +
+h video, play
+of the Black Pear!
+aribbean
+Jack Sparrow
+Pearland legendary pirate of
+Hector Barbossa
+Meet the characters from
+the Caribbean: The Curs
+aribbean - Pirates vs.
+in Pirates vs. Men
+Pirates of the Caribbean - Pirate's Conquest | Disney Games
+games disney.compirates-conquest + Disne
+Watch out for pirate ships and avoid
+iding with whirlpools! If the Damage meter is
+depleted, the battle ends. and youll have. to start over.. To conquer a cit
+» C3 Other bookmarks
+intext: ignores link
+text, URLs, and titles, and
+only searches body text.
+intext: helps you avoid
+query words that are too
+common in URLs and
+links.
+pirates intext:"Disney.com”
+requires Disney.com to be
+within the body of the web page
+
+Slide: s20.png
+------------------------------
+Google _nie-pates ote carttean x
+Pirates ofthe Caribbean: Dead Men Tell No Tales - Oficial
+YouTube
+Pirates ofthe Caribbean: Dead Men Tell No Tales - "Legacy
+> View a
+bean: Dead Men Tell No Tales (2017) - IMDb
+Pirates of the Caribbean: On Stranger Tides (2011) - IMDb
+intitle: restricts the
+results to documents
+containing a particular
+word in its title.
+You can also search for
+phrases. Just put your
+phrase in quotes
+intitle:pirates
+Intitle:”pirates of
+the caribbean”
+
+Slide: s21.png
+------------------------------
+* inurl: restricts the
+results to documents
+containing a particular
+word in its URL.
+fa _ =| . inurl:disney
+= anew * Results include
+ni = : | * Disney.go.com
+ee — _ re www.disney.de
+
+Slide: s22.png
+------------------------------
+* site: restricts the
+results to those
+websites in a domain.
+im - | Department of Computer Science
+Science (
+(General) - | Department of
+¢ There can be no space
+between site: and
+the domain.
+ros
+jobotics - | Department of Computer
+\ce - | Department of Computer Science
+ne Progams» MS. Pog eo.
+ngineering - | Department of Computer e Quer y 183
+* masters site:cs..edu
+opment - | Department of Computer
+
+Slide: s23.png
+------------------------------
+a Using site:
+¢ You can use site: in conjunction with another
+search term or phrase.
+pirates site:disney.com
+* You can also use site: and negation to exclude
+sites.
+pirates -site:disney.com
+¢ You can use site: to exclude or include entire
+top level domains (and, like with filetype, the dot is
+optional).
+Pirates -site:com
+Pirates site:edu
+
+Slide: s24.png
+------------------------------
+a ure | webeache.googleusercontent. com
+° a © 5 a
+This is Google's cache of https:/www.cs..edu/. It is a snapshot of the page as it appeared on Feb 15, 2022
+08:53:41 GMT. The current page could have changed in the meantime. Learn more.
+Full version Text-only version —_View source
+Tip: To quickly find your search term on this page, press Ctrl+F or 98-F (Mac) and use the find bar.
+= Viterbi
+Department of
+Computer Science
+cache:
+cache: url shows
+the version of a web
+page that Google has
+in its cache.
+
+Slide: s25.png
+------------------------------
+¢ link: restricts the
+results to those web
+pages that have links
+to the specified URL.
+* link:Disney.com
+* Note: apparently the link
+operator only returns a
+sample of web pages
+pointing to the link
+
+Slide: s26.png
+------------------------------
+Google rekatedwwes..edy
+a ; #/ « related: lists web pages that
+vo como seers are "similar" to a specified web
+Ties natn cba porto oa page.
+Department of Computer Science, Columbia University | Home
+TEES enact nen te it * There can be no space between
+senenafimboas tape related: andthe URL.
+‘Side of Manhattan,
+Donald Bren School of Information and Computer Sciences
+www ics.uciedul »
+Stanford Computer Science
+‘woes stanford. edu ©
+Computer Science Department at Princeton University
+hitps:iwww.cs princeton edul »
+‘os
+Computer Science and Engineering: Welcome to CSE @ UCR
+wwe. c8.uer. 0c
+UCSB Computer Science =
+hitps:/www.cs.uesb.edu/
+Litem panne —
+
+Slide: s27.png
+------------------------------
+== info: presents
+: some information
+deny Th ct one re ty that Google has
+about a particular
+web page.
+
+Slide: s28.png
+------------------------------
+stocks:aapl
+Google
+@& *epleinc GR
+Market Summary > Apple Ine
+170.74 uso
+41.85 (1.10%) # today
+op GOP. score
+Hig 29k high
+Lo 52k low
+About
+ceo: 1 1924,2011-)
+Founded: April 1, 1976, Los Altos, CA,
+Headquarters:
+Number:
+Subsidiaries: Bedlt, NextVR, Inc, Beats Electonics,
+Founders: Stove Jobs, Ronald Wayne, Steve Wozniak
+Financials
+¢ Ifyou begin a query with stocks: Google will treat the
+rest of the query terms as stock ticker symbols, and will
+link to a finance page showing stock information for
+those symbols.
+
+Slide: s29.png
+------------------------------
+« Math expressions are evaluated: 12 + 34+ 10 * (150/ 7) = 260.285714
+¢ Dictionary definitions: define:antidisestablishmentarianism
+¢ Put @ in front of a word to search social media. For example: @twitter.
+¢ Put $ in front of a number and search for a price. For example: camera $400.
+* Put .. between two numbers and search in a range.
+For example, camera $50..$100.
+¢ Puta valid tracking number from FedEx or UPS and it will take you to the
+tracking site
+¢ Puta valid airline and flight number and it will give you its status
+¢ Puta tilde, ~car repair and it queries on ALLisynonyms of car, like auto
+— See the following links to further discussion of Google’s operators
+— http://www.google.com/support/websearch/bin/answer.py? hl=en&answer=136861
+—_ http://www.googleguide.com/advanced_operators_reference.html
+—_ http://searchengineland.com/google-power-user-tips-query-operators-48126
+
+Slide: s30.png
+------------------------------
+Google
+Google
+Even More Things One Can Do with Google
+53499439531=englsh x §Q
+LAL G)Videoe images eNews Maps | More
+Sotings Tools
+‘resus (0.6 seconds)
+fifty-three billion four hundred ninety-three
+million four hundred thirty-nine thousand
+five hundred thirty-one
+Speaking/writing out a number
+what's my ip x $a
+QA fy Books News Shopping Maps: More
+‘About 2,040,000,000 results (0.78 seconds)
+Settings Tools
+Whats my IP
+172.248.32.30
+Your public IP address
+> Learn more about IP addresses
+What is my IP address
+Google mmromecaeuer x 4a
+Mortgage calculator
+$473
+Mortgage calculator
+Google spinner x $a
+A Gimges 0 Sepping GB Vekoe mINewe Moe Sethe Toot
+Snonbes = amber J det
+Spinners for Games
+
+Slide: s31.png
+------------------------------
+There were actually three
+different Google
+phonebook operators.
+phonebook: searches the
+entire Google phonebook.
+rphonebook: searches
+residential listings only.
+bphonebook: searches
+business listings only
+As of 2010, Google's phone book feature has been officially retired.
+Both the phonebook:and the rphonebook: search operator have both been dropped
+due to many complaints about privacy violations
+
+Slide: s32.png
+------------------------------
+© csaisrettme Fone © csc1 871 HomePage © CSCI Home Pane
+Images
+Maps
+p25
+Hope for eatly detection and diagnosis
+Results by reading level for ovarian cancer:
+Basic —
+timin > —_——
+Ovarian cancer
+ray ‘ww ne rim ih. gow
+Query: European vacations Query: ovarian cancer
+The feature is based primarily on statistical models built with the help of teachers.
+Google paid teachers to classify pages for different reading levels, and then took their
+classifications to build a statistical model. With this model, they can compare the words
+on any webpage with the words in the model to classify reading levels.
+Google dropped this feature in 2015.
+
+Slide: s33.png
+------------------------------
+University of Southern Ca
+cfr
+vis. googe con
+www.google.com, cary
+sc1571 Hane Fone > Cy other tocar
+ges Videos Maps News Shopping Gmail more ~ Elis Hovowite
+ogle fo one
+vou 215 00000 sut (017 seco)
+Fes News Shopping Gmail ElieMorowitz ~
+In 2009 Google
+introduced the Wonder
+Go Jeguer fects Search
+‘12,50 00 ees (015 scone) dvancad ec
+8B evento we Wheel, a flash-based
+foe cua siuse ua facts das es interface
+i News ne
+® shopping laguat cat alin jaguar
+In 2011 Google removed
+the Wonder Wheel but
+provided no concrete
+explanation for why it
+did so;
+>) More jaguar
+jaguar ae
+Any ime jaguar models
+Jaguar
+black jaguar facts
+jaguar onal jaguar car laquarhabast
+oat ea In 2012 Google restored
+the wonder wheel,
+renaming it the
+Contextual
+Google puts up a wheel of possible
+interpretations including the jaguar Targeting Tool
+car and the animal; clicking on the spokes In 2014 it was re-focused
+of the wheel bring up a refined wheel which to help advertisers chose
+eventually lead to a modified query their keywords
+In 2011 Google removed the Wonder Wheel
+
+Slide: s34.png
+------------------------------
+Google Code Search
+From Wikipedia, the ree eneydopeda
+Not to be confused with Google Code.
+Google Code Search was a toe beta product rom Google which debuted in Googlo Labs on Octaber 5, 2006, allowing web users to Google Code Search
+search for open-source code onthe Intemet. Features included the ably to serch using operators, namely 1ang:, packages, =
+Google code search
+License: and £11
+The code avalabie or searching was in various formats includ tar gz, tab, tar, and zip, CVS, Subversion, git and Mercuri! | peeloperay Ganga
+reposts In relense ober 5, 206
+content ps Development statue conned
+on Operating system — Any (web-based
+jain
+8 See also oo ae
+4 Reterences ° ioomearche
+8 Extoral inks
+Regular expression engine {esi}
+The site allowed the use of regular expressions in queries, which atthe time was not offered by any other search engine for code,(“taton eedect This makes it resemble grep, but
+‘over the world's public cade. The methodology employed combines a trigram index with a custom-built, denia-of-service resistant regular expression engine."
+In March 2010, the code of RE2, the regular expression engine used in Google Code Search, was made open source.21
+Google Code Search supported POSIX extended regular expression syntax, excluding back-references, collating elements, and collation classes,
+Languages not officially supported could be searched for using the file: operator to match the common file extensions for the language.
+Discontinuation {edit}
+in October 2011, Google announced that Code Search was to be shut down along with the Code Search API. The service remained online until March 2013, and it now retums
+404.
+In January 2012, Russ Cox published an overview of history and the technical aspects ofthe tool, and open-sourced a basic implement
+standalone programs that can run fast indexed regular expression searches over local code!
+jon of a similar functionality as a set of
+
+Slide: s35.png
+------------------------------
+iversity of Southern Californi
+Initial Google Patents Page
+© htips//www.google com Aep=
+ert te Bookmarks
+71 Home Pape [) CSCIST2 Home Page
+patent query
+using patent
+number
+us 791748082 Oy
+Google
+Document compression system and method for use with
+ww. google com/patents/US7917480
+Jee
+€ > C/G hts
+Google us 7174082 a | °
+Sample patent results
+page,
+Note download
+oewneatvor
+Document compression system and method
+for use with tokenspace repository
+ABSTRACT
+‘The declosad embodiments enable mut-stage query scoring. ich sips
+Export Cation
+
+Slide: s36.png
+------------------------------
+University of Southern Ca
+8 Oc cope Boks te
+> © Secure_tps:/books google.com
+other Bookmarks
+BE Apes 0 CSC1872 Home Pope 0) CSCI671 Home Page 1 CSC1951 Home Page Ill Computer Science.
+Google
+Books
+‘Search the wores most comprehensive index of flex books.
+My ary
+Google Books is a service that searches
+the full text of books and magazines that Google
+has scanned, converted to text using optical character
+recognition (OCR), and stored in its digital database
+Books are provided either by
+publishers and authors, through the Google
+Books Partner Program, or by
+*Google's library partners, through the Library Project.
+Controversey:
+Google has been criticized for potential copyright
+violations, and lack of editing to correct the many errors
+introduced into the scanned texts by the OCR process.
+As of October 2015, the number of scanned book
+titles was over 25 million.
+Google estimated in 2010 that there were about
+130 million distinct titles in the world,
+and stated that it intended to scan all of them
+
+Slide: s37.png
+------------------------------
+Full view eae so Snippet View
+Full View , .
+Snippet View
+Limited View https://www.google.com/googlebooks/library/screenshots.html#books-fullview
+
+Slide: s38.png
+------------------------------
+© © © £9 coogle serotar x ens
+> Qf Secure https://scholar.google.com e%
+pps) CSCI572Home Page [) CSC1571Home Page [) CSCI351 Home Page fl Computer Science (otner Bookmarks
+Web Images More. = om
+JeMylibcary 7’ My Citations A My updates Aerts More =
+* Google Scholar is a freely accessible search
+engine that indexes the full text or metadata of
+Google scholarly literature across an array of publishing
+Scholar formats and disciplines.
+| =
+© Aen (2 ch potty © Ca ew * The Google Scholar index includes most peer-
+reviewed online academic journals and books,
+conference papers, theses, dissertations, etc
+My updates: recommended based on My Citations Learn more
+AA discrete particle swarm optimisation algorithm for geographical map
+contour reconstruction
+Dynamic character grouping based on four consistency constraints in
+topographic maps
+See all updates
+‘Stand on the shoulders of giants
+
+Slide: s39.png
+------------------------------
+Relevance Feedback &
+Query Expansion
+
+Slide: s40.png
+------------------------------
++ After initial retrieval results are presented, allow the user to provide feedback on the relevance of
+one or more of the retrieved documents
+— Google offers this but not very prominently (see 10 related searches below)
+MY poerto-peer srocesing ‘Hl peecto-peer crocessna- Go
+€ > & fH Ovwww.googe.com, way € > & fi Oveww.gcoge.com, ay
+© cscisrztiame Page © csc157 Home Poge ECCI Home Page ©) Etsterowts Heme? —_® C) Other bookmats Der te ESS ES SIORS Cee ren Reese
+Sign in Sign in 3
+Google seert-veer processing Google reert-seerrrocessna
+Search Search
+Irnages ep ray to utlize peer-to-peer networking fo distributed Images Related searches for peer-to-peer processing
+Videos A Peer-To-Peer Work Processing App With WCF Videos er processint
+Nows We donate cesing a peerirpeer processing lato er mite ples News cessing pasta king
+More What is peer-to-peer process More technet microsoft. comv/en-us/library/bb457079. aspx
+iki nswetscom >.» Technology» Computers > Computer Networking ep 27, 2005 — Another way to ulze peerio-peet netwoking for istbuted
+Peer to peer process? zar| za il bhgut yu. When to have = peer to peer? Computer processing isto run programms on each peer that run during idle processor times
+‘Change location Past hour A Peer-To-Peer Work Processing App With WCF
+‘Storage Devi volution: General-Purpose Peer Processing Past 24 hours ‘msdn.microsoft,com/en-us/magazine/dd86251 4. aspx
+Relat ‘evolutionary path that, when combined ... Past year 3 es
+t a What is peer-to-peer process
+An Efficient Scheme for Query Processing on Pes Peer Networks ‘wiki answers.com >... » Technology » Computers » Computer Networking
+The peer-to-peer networking paradigm has emerged as an exciting and popular Sites with images th internet abcess. Network cables connected to each machine. Program
+
+Slide: s41.png
+------------------------------
+cfr
+© ¢5c1572 Home Page >» © Other bookmarks
+Top references for german cars - Feedback a
+Audi Volkswagen Smart
+BMW Porsche Mini
+Mercedes Benz Opel Bentley
+© www.google.com/#hi=enac YA
+¢- ct we
+@cscrs7zHome Page © csc1571 Hone Page > (other bocknare
+warw.googe.com,
+Related searches
+Related searches for rock bands.
+punk rock bands rock Wyrics _illhoard
+lis of cock bands emo bands rock music
+classic rock bands is rocksengs metallica
+new rock bands
+0's rock bands
+Pablo picasso
+abl picasso
+Google has enhanced their related searches,
+eg.
+* If you search for the name of a category,
+Google will show the most popular members,
+e.g. “german cars”
+¢ If you search for a category like “rock bands”
+You get related searches including a few top
+rock bands such as metallica and led zeppelin
+If you search for famous people you get photos
+of their work, e.g. Pablo Picasso returns photos
+of his famous painting
+
+Slide: s42.png
+------------------------------
+retin (citings [Seehontner.. Ul Cngae Seve
+jaguar ot Cota
+ica nfo
+ato ata
+coer
+agua
+search yahoo.com,
+Web images Video Local Shopping News Nore
+‘ance Visual Search mages Nene Videos Morey Jaguar
+a tems 2010 Jaguar Clearer oucranoe ore
+‘Search vty, Ps & Hove. Your Oficial SoCal Jaguar Ste
+The Official Jaguar Site
+eam Mare About Lependary Jaguar Paromance & Serce Options Hee
+saguar 7
+On the query “jaguar” yahoo’s 3rd result is the
+animal; Bing’s 2" result is the animal; all have
+extensive ads for the car at the top and side indicating that
+the query for the animal is far rarer; Bing, on the left, puts up
+alternatives, e.g. Jaguar Luggage, Jacksonville Jaguars;
+Yahoo also provides related searches but only for the car: bmw, lexus, ete
+Bing and Yahoo clearly mark
+Related Searches
+
+Slide: s43.png
+------------------------------
+Auto-Completion
+
+Slide: s44.png
+------------------------------
+* Auto-completion is the process of predicting a word or phrase that the user
+wants to type in without the user actually typing it in completely
+« Auto-completion is a form of relevance feedback
+— This feature is effective when it is easy to predict the word being typed, e.g.
+when a browser fills in your name, address and/or email in a form;
+— Search engines may use past history, phonetic Soundex algorithms, and
+spelling corrections algorithms to assist in making guesses;
+— The challenge is to search a large index or a long list of popular queries in a
+very short amount of time so the results pop up while the useris typing
+
+Slide: s45.png
+------------------------------
+Google {4
+apple
+Search aol
+american airlines
+| Amazon.com Ofc Sto
+Mops Huge Selection ang Amazing Prices. Free Shipping on Orders Over $25
+12,679 people +d this page
+Videos
+News, ‘Amazon.com: Online Shopping for Electronics, Apparel, Computers ...
+Shopeing ‘ww amazon.com
+nine retalier of books, movies, music and games along with electronics, toys, apparel,
+general home and garden toms. Region t
+More
++Elis Search Image
+Google
+anthropologie
+Search angry birds
+android market
+Anniversary Gifts 1 (877) 5309512
+Images www.bluenile.com - doa aw 3,437 seller reviews
+Fade ptt gir or He Fes 820 Dy Reture
+Maps
+Videos Anniversary Gifts | PersonalizationMall.com
+‘ww. personaliztionmall.com- 3H KH 2,157 seller reviews
+News Unique Romantic Anniversary Gifts Engraved Free & Ship in 1-2 Days!
+shopping Bridesmaid Gifts - Wedding Favors - Wedding Gifts - Groomsmen Gifs
+More MY M&M'S® - Anniversary | MyMMs.com
+‘eww. mymms.com
+catenss ” gprtenene ria
+Ads -Wny these acs?
+Google has been offering auto-
+completion since 2008, though it
+was an experimental feature as
+far back as 2004.
+Google does automatic
+completion even after the user
+enters just the first character
+When the second character is
+entered a totally different set of
+possibilities may be offered
+RA Aorowitz, 2011-2022 45
+
+Slide: s46.png
+------------------------------
+University of Southern Ca
++Elis Search images
+Google | ena
+anaheim ducks
+anaheim
+By the time the fourth
+character is entered Google
+Search analytics
+anagram —=—= has already guessed that the
+| seme ‘Anaheim Ducks Tickets - Buy Ducks Hockey Tickets Todey.
+word has been misspelled,
+Images ‘wo icketmaster com/Ducks
+Prices Stating at Only $251,
+Veo 71eTcets Ducks Tikes - Across from Honda Center and shows this by the
+News: No hidden handling fees. ] i bd —
+chin s squiggly red line; so auto
+completion and spelling
+correction are intertwined
+J, and arena information.
+: 48
+wore Elke Horowitz | Q%
+Google | exe
+amazon promo code
+Search amazon kindle
+amazon prime
+Everything A - Wry 36?
+| Amazon com Oni Sto
+Images ‘wwew amazon.com
+amazon.com i ated 49% 8.669 reviows
+Mops Huge Selection and Amazing Prices. Free Shipping on Orders Over $25
+Videos 12.679 people +'d this page
+News Showing results for amazon
+Search instead for anaz
+SShopsing
+More ‘Amazon.com: Online Shopping for Electronics, Apparel, Computers ...
+‘www amazon conv
+nine mia of nooks. movi caames.alaga wth electronics. tows. annarel
+“Horowitz, 2011-2022 46
+
+Slide: s47.png
+------------------------------
+iversity of Southern Californi
+‘tute garbachev -oodl Ser
+© © Sf Onmgiegecn/ sare py armen essences ST After hitting Enter, Google
+© cscisretomerage © csc1s71 Home Pege G CSci351 Home Page Gets Horowke' Home P. . .
+ong ral will display results for
+Google sie sewacner “Mikhail Gorbachev”, but
+also provide a link if instead
+the user actually wanted to
+search for “mike garbachev”
+Search
+Showing results for mike gorbachev
+Search instead for mike garbachev
+Mikhail Gorbachev - Wildpedia, the free encyclopedia
+en.wikipedia org/wiki/Mikhall_ Gorbachev
+Videos Gorbachev was bom in Stavtopol Kal into a peasant Ukrainian-Russian family, and in
+Nows his teens operated... Olver, Michael J; Alderof, Derek Howard 2007)
+Eatly life - Mariage and family - Rise in the Communist Party
+Shopping
+Move Mike Gorbachev | Facebook
+‘wiv facebook convimgotbachev
+Join Facebook to connect with Mike Gorbachev and others you may know. Facebook
+ives people the power to share and makes the world more open and
+Los Angeles, ca S08 People the
+Change location
+8 v Profiles | Fac
+‘wi facebook cor/public/Mike-Gorbachev - Translate this page
+Show search tools Jain Facebook to connect with Mike Gorbachev and others you may know. Facebook
+ives people the power to share and makes the world mare open and ..
+Mike Gorbachev profiles | Linkedin
+‘wow linkedin. cor/pub/div/Mike/Gotbachev
+View the profiles of prote named Mike Gorbachev on Linkedin, There are 3
+profescionals named Mike Gorbachev, who use LinkedIn to exchange:
+Mike Gorbachev (@HeyMikeFantasy) on Twitter
+
+Slide: s48.png
+------------------------------
+way
+1281 HomePage © Ee Heron Hone > other boos
+[rive ox i
+ke o
+vw: yahoo.com
+© cais7i tame Page © CSCLa6t Home Pane © Ae Heron Hone
+Web
+{mike garbac
+mike garbackt
+2 jis Horowitz, 2011-2022 48
+Yahoo does auto-completion
+though it starts after typing the
+third character, whereas
+Google starts on the first
+character
+As the user types more
+characters in this example
+Yahoo runs out of alternatives
+and when one more character
+is added there will be no more
+auto-complete suggestions
+
+Slide: s49.png
+------------------------------
+ano aa a 7
+Ques —= = 7 a eleni an After hitting Enter, Yahoo does offer
+{cL Seiten Speed Hes + 3] tated *_ea ast tenines uz S578 one._» einai the correct spelling of “Gorbachev”
+© oasbie = B Cooker = 7 C55 + Fors + SS imager » | lformation = Lj Macelaneous + 5) Outine - Rese » S. Tools =
+YAHOO!, | cite sarbachev
+wes | maces | veo | siceenc | ares
+We have included michael gorbachey results - Show only mike garbachev
+‘Anytime
+Past day Mikhail Gorbachev - Wikipedia, the free encyclopedia
+Eat lia Hiseinthe.. | General Secretary
+Past week ‘Arche Broan, in The Gorbachev Factor, uees the mami of many people around
+Past mant, Retrieved 2 Aprl 2009." Olver, Michael 1: Adcraf Derek Howard (2007),
+‘en.wikipedia orgkiMine Gorbachev
+Mikhail Gorbachev: Biography from Answers.com
+Fal Me {ues Unrished Revolution: Pattial Change rom
+Gorbachev to Put. thaca, NY Comell Unversity Press, Matlock, ack FJ (1908)
+wn answers comtop-cmikhaligoroachew
+‘Mike Gorbachev - Image Results
+Rak &
+Facebook
+and others you may know Facatook gives peope the power fo shar and ma
+sr facebook comipeopie Michael Gorbachev10000237 965507
+‘My Country and the World, by Michael Gorbachev
+[Atworpage summary of Gorbachev's evaluation of Russian and Soviet history dating back
+to 017
+ww femitha.comreviowl grb him
+Mikhail Gorbachev - Biography - Nobelprize.org
+‘Why Gorbachev Happened: His Tsumphs an his Fares. New York Simon & Schuster,
+1901 Miler, John. Miksa Gorbachev andthe Endo Soviet Power
+wen nebelprize org. laureate! 000 gorbachev bo he
+crazymonk.org
+michael gorba
+Fe: watch Bis Mors shor, whch played during te 2002
+Seo
+d returns many results; in case the user
+actually wanted to search for
+produce those
+results, but after clicking Yahoo delivers
+more results for Gorbachev and none for
+Garbachev
+“garbachev”
+
+Slide: s50.png
+------------------------------
+Bing Auto-Completion
+* On the other hand, Bing does not
+even wait for the first character to
+be entered, as seen on the left they
+make use of previous queries and
+enter some possibilities before the
+user even types a single character
+« After entering “mike garbac” bing
+finally comes up with the correct
+spelling, see below
+ppyright Ellis Horowitz, 2011-2022 50
+
+Slide: s51.png
+------------------------------
+iversity of Southern Californi
+e000 rmike garbachev Bing
+[Ske garbacnev- Big lL
+On| srxmm SECT As with Google and Yahoo, Bing will
+1] Ory Mail -inbo... Gj Suggested Sites + (5) Most Visited ~ (_j Latest Headlines = 2» [Bookmarks
+Clr ee et oe se=«S«=- offer results using the corrected spelling
+DING mesures ro] and include a link for the user spelling
+Web —
+Web Images Morey
+Mikhail Gorbachev and
+Per including results for michael gorbachev.
+tinal Gortechov 1 you want rests for mike garbachev? ona Re
+Biography
+cee ital Gorbachev - Whines, he fee encxconedia
+— aly le Marriage and family. Rise nthe Communist
+rene Brown, in The Gorbachev Facto, uses the moms of many peope around
+Retrieved 2 Apr 2009, * Olver Michael J: AldcroR, Derek Howard (207),
+da ocjwiihixhall Gorbachev
+Mixnail Gorbachev
+Family
+Miknall Gorbachev
+wie
+Mikhail Gorbachev: Biography from Answers.com
+Gorbachev Foundation MeFau, Michael (2001), Russia's Unfinished Revoluton: Poiteal Change from
+Reagan and Gorbachev to Puta, thaca, NY Comol| Uniweriy Press, Matook Jack F, J
+Gorbachev vw answers comfopclminal-gorbachev
+Mi BATENOY anes of mike garbachev
+or all-Tur of ‘ing com/mages!search?gsmike garbachev
+Michael Gorbachev | Facebook
+ives in Tanjunghaa Frm Madan Worked at PTKALAPAON
+Michael Gorbachev is on Facebook. Join Facebook to connect with Michast
+Gorbachev and chars you may know. Facebook gives pecnle
+My Country and the Worid, by Michael Gorbachev
+‘two-page summary of Gorbachev's evaluation of Rus'an and Soviet history dating
+back to 1917
+Mikhail Gorbachev - Biography - Nobelprize.org
+ot reward
+michael gorbachev | crazymonk.org Eoneooa
+Par of Ero Moris day (Re- atch tis Mors shor, which played during the 2002
+(scar telecast depicing a bunch of peopl aking about ta overt fms
+zononk oatosicalmichaelaorbach
+eee 2
+te oo)
+
+Slide: s52.png
+------------------------------
+* The mean reciprocal rank is a statistical measure for evaluating any process that produces a list
+of possible responses to a sample of queries, ordered by probability of correctness.
+The reciprocal rank of a query response is the multiplicative inverse of the rank of the first
+correct answer
+* The mean reciprocal rank is the average of the reciprocal ranks of results for a sample of
+queries MRR = i s 1 ;
+Q| rank;
++ For example, suppose we have the following three sample queries for a system that tries to
+translate English words to their plurals. In each case, the system makes three guesses, with the
+first one being the one it thinks is most likely correct:
+Query Results Correct response Rank Reciprocal rank
+cat catten, cati,cats cats 3 1/3
+tori torii, tori, toruses _ tori 2 1/2
+virus viruses, Virii, viri viruses 1 1
+the mean reciprocal rank as (1/3 + 1/2 + 1)/3 = 11/18 or about 0.61.
+

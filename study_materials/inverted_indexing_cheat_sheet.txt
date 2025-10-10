@@ -1,0 +1,40 @@
+# 📋 Inverted Indexing - Cheat Sheet
+
+**KEY TERMS**
+
+* **Inverted Index**: A data structure mapping terms to documents containing them.
+* **Term Frequency**: The number of times a term appears in a document.
+* **Document Frequency**: The number of documents containing a particular term.
+* **N-gram**: A sequence of n consecutive words or characters.
+* **Part-of-Speech Tagging**: Identifying the grammatical category of each word.
+
+**ALGORITHMS**
+
+1. **Inverted Index Construction**: Tokenize, create unique terms, and map to documents.
+2. **N-gram Indexing**: Identify N-grams and create inverted indexes for proximity searches.
+
+**FORMULAS**
+
+None mentioned in the slides.
+
+**MUST-KNOW FACTS**
+
+* Google's n-gram sample contains 1 trillion tokens and 95 billion sentences.
+* The distribution of unique N-grams is similar between English and Chinese, but shifted to larger N in Chinese.
+
+**QUICK REFERENCE**
+
+| **Term** | **Definition** |
+| --- | --- |
+| Inverted Index | Maps terms to documents |
+| Term Frequency | Number of times a term appears |
+| Document Frequency | Number of documents containing a term |
+| N-gram | Sequence of n consecutive words |
+| Part-of-Speech Tagging | Identifying grammatical category |
+
+**ALGORITHM SUMMARY**
+
+| **Algorithm** | **Description** |
+| --- | --- |
+| Inverted Index Construction | Create inverted index for efficient search |
+| N-gram Indexing | Support proximity searches with inverted indexes

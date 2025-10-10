@@ -1,0 +1,33 @@
+# 📋 Web Serving Basics - Cheat Sheet
+
+**WEB ARCHIVING CHEAT SHEET**
+
+## KEY TERMS (most important definitions)
+
+* **Surface Web**: Accessible through standard search engines like Google
+* **Deep Web**: Not indexed by standard search engines, requires special software or browsers
+* **Dark Web**: Subset of Deep Web, intentionally hidden from public view
+* **Internet Archive**: Digital library preserving websites, books, and digital content
+* **Apache Nutch**: Open-source web crawling framework used by Internet Archive
+
+## ALGORITHMS (names and what they do)
+
+* **Apache Nutch Algorithm**: Crawls web using seed sites, follows links, archives content every 2 months
+* **Internet Archive Crawler**: Surveys web every 2 months, uses Apache Nutch algorithm to crawl and archive content
+
+## MUST-KNOW FACTS
+
+* **4.5 petabytes**: Size of Internet Archive's database
+* **412 billion web pages saved over time**: Number of web pages preserved by Internet Archive
+* **100TB of data per month**: Amount of new data added to Internet Archive every month
+* **55% in English**: Percentage of content on the web written in English
+
+## QUICK REFERENCE
+
+* **Crawling vs. Indexing**:
+	+ Crawling: discovering new content on web
+	+ Indexing: storing content in database for later retrieval
+* **The Web as a Graph**:
+	+ Each node represents website, each edge represents link between websites
+* **DMOZ (Directory Mozilla Open Directory Project)**:
+	+ Human-edited directory of websites, shut down in 2016

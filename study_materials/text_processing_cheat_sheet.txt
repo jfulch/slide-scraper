@@ -1,0 +1,37 @@
+# 📋 Text Processing - Cheat Sheet
+
+Here is the condensed cheat sheet:
+
+## KEY TERMS (most important definitions)
+
+* **Information Retrieval (IR)**: Searching for relevant information from a large database or corpus
+* **Text Classification**: Automatically assigning categories or labels to text data based on its content
+* **Bag of Words**: Representing text data as a vector of word frequencies
+* **Naive Bayes (NB)**: Supervised learning algorithm for classification tasks, assuming independence between features
+* **k-Nearest Neighbors (kNN)**: Supervised learning algorithm for classification tasks, classifying based on majority vote of nearest neighbors
+
+## ALGORITHMS
+
+* **Naive Bayes (NB)**: Classification task where features are independent
+* **k-Nearest Neighbors (kNN)**: Classification task where data is high-dimensional or has complex relationships
+* **Rocchio**: Classification task where data is high-dimensional and has complex relationships, forms a centroid (prototype) for each class
+
+## FORMULAS
+
+* Bayes' Theorem:
+P(C|D) = P(D|C) \* P(C) / P(D)
+
+## MUST-KNOW FACTS
+
+* 10,000 - 1,000,000 unique words in a typical text collection
+* kNN can be more accurate than NB or Rocchio for high-dimensional data
+* Naive Bayes is widely used in spam filtering due to its simplicity and effectiveness
+
+## QUICK REFERENCE
+
+* **Text Classification**: Use NB, kNN, or Rocchio algorithms
+* **Bag of Words**: Represent text data as a vector of word frequencies
+* **High-Dimensional Space**: A space with many dimensions, such as bag-of-words representation of text data
+* **Google Alerts**: Service that sends email updates when new content matches search query
+
+This cheat sheet should provide a quick review of the key terms, algorithms, and must-know facts for an exam.

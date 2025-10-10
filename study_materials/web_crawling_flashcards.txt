@@ -1,0 +1,83 @@
+# 🃏 Web Crawling - Flashcards
+
+Here are 20 flashcard pairs based on the lecture content:
+
+**1.**
+Q: What is a web crawler?
+A: A computer program that visits web pages in an organized way.
+
+**2.**
+Q: What are some common names for web crawlers?
+A: Spider, robot, or sometimes called "googlebot" (Google's crawler).
+
+**3.**
+Q: Which search engine uses five different crawlers?
+A: Bing
+
+**4.**
+Q: What is the purpose of a web crawler algorithm?
+A: To find the "Best" pages first and avoid duplication.
+
+**5.**
+Q: What are some key considerations for crawling the web?
+A: Quality, Efficiency, Etiquette, Coverage, Relative Coverage, Freshness.
+
+**6.**
+Q: How does a basic web crawling algorithm work?
+A: Initialize with known seed pages, loop through fetching and parsing pages, extracting URLs, and placing them on a queue.
+
+**7.**
+Q: Why can't one machine crawl the entire web?
+A: Due to limitations in handling malicious pages, latency/bandwidth issues, and mirrored sites.
+
+**8.**
+Q: What is the purpose of Robots.txt stipulations?
+A: To prevent web pages from being visited by specifying what can/not be crawled.
+
+**9.**
+Q: Where are Robots.txt stipulations placed on a website?
+A: In the root directory of the website.
+
+**10.**
+Q: What is the protocol that defines limitations for web crawlers?
+A: The robots.txt protocol (http://www.robotstxt.org/orig.html)
+
+**11.**
+Q: How do websites announce their request to limit crawling?
+A: By placing a robots.txt file in the root directory.
+
+**12.**
+Q: What is an example of a Robots.txt rule?
+A: Disallowing all URLs starting with "/yoursite/temp/" (User-agent: *, Disallow: /yours...).
+
+**13.**
+Q: Which Bing crawler generates page snapshots?
+A: BingPreview
+
+**14.**
+Q: How does a web crawling algorithm handle duplicate pages?
+A: By avoiding duplication and maintaining politeness.
+
+**15.**
+Q: What is the purpose of distributing web crawling tasks?
+A: To make it feasible to crawl the entire web with multiple machines.
+
+**16.**
+Q: What are some common challenges in web crawling?
+A: Handling malicious pages, latency/bandwidth issues, mirrored sites, and dynamically generated pages.
+
+**17.**
+Q: How do websites prevent web crawlers from accessing certain areas?
+A: By placing a robots.txt file with specific rules (e.g., Disallow: /yoursite/temp/).
+
+**18.**
+Q: What is the name of Google's web crawler?
+A: googlebot
+
+**19.**
+Q: Which Bing crawler is used for crawling images and video?
+A: MSNBotMedia
+
+**20.**
+Q: Where can you find a list of web crawlers?
+A: http://en.wikipedia.org/wiki/Web_crawler

@@ -1,0 +1,63 @@
+# 🃏 Deduplication - Flashcards
+
+Here are 20 flashcard pairs based on the lecture content:
+
+**Q1: What is de-duplication?**
+A: The process of identifying and avoiding essentially identical web pages.
+
+**Q2: Why is de-duplication used in web crawling?**
+A: To index only a single version of identical or nearly identical web pages to return as search results.
+
+**Q3: What are some examples of the same page being referenced by different URLs?**
+A: Different host names (e.g., http://espn.go.com vs. http://www.espn.com), protocols (e.g., http vs. https), and paths/page names.
+
+**Q4: What is Structural Classification of Proteins (SCOP)?**
+A: A database that classifies proteins based on their structural similarity.
+
+**Q5: How many PDB entries are in the 1.75 release of SCOP?**
+A: 38,221
+
+**Q6: What does SCOP stand for?**
+A: Structural Classification of Proteins
+
+**Q7: Who are some of the authors of the SCOP database?**
+A: Alexey G. Murzin, John-Marc Chandonia, Antonina Andreeva, Dave Howorth, Loredana Lo Conte, Bartlett G. Ailey, Steven E. Brenner, Tim J.P. Hubbard, and Cyrus Chothia.
+
+**Q8: What is the purpose of de-duplication in /ocker storage?**
+A: To store only a single copy of a file and manage multiple links to it.
+
+**Q9: Is de-duplication effective in saving space?**
+A: Not clear and needs analysis for each particular application.
+
+**Q10: What is the difference between identical and nearly identical web pages?**
+A: Identical pages are exactly the same, while nearly identical pages have minor differences.
+
+**Q11: How does SCOP classify proteins?**
+A: Based on their structural similarity, including folds, superfamilies, and families.
+
+**Q12: What is the reference for the 1.75 release of SCOP?**
+A: Murzin A.G., Brenner S.E., Hubbard T.J.P., Chothia C. (1995).
+
+**Q13: Who are some of the authors of the recent changes to SCOP?**
+A: Lo Conte L., Brenner S.E., Hubbard T.J.P., Chothia C., Murzin A.
+
+**Q14: What is the purpose of de-duplication in web crawling?**
+A: To reduce storage space and improve search results by indexing only a single version of identical or nearly identical web pages.
+
+**Q15: How does SCOP handle obsolete entries?**
+A: By listing them and providing information on their replacements.
+
+**Q16: What is the relationship between de-duplication and /ocker storage?**
+A: De-duplication is used in /ocker storage to store only a single copy of a file and manage multiple links to it.
+
+**Q17: Why is de-duplication important in web crawling?**
+A: To improve search results by reducing the number of identical or nearly identical web pages indexed.
+
+**Q18: What is the difference between identical and duplicate URLs?**
+A: Identical URLs point to the same page, while duplicate URLs may point to different versions of the same page.
+
+**Q19: How does SCOP classify proteins based on their structural similarity?**
+A: By grouping them into folds, superfamilies, and families based on their 3D structure.
+
+**Q20: What is the purpose of de-duplication in general?**
+A: To reduce storage space by eliminating duplicate or identical data.

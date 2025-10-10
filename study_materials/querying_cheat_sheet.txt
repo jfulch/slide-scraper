@@ -1,0 +1,39 @@
+# 📋 Querying - Cheat Sheet
+
+**Auto-Completion Cheat Sheet**
+
+## KEY TERMS (most important definitions)
+
+* **Mean Reciprocal Rank (MRR)**: A statistical measure evaluating the correctness of responses to queries, ordered by probability.
+* **Reciprocal Rank**: The multiplicative inverse of the rank of the first correct answer.
+
+## ALGORITHMS
+
+* **Google's Auto-Completion Algorithm**: Suggests possible completions starting from the 1st character entered.
+* **Yahoo's Auto-Completion Algorithm**: Suggests possible completions after the 3rd character is entered, stopping when out of possibilities.
+* **Bing's Auto-Completion Algorithm**: Uses previous queries to make educated guesses before user types a single character.
+
+## FORMULAS
+
+* **Mean Reciprocal Rank (MRR) Formula**:
+	+ MRR = ∑(1/rank) / Q
+	+ Where: 
+		- MRR: Mean Reciprocal Rank
+		- rank: Rank of the first correct answer for each query
+		- Q: Total number of queries
+
+## MUST-KNOW FACTS
+
+* Google's auto-completion starts on 1st character.
+* Yahoo's auto-completion starts after 3rd character.
+* Bing uses previous queries to make educated guesses.
+
+## QUICK REFERENCE
+
+| Algorithm | Description |
+| --- | --- |
+| Google | Starts suggesting on 1st character |
+| Yahoo | Starts suggesting after 3rd character, stops when out of possibilities |
+| Bing | Uses previous queries to make educated guesses |
+
+This cheat sheet provides a concise overview of the key terms, algorithms, and formulas related to auto-completion. It's designed for quick review and reference during an exam or study session.

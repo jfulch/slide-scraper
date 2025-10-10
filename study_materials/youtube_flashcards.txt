@@ -1,0 +1,63 @@
+# 🃏 Youtube - Flashcards
+
+Here are 20 flashcard pairs based on the lecture content:
+
+**Q1: What is a video search engine?**
+A: A web-based search engine that crawls the web primarily for video content.
+
+**Q2: Is YouTube a video search engine?**
+A: No, because it doesn't crawl the web looking for video content; instead, it indexes video content through metadata acquisition.
+
+**Q3: What types of metadata are associated with videos?**
+A: Author, title, creation date, duration, coding quality, tags, description, subtitles (STR or SUB), and transcription (TTXT).
+
+**Q4: How is the ranking of videos under a query done?**
+A: Using relevance (metadata and user preferences), ordered by date of upload, number of views, duration, and user ratings.
+
+**Q5: What was CastTV?**
+A: A Web-wide video search engine that was founded in 2006 but is no longer active.
+
+**Q6: Which search engines still exist?**
+A: Bing (crawls for videos) and Blinkx (renamed as RhythmOne, uses speech recognition and visual analysis).
+
+**Q7: Why is video hosting highly concentrated on a few websites?**
+A: Large file sizes involved.
+
+**Q8: What are some popular video hosting websites?**
+A: Vimeo.com (HD video), Vevo.com (joint venture of Universal Music Group, Sony Music Entertainment, and Warner Music Group), Dailymotion.com (owned by Vivendi).
+
+**Q9: Can YouTube be crawled?**
+A: Yes, it is legal to crawl YouTube according to their Terms of Service.
+
+**Q10: What is Hulu?**
+A: An America subscription video on demand service jointly owned by Walt Disney, 21st Century Fox, Comcast, and Time Warner.
+
+**Q11: Who acquired Fox's partial ownership in Hulu?**
+A: Disney (in December 2017).
+
+**Q12: What is Blinkx?**
+A: A search engine that uses speech recognition and visual analysis to process downloaded video.
+
+**Q13: What types of algorithms are used for ranking videos?**
+A: Relevance, ordered by date of upload, number of views, duration, and user ratings.
+
+**Q14: How do video search engines index video content?**
+A: Through metadata acquisition (author, title, creation date, etc.).
+
+**Q15: What is the difference between a video search engine and YouTube?**
+A: A video search engine crawls the web for video content, while YouTube indexes content through metadata.
+
+**Q16: Which algorithm uses speech recognition and visual analysis?**
+A: Blinkx (renamed as RhythmOne).
+
+**Q17: Why do most video hosting websites allow embedding on other sites?**
+A: To increase visibility and engagement.
+
+**Q18: What is the purpose of YouTube's robots.txt file?**
+A: To specify which crawling methods are allowed or disallowed.
+
+**Q19: Can you access YouTube using automated means (robots, botnets, scrapers)?**
+A: No, except in accordance with their robots.txt file or with prior written permission.
+
+**Q20: What is the difference between a video search engine and a document search engine?**
+A: Video search engines use relevance, ordered by date of upload, number of views, duration, and user ratings; while document search engines are simpler.

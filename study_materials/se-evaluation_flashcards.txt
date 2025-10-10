@@ -1,0 +1,63 @@
+# 🃏 Se-Evaluation - Flashcards
+
+Here are 20 flashcard pairs based on the lecture content:
+
+**Q1: What is Precision?**
+A1: The number of relevant items retrieved divided by the total number of items retrieved.
+
+**Q2: What is Recall?**
+A2: The number of relevant items retrieved divided by the total number of relevant items.
+
+**Q3: What is the formula for Precision?**
+A3: tp / (tp + fp)
+
+**Q4: What is the formula for Recall?**
+A4: tp / (tp + fn)
+
+**Q5: What is the definition of Accuracy?**
+A5: The fraction of correct classifications out of total classifications.
+
+**Q6: Why is Precision more important than Recall in web applications?**
+A6: Because it's better to retrieve a small number of relevant items with high precision than a large number of irrelevant items.
+
+**Q7: What is the relationship between Precision and Recall?**
+A7: They are inversely related, meaning that as one increases, the other decreases.
+
+**Q8: How can you get high Recall but low Precision?**
+A8: By retrieving all documents for all queries, which results in a large number of irrelevant items.
+
+**Q9: What is the Harmonic Mean?**
+A9: A measure of central tendency that tends towards the least element in the list.
+
+**Q10: How do you calculate the Harmonic Mean?**
+A10: By taking the nth root of the product of n numbers.
+
+**Q11: What are the three Pythagorean Means?**
+A11: Arithmetic Mean, Geometric Mean, and Harmonic Mean.
+
+**Q12: Why is the Harmonic Mean useful in analyzing search engine results?**
+A12: Because it tends towards the least element in the list, making it a good measure of central tendency for skewed data.
+
+**Q13: What are the elements of Good Search Results?**
+A13: Google's Search Quality Guidelines and using log files for evaluation.
+
+**Q14: What is A/B Testing?**
+A14: A method of comparing two versions of a search engine to see which one performs better.
+
+**Q15: How do you calculate Mean Average Precision (MAP)?**
+A15: Not specified in the lecture content, but it's an important metric for evaluating search engines.
+
+**Q16: What is Discounted Cumulative Gain (DCG)?**
+A16: A measure of ranking quality that takes into account the position and relevance of each item.
+
+**Q17: What are the key differences between Precision and Recall?**
+A17: Precision measures the number of relevant items retrieved, while Recall measures the number of relevant items not yet retrieved.
+
+**Q18: How do you calculate the Geometric Mean?**
+A18: By taking the nth root of the product of n numbers.
+
+**Q19: What is the relationship between Precision and the number of documents retrieved?**
+A19: As the number of documents retrieved increases, precision typically decreases.
+
+**Q20: Why is it not a good strategy to retrieve all documents for all queries?**
+A20: Because it results in a large number of irrelevant items, leading to low Precision.

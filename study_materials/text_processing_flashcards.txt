@@ -1,0 +1,63 @@
+# 🃏 Text Processing - Flashcards
+
+Here are 20 flashcard pairs based on the lecture content:
+
+**Q1: What is a standing query?**
+A1: A rerunable query that periodically finds new news items on a specific topic.
+
+**Q2: What is the main difference between IR and text classification?**
+A2: IR ranks documents, while text classification classifies them as relevant or not relevant.
+
+**Q3: What is Google Alerts used for?**
+A3: To monitor and receive updates on specific topics by sending new documents that match the query.
+
+**Q4: What are hand-written text classifiers called?**
+A4: Standing queries.
+
+**Q5: What is bag of words representation in high-dimensional space?**
+A5: A fixed set of classes (C) used to represent text documents.
+
+**Q6: What is a classification function y(d)?**
+A6: A function that determines the category of document d.
+
+**Q7: What is the purpose of building a classifier?**
+A7: To generate a classification function, y(d), to determine the category of a document.
+
+**Q8: What is the name of the algorithm used in Stanford NLP Group's Twitter feed?**
+A8: LexicalizedParser.
+
+**Q9: What is the difference between tokenization and parsing?**
+A9: Tokenization breaks down text into individual words, while parsing analyzes the grammatical structure of a sentence.
+
+**Q10: What is the purpose of using quotes in a query?**
+A10: To match exact phrases or words in the search results.
+
+**Q11: What type of documents are represented by bag of words?**
+A11: Text documents.
+
+**Q12: How many properties can be purchased with no money down, according to an email?**
+A12: 6 (according to the email from takworlld@hotmail.com).
+
+**Q13: What is the name of the website mentioned in the email for purchasing real estate courses?**
+A13: Wholesaledaily.com.
+
+**Q14: What is the main idea behind Google Alerts?**
+A14: To monitor and receive updates on specific topics by sending new documents that match the query.
+
+**Q15: What is the difference between a classifier and a parser?**
+A15: A classifier determines the category of a document, while a parser analyzes the grammatical structure of a sentence.
+
+**Q16: What type of space is used to represent text documents?**
+A16: High-dimensional space (usually bag of words).
+
+**Q17: What is the purpose of using a classification function y(d)?**
+A17: To determine the category of document d.
+
+**Q18: What is the name of the programming assignment mentioned in Stanford NLP Group's Twitter feed?**
+A18: Implementing a CKY parser.
+
+**Q19: What is the main idea behind text classification?**
+A19: To classify documents as relevant or not relevant based on their content.
+
+**Q20: What type of queries are standing queries?**
+A20: Hand-written text classifiers.

@@ -1,0 +1,29 @@
+# Text Processing - Quick Reference
+
+Here is a one-page quick reference card for the text processing lecture:
+
+**Text Processing Quick Reference**
+
+**Key Terms and Definitions:**
+
+1. **Standing queries**: pre-defined search queries that are rerun periodically to find new relevant documents
+2. **Text classification**: task of assigning a label or category to a document based on its content
+3. **Information need**: specific information a user is seeking to monitor or track
+4. **Classification (relevant vs. not relevant)**: task of determining whether a document is relevant to the user's information need
+5. **Google Alerts**: modern instantiation of standing queries, sends users new documents that match their search query
+
+**Important Formulas/Algorithms:**
+
+* N/A (no specific formulas or algorithms were presented in the lecture)
+
+**Essential Facts to Remember:**
+
+1. Standing queries are a type of text classification where a user defines a pre-determined search query and is notified when new relevant documents are found.
+2. Text classification can be used for monitoring and tracking information needs, such as news articles on a specific topic.
+3. Google Alerts is an example of a modern instantiation of standing queries, allowing users to track keywords and receive notifications when new content matches their search query.
+
+**Key Takeaways:**
+
+* Understand the concept of standing queries and text classification
+* Recognize the importance of pre-defined search queries in tracking information needs
+* Familiarize yourself with Google Alerts as an example of a modern instantiation of standing

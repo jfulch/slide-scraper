@@ -1,0 +1,63 @@
+# 🃏 Querying - Flashcards
+
+Here are 20 flashcard pairs based on the lecture content:
+
+**1. Q: What is implicit AND?**
+A: When searching for multiple keywords, Google/Bing automatically searches for pages that contain ALL of your keywords.
+
+**2. Q: How do you search for phrases in Google?**
+A: Put your phrase in quotes, e.g., "pirates of the caribbean".
+
+**3. Q: What is the purpose of Google's Advanced Search page?**
+A: To allow users to enter a Boolean query and refine their search results.
+
+**4. Q: What does NOT do in a search query?**
+A: Exclude pages that contain specific unwanted words.
+
+**5. Q: How do you search for multiple keywords with implicit AND?**
+A: Simply type multiple keywords, e.g., disney disneyland pirates.
+
+**6. Q: What is the difference between OR and AND in a Boolean query?**
+A: OR searches for pages that contain at least one of the specified words, while AND searches for pages that contain all of them.
+
+**7. Q: How do you search for exact phrases with quotes?**
+A: Put your phrase in quotes, e.g., "apple orchard".
+
+**8. Q: What is the purpose of Google's Advanced Search Tips page?**
+A: To provide guidance on using advanced search features and Boolean queries.
+
+**9. Q: Can you use implicit AND with multiple keywords?**
+A: Yes, Google/Bing will automatically search for pages that contain all your keywords.
+
+**10. Q: What is the difference between a phrase search and an exact phrase search?**
+A: A phrase search searches for pages that contain the specified words in any order, while an exact phrase search searches for pages that contain the exact phrase as written.
+
+**11. Q: How do you exclude unwanted words from your search results?**
+A: Use the NOT operator, e.g., apple -computer.
+
+**12. Q: What is the purpose of Google's Language feature in Advanced Search?**
+A: To allow users to search for pages in a specific language or format.
+
+**13. Q: Can you use quotes with multiple keywords?**
+A: No, using quotes with multiple keywords will treat them as an exact phrase search.
+
+**14. Q: What is the difference between Google and Bing's advanced search features?**
+A: Both Google and Bing offer advanced search features, but their interfaces and options may differ.
+
+**15. Q: How do you search for pages within a specific site or domain?**
+A: Use the "site:" operator followed by the URL of the site, e.g., site:www.ncri.ie.
+
+**16. Q: What is the purpose of Google's Reading Level feature in Advanced Search?**
+A: To allow users to filter results based on reading level or difficulty.
+
+**17. Q: Can you use implicit AND with specific keywords and phrases?**
+A: Yes, Google/Bing will automatically search for pages that contain all your specified keywords and phrases.
+
+**18. Q: What is the difference between a Boolean query and an advanced search?**
+A: A Boolean query uses logical operators (AND, OR, NOT) to refine search results, while an advanced search offers additional features such as language and file type filtering.
+
+**19. Q: How do you narrow your search results by rating or hours?**
+A: Use the "Rating" or "Hours" filter in Google's Advanced Search page.
+
+**20. Q: What is the purpose of Google's Topanga, CA result in an advanced search?**
+A: To provide a specific example of a search result that matches the user's query.

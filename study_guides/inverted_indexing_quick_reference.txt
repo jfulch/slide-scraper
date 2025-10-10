@@ -1,0 +1,31 @@
+# Inverted Indexing - Quick Reference
+
+**Inverted Indexing Quick Reference Card**
+
+**Key Terms and Definitions:**
+
+1. **Definition:** An inverted index is a data structure that maps each word in a text collection to a list of documents where the word appears.
+2. **Vocabulary:** A vector containing all distinct words in lexicographical order.
+3. **Postings List:** A list of documents where a word appears, stored on disk.
+4. **Dictionary (Index File):** The part of the inverted index that stores pointers to postings lists, usually kept in memory.
+
+**Important Formulas or Algorithms:**
+
+* None explicitly stated
+
+**Essential Facts to Remember:**
+
+1. An inverted index is composed of a dictionary and a set of postings lists.
+2. Terms in the inverted file index can be refined through case folding, stemming, and stop words removal.
+3. The dictionary has been sorted alphabetically, while postings lists are sorted by document ID.
+4. Skip pointers can be used to improve merging during query processing.
+
+**Additional Concepts:**
+
+1. **Biwords:** A biword is a two-word sequence that appears together in the text collection.
+2. **Grammatical Tagging:** The process of assigning grammatical tags to words in the text collection.
+3. **N-Grams:** N-grams are sequences of n items (e.g., words, characters) from a given text.
+
+**Distributed Indexing:**
+
+1. Distributed indexing is a technique for storing and querying

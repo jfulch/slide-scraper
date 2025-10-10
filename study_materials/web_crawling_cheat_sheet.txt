@@ -1,0 +1,30 @@
+# 📋 Web Crawling - Cheat Sheet
+
+**CRAWLER & SEARCH ENGINE OPTIMIZATION CHEAT SHEET**
+
+## KEY TERMS (most important definitions)
+
+* **Crawler**: A program that systematically explores and indexes web pages
+* **Googlebot**: Google's crawler
+* **Sitemap**: A list of a website's URLs, used to help search engines understand its structure
+* **Uniform policy**: Revisit all pages with the same frequency, regardless of their rates of change
+* **Proportional policy**: Revisit pages that change more frequently more often
+
+## ALGORITHMS (names and what they do)
+
+* **Uniform policy**: Ensure all pages are kept up-to-date, even if some change more frequently than others
+* **Proportional policy**: Prioritize revisiting pages that are changing rapidly
+* **Shadowing**: Update the index without disrupting ongoing queries by collecting and storing a new set of pages separately
+
+## MUST-KNOW FACTS
+
+* Google uses multiple crawlers, including Googlebot Images, Googlebot News, and Googlebot Video
+* Google's sitemap format is represented in XML
+* The uniform policy outperforms the proportional policy in terms of average freshness
+* As of 2019, Googlebot runs the latest Chromium rendering engine
+
+## QUICK REFERENCE
+
+* **Crawling**: A process where a program systematically explores and indexes web pages to build a search index
+* **Indexing**: Building a database of web page content for searching purposes
+* **Freshness**: The accuracy of search results, affected by how often the crawler revisits pages

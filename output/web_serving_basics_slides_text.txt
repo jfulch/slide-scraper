@@ -1,0 +1,731 @@
+Extracted Text from Web_Serving_Basics Lecture Slides
+============================================================
+
+Slide: slide_001.png
+------------------------------
+Web Trends and Measurements
+Copyright © Ellis Horowitz 1999-2022
+
+Slide: slide_002.png
+------------------------------
+¢ Web has changed dramatically over the last 30+ years
+¢ If one is building a web search engine today it is important to
+understand the different dimensions of the web
+— Scale, complexity and growth are only a few important
+factors
+¢ In today’s lecture I try to quantify some of the trends to better
+understand where the web is going and why
+* many of the early slides come from Mary Meeker (formerly of)
+Kleiner, Perkins, Caufield and Byers, a major venture capital
+firm, http://www.kpcb.com/
+Copyright © Ellis Horowitz 1999-2022
+
+Slide: slide_003.png
+------------------------------
+A total of 5.03 billion people around the world use the internet today —
+equivalent to 63.1 percent of the world's total population
+Share of the population using the
+Ai jual: ed t it he
+> internet
+it ountec Internet t The Interne
+an be use’ o1 it nobile phone, personal d al as: it it evice, digit etc
+@ Add country
+North America
+Europe and Centra
+Middle East and North Africa
+Latin America and Caribbean
+East Asia and Pacific
+South Asia
+Sub-Saharan Africa
+CHART MA AB OUR
+
+Slide: slide_004.png
+------------------------------
+TOMO ea 2/14 — 6 of Top 10 Global Internet Properties ‘Made in US.
+highly popular Internet websites; >86% of Their Users Outside America...China Rising Fast
+Baidu is a Chinese search engine Top 10 Internet Properties by Global Monthly Unique Visitors, 3/14
+Google
+Tencent is a Chinese holding
+company of Internet properties,
+Microsoft
+i Facebook Ts
+among the most popular being,
+i Es
+QQ, for chatting; venom
+Sohu.com Inc. is a Chinese online Wikipedia
+media, search, gaming, Alibaba
+community and mobile service —— BUSA Users
+group. Tencent IEE] u International Users
+Sohu MU
+Amazon.com [ii
+200 400 600 800 1,000 1,200 1,400
+Monthly Unique Visitors (MMs)
+Q@KPCB sens. 21 131
+
+Slide: slide_005.png
+------------------------------
+\ China Mobile Internet Users =
+817MM.+9% vs. +8% Y/Y
+China Mobile Internet Users vs. Y/Y Growth
+"= China Mobile Internet Users == Y/Y Growth
+Hillhouse
+Capital
+Copyright © Ellis Horowitz 1999-2022 5
+
+Slide: slide_006.png
+------------------------------
+China Mobile Internet Usage Leaders...
+Tencent + Alibaba + Baidu = 71% of Mobile Time Spent
+Share of Mobile Time Spent, April 2016 = WeChat
+Daily Mobile Time Spent = ~200 Minutes per User, Average QQ
+= QQ Browser
+Tencent = Tencent Video
+= Tencent News
+Tencent Games
+= QQ Music
+= JD.com
+= QQ Reading
+All Others
+29%
+= UCWeb Browser
+Taobao
+= Weibo
+= YouKu Video
+= Momo
+= Shugi Novel
+=AliPay
+AutoNavi
+4 = Mobile Baidu
+. “ iQiyi / PPS Video
+Baidu
+= Baidu Browser
+Baidu Tieba
+91 Desktop
+Baidu Maps
+@KPCB *
+
+Slide: slide_007.png
+------------------------------
+1,473.4. 1,465.5
+1,437.2 1465.
+1,404.9
+1,372.6 1,354.8 14
+1,301.7 1,281.2
+3 1,018.7
+oe 725.3
+494.5
+304.7
+1735 [|
+201 ¢ 2 2 2014 20152 2017-201 19 ) 2021
+2009
+© Statista 2022 &
+Details: Wo
+wide; IDC,
+
+Slide: slide_008.png
+------------------------------
+University of Southern C
+World’s Content is Increasingly Findable + Shared + Tagged -
+Digital Info Created + Shared up 9x in Five Years
+Amount of global digital information created & shared
+There has been exponential growth — from documents to pictures to tweets —
+in online information: grew 9x in five years to nearly 2 zettabytes* in 2011, per IDC.
+1 Zettabyte = 1,024 Exabytes
+1 Exabyte = 1,024 Petabytes Global Digital Information Created & Shared, 2005 — 2015E
+1 Petabyte = 1,024 Terabytes
+1 Terabyte = 1,024 Gigabytes =
+or of es
+1 Zettabyte = 1,000,000,000,000 § = 6
+gigabytes 5 g
+2 2
+ES 2 i
+- i
+a.)
+a .—_— __ || | |
+2005 2007 2009 2011 2013E 2015E
+m=]
+Note:* 1 zetabyte = 1 trilion gigabytes. Source: IDC repor “Extracting Value from Chaos' 11.11
+
+Slide: slide_009.png
+------------------------------
+University of Southern C i ——
+Photos Alone = 1.8B+ Uploaded & Shared Per Day...
+Growth Remains Robust as New Real-Time Platforms Emerge
+valuation);
+500 million photos are Daily Number of Photos Uploaded & Shared on Select Platforms,
+uploaded every day and that 2005 - 2014YTD
+number is doubling every year ‘a0
+Yahoo has recently made a a +500
+major upgrade to Flickr a . = Flickr
+3 @ Snapchat
+Instagram was in 2010 é eae iSinetagram
+purchased by Facebook for ed = ee,
+$1 billion oa oe
+8 WhatsApp (2013, 20%4 onty)
+Snapchat is a photo messaging 2 600
+application developed by two 2
+Stanford students ($9B S 300 i
+2005 2006 2007 2008 2009 2010 2011 2012 2013 2014YTD
+sd company data, 2014 YTD data per latest as of 6/14.
+bobby Murphy - Evan Spiegel
+
+Slide: slide_010.png
+------------------------------
+Internet » Online Video & Entertainment
+Hours of video uploaded to YouTube every minute as of February 2020
+DOWNLOAD
+Arc Ie
+< Source
+Show sources i
+” Show publishe
+“Use Ask Statist
+. Release date
+February 202
+Region
+Survey time pe
+2007 to Febr
+Supplementary
+revious figures a
+Statista 2022 Pm
+© Additional information Show source ®
+* As of February 2020, more than 500 hours of video were uploaded to YouTube every minute.
+* This equates to approximately 30,000 hours of newly uploaded content per hour.
+* The number of video content hours uploaded every 60 seconds grew by around 40 percent
+between 2014 and 2020. 10
+
+Slide: slide_011.png
+------------------------------
+In the second quarter of 2022, mobile devices (excluding tablets) generated 58.99 percent of
+global website traffic, consistently hovering around the 50 percent mark since the beginning of
+2017 before permanently surpassing it in 2020.
+58.999
+5455.05784 35.79%
+51.52%
+748.91%3
+7 a
+38. 28:09s7%
+32.85%
+31.16%
+© Statista 2022 ®
+tatCounter; Q1 2015 to Q2 20
+
+Slide: slide_012.png
+------------------------------
+Tablet Growth =
+More Rapid than Smartphones, iPad = ~3x iPhone Growth
+First 12 Quarters Cumulative Unit Shipments, iPhone vs. iPad
+160,000
+iPad iPhone
+140,000
+120,000
+100,000
+80,000
+60,000
+Global Unit Shipments (000)
+40,000
+20,000
+0 -
+0 1 2 3 4 5 6 iz 8 9 10 11 12
+Quarters After Launch
+Source: Apple, as of CQ1:13 (12 quarters post iPad launch).
+Launch Dates: iPhone (6/29/07), iPad (4/3/10). 44
+Copyright © Ellis Horowitz 2021 12
+
+Slide: slide_013.png
+------------------------------
+Product Finding =
+Often Starts @ Search (Amazon + Google...)
+Where Do You Begin Your Product Search?
+36%
+Search Engine
+Copyright © Ellis Horowitz 1999-2022 13
+
+Slide: slide_014.png
+------------------------------
+Technology Cycles — Still Early Cycle on Smartphones + Tablets,
+Now Wearables Coming on Strong, Faster than Typical 10-Year Cycle
+Technology Cycles Have Tended to Last Ten Years
+Wearable /
+Mainframe Mini Personal Desktop Internet Mobile Internet — Everywhere
+Computing Computing Computing Computing Computing Computing
+1960s 1970s 1980s 1990s 2000s 2014+
+Image Source: Computersciencelab.com, Wikipedia, IBM, Apple, Google, NTT docomo, Google, Jawbone, Pebble.
+
+Slide: slide_015.png
+------------------------------
+Re-Imagination of Computing Operating Systems -
+iOS + Android = 60% Share vs. 35% for Windows
+Global Market Share of Personal Computing Platforms by Operating System Shipments, 1975 — 2012
+1983 1998 — 2005 2012
+Wintel - 25% Wintel - 96% Wintel - 35%
+100%
+90%
+80%
+70%
+60% Ata ;
+TRS-80 WinTel
+50%
+40%
+30%
+Operating Systems (%)
+20%
+Other
+10%
+1975 1977 1979 1981 1983 1985 1987 1989 1991 1993 1995 1997 1999 2001 2003 2005 2007 2009 2011
+Market Share of Personal Computing Platforms by
+“oO
+Source: Asymco.com (as of 2011), Public Filings, Morgan Stanley Research, Gartner for 2012 data. 109
+
+Slide: slide_016.png
+------------------------------
+Market Share Of Leading Cloud Hosting Providers
+Top 10 Providers by Total 2020 Market Share
+Microsoft Azure
+Alibaba Group
+Google Cloud Platform
+Rackspace
+CenturyLink
+IBM Cloud
+OVHcloud
+DigitalOcean, Inc.
+1&1
+Percent of Market Share
+Source: intricately data, April 2021
+
+Slide: slide_017.png
+------------------------------
+..While The Cloud Rises
+Amazon Web Services (AWS) Leading Cloud Charge...
+Objects Stored in Amazon S3* (B)
+2,000
+1,500
+1,000
+; il]
+Q4 Q4 Q4 Q4 Q4 Q4 Q1 Q3
+2006 2007 2008 2009 2010 2011 2012 2012 ons
+@ K P C B *Note: S3 is AWS’ storage product and used as proxy for AWS scale / growth 74
+Source: Company data.
+Copyright © Ellis Horowitz 1999-2022 1
+Number of Amazon S3 Objects (B)
+
+Slide: slide_018.png
+------------------------------
+...Computing Big Bangs Volume Effects =
+Cloud Revenue Re-Accelerating +58% vs. +54% Q/Q
+Cloud Service Revenue — Amazon + Microsoft + Google
+mAmazon AWS =«=Microsoft Azure = Google Cloud
+Copyright © Ellis Horowitz & Marco Papa 1999-2022 1
+
+Slide: slide_019.png
+------------------------------
+Google Trends imply queries associated with voice-related commands have
+risen >35x since 2008 after launch of iPhone & Google Voice Search
+Google Trends, Worldwide, 2008 — 2019
+Navigate Home
+Call Mom
+Call Dad
+—_ Dae wnan easton rset | j
+meres.
+2008 2009 2010 2011 2012 2013 2014 2015 2019
+
+Slide: slide_020.png
+------------------------------
+rsity of Southern C
+Voice-Based Mobile Platform Front-Ends =
+Voice Can Replace Typing
+Google Assistant
+Nearly 70% of Requests are Natural / Conversational Language, 5/17
+20% of Mobile Queries Made via Voice, 5/16 J
+KLEINER SS 106 ge: Yanan
+PERKINS Copyright © Ellis Horowitz 1999-2022 20
+
+Slide: slide_021.png
+------------------------------
+—_—
+.Voice =
+47MM Amazon Echo Base + ~2x in One Year
+Amazon Echo Installed Base Amazon Echo Skills
+
+Slide: slide_022.png
+------------------------------
+* Growth in number of users connected
+* Growth in Smartphone use
+* Growth in digital data, especially photos and video
+* Growth in Social Media as an advertising platform
+* Transition from desktop/laptop use to mobile
+* Growth in tablet usage over desktops/laptops
+* Decreased dominance of Microsoft Windows
+* Move away from server farms to cloud computing
+* Growth in voice communication with devices
+Copyright © Ellis Horowitz 1999-2021 22
+
+Slide: slide_023.png
+------------------------------
+* The World Wide Web (the Web, the publicly accessible web) is so
+dynamic it is hard to describe it and have the description be valid for
+very long
+¢ In this lecture we look at what is known,
+— Measuring the Web by number of web sites
+— Measuring the Web by the Languages of Web Pages
+— Measuring the Web by Rate of Change of Pages
+— Measuring the Web by Document Content Type
+— Measuring the Web by linkage
+— Measuring the Web as a Graph
+— Measuring the Web by Content
+— (using the best statistics we can find)
+
+Slide: slide_024.png
+------------------------------
+Jan. 2020:
+~1.7 Billion sites
+nginx web server
+had the largest
+growth;
+Over 50% of websites
+Are hosted either by
+Apache or nginx;
+But Microsoft web
+servers still power
+43.2% of all sites
+Around 75% of websites
+are not active, but parked
+Total number of Websites
+2,000,000,000 HE Websites
+1,500,000,000
+1,000,000,000
+500,000,000
+e e
+a gM qF qo qo ao? oh aol aol”
+http://www. internetlivestats.com/total-number-of-websites/
+Copyright © Ellis Horowitz 1999-2022
+
+Slide: slide_025.png
+------------------------------
+Number of websites
+in the world
+The global number of websites has more than
+doubled from 2015 to 2021. Websites growth rate
+= from 1991 to 2021
+2 Billion
+1.6 Billion
+websites
+@ in 2021
+1.86
+a 207.0
+Aug, 1995 2000 2005 2010 2015 2021
+1991
+
+Slide: slide_026.png
+------------------------------
+Domain Count Statistics for TLDs
+136 million in .com, record, Our Count represents all domaine we kno which isusuallymoreaceuate
+21 million in .tk, 14 ud @ Our Count z
+million in .de, etc 13604670
+tk 21,014,704 é
+. . de 14,586,920 100M
+what is .tk and why is et taosigvt
+it so large? (Tokelau) = 11,579,296 80M
+ore 0,398,501
+a 10,361,314
+into 5,528,696 som |
+nl 5,042,167
+ru 4,928,746 20M
+oh 3,673,059
+o- PRerrrrrrr rrr rr re eee eee PPP PT TT
+br SRST ESTE FEISS GSS ORE SEES ESERSS
+top
+biz 2
+loan 2,253,686
+Display: Top25 - Default - None
+
+Slide: slide_027.png
+------------------------------
+y of Southern C.
+5 c
+Web Page Language Diversity
+¢ The Web contains pages in many different languages
+* Characters in a language are encoded such that each character is paired with a number
+* Unicode and its parallel standard, the ISO/IEC 10646 Universal Character Set, together
+constitute a modern, unified character encoding.
+* Most modern web browsers feature automatic character encoding detection. In Firefox, for
+example, see the View/Character Encoding submenu, shown below
+¢ In HTML one can specify the character encoding using
+* <meta http-equiv=“Content-Type content=“text/html” charset=utf-8>
+¢ If charset is missing ISO-
+Bobars
+Sidebar | 8859-1 is taken as the default
+unless there is a browser
+jest European Wester (150-8659-1) setting;
+Eul Screen ‘Customize List East European Western (150-8859-15)
+Firebug nee East Asian ‘Western (IBM-850)
+© Unicode (uTF-8) raieaileens geno ae * Websites in non-western
+Chinese Traditional (Big5) Unicode Cec (150-8859-14) :
+Western (Windows-1252) pan languages typically use UTF-8
+Greek (150-8859-7) Unicode (UTF-16) Greek (MacGreek)
+Greek (Windows-1253)
+Icelandic (MacIcelandic)
+Nordic (150-8859-10)
+South European (150-8859-3)
+Central European (150-8859-2) User Defined
+
+Slide: slide_028.png
+------------------------------
+¢ Itis estimated that about 40,000 different
+languages have been created by human
+beings
+* Only between 6,000-9,000 are still in use
++ Study done by the United Nations
+— http://unesdoc.unesco.org/images/0018/
+001870/187016e.pdf
+— The methodology was to examine the
+pages on a search engine and attempt to
+identify the primary language in which
+the page is written
+— Conclusions
+¢ From 1996 — 2008 English was
+predominant, occupying roughly
+80% of web pages
++ At the same time the number of
+Internet users who had English
+as their primary language
+dropped from 80% to 40%
+English
+Russian
+German
+Japanese
+Spanish
+French
+Chinese
+Portuguese
+Italian
+Polish
+Turkish
+Dutch
+Others|
+q T T T T T
+0% 5% 10% 20% 30% 40% 50%
+Content languages for websites as of 12 March 2014
+
+Slide: slide_029.png
+------------------------------
+Complexity of Data Types
+
+Slide: slide_030.png
+------------------------------
+¢ By some accounts, there are 16,000 to 51,000 content types*
+* What to do with content types?
+— Parse them
+* How? The Apache Tika™ toolkit detects and extracts metadata and text content from
+various documents using existing parser libraries. Tika unifies these parsers under a
+single interface. Tika is useful for search engine indexing
++ Extract their text and structure
+— Index their metadata
+¢ Use an indexing technology like
+* Lucene, http://lucene.apache.org/
+¢ Solr, http://lucene.apache.org/solr/
+* Google Search Appliance (http://www.google.com/enterprise/search/products/gsa.html)
+— Identify what language they belong to
+« N-grams
+*http://filext.com/ (see if you can name the top 20 file extensions)
+
+Slide: slide_031.png
+------------------------------
+"NB What fle tres con Goodie
+€ > & fh [© spore googe.com wy
+© cscisreteme rage © csc1871 Heme Page © C5.1251 Hane Page © Es Hexonte Hoe > Co other bookmarks
+Considering the fact that there are thousands
+of file types of content stored on the web,
+Google actually indexes only a small number,
+less than 3 dozen, but they may well constitute
+far more than a majority of the available content
+Google
+Webmaster Tools jelp home
+What file types can Google index?
+fles, The most commo
+Flash and other ich media files
+Document Format (pd) 00
+it ps)
++ Adobe Port
+iets + Adobe Post
+Webmaster FAQ
+rmat ( df) Search Engine Optimization (SEO)
+Format (god
+(30) Webmaster a
+eta tags
++ Microsoft Word (.doe, .dacx)
++ OpenOice pre
+Image Sitemaps
+http://support.google.com/webmasters/bin/answer.py?hl=en&answer=35287
+
+Slide: slide_032.png
+------------------------------
++ How many websites? ~/.86 billion
+* How are they distributed across TLDs or across countries?
+— 112 million out of 148 million belong to .com or about 72%
+* How many web pages are there? 30 trillion unique URLs from Google found in 2012,
+see http://googleblog. blogspot.com/2008/07/we-knew-web-was-big.html
+* Which content types hold the most information: HTML, PDF, Word, Excel, PPT, others?
+— There are thousands of different content types
+* How much storage is required to hold a single snapshot of the Web?
+— I trillion web pages at 100K bytes per page requires 100 petabytes
+* 1 petabyte storage costs under $1,000, so $100,000 of equipment will work
+— Google processes 24 petabytes per day, http://en.wikipedia.org/wiki/Petabyte
+— The Internet Archive has more than 10 petabytes, http://en.wikipedia.org/wiki/nternet_Archive
+* What are the languages in which the documents are written?
+— According to the Internet Archive, about 55% is in English, other popular languages include: French,
+German, Spanish and Chinese, also see http://en.wikipedia.org/wiki/Languages_used\on_the_Internet
+* General properties of the Web graph
+— In-degree and out-degree distribution follows a power law
+* Categories of Content: pornography, spam, mirrors
+— Presumably there is a lot of the above, but little concrete data on how much
+
+Slide: slide_033.png
+------------------------------
+european cars - Yahoo! Directory Search Results - Mozilla Firefox
+file Edt View History Bookmarks Tools Help
+‘{@! european cars - Yahoo! Directory Search Re... | +
+€ OF desea
+i,ehorowitzt | Sign Out Help
+DIRECTORY
+Show All
+Regional
+Business and Economy
+Recreation
+Arts
+Anytime
+Last 3 months
+Last 6 months
+Lastyear
+vyahoo.comjsearch;_yt=ADac P5261 : 2 - - e
+european cars
+Also try: european car parts, european cars for sale, More
+European Car Sharing
+Umbrella organization for car sharing companies in Europe.
+www.carsharing.org
+Aims to provide motoring rel
+safety porfarmance of ears sold in mewn
+www.eulroncap.com
+European Car Free Dai
+Take place September 22, 2000, to protest problems of urban mobility, air pollution, and
+noise
+www.22september.org
+ClassicDriver.com - The European Car Webzine
+Focuses on prestige marques, includes articles, web broadcasting, screen savers, dealer
+guide, and more
+www.classicdriver.com
+Yahoo originally used
+human editors to
+assemble a large
+hierarchically
+structured directory of
+web pages.
+= http://www.yahoo.com/
+— Yahoo still retains the
+hierarchy as seen to the
+left; under european cars
+we See categories:
+regional with 93 matches,
+business & economy with
+79 matches, etc
+
+Slide: slide_034.png
+------------------------------
+2) ODP - Open Directory Project - Mozilla Firefox
+Fle Eat ew Hitoy Booknars Tos Help * Open Directory Project,
+© 00° - Open Directory Project = : known as DMoZ, is an
+¢ wow. co2.0r a)- ‘
+C1? |@ wncoes effort to organize the web
+(AIEILEILZ) open directory project AGI Search. according to an ontology;
+about dmoz | dmoz blog | suggest URL | help | link | editorlogin ee
+¢ An approach similar to
+Search | advanced Yahoo’ s:
+at cummonts ess tema mS es ¢ Based on the distributed
+Games Heatth Home labor of volunteer editors
+Video Games, RPGs, Gambling... Fitness, Medicine, Altemative.. Family, Consumers, Cooking. (“net-citizens provide the
+Kids and Teens News Recreation . wn”
+Arts, School Time, Teen Life. Media, Newspapers, Weather. Travel, Food, Outdoors, Humor. collective brain ).
+Reference Regional Science ¢ Used by most other search
+Maps, Education, Libraries. US, Canada, UK, Europe. Biology, Psychology, Physics engines
+Shopping Society Sports
+Clothing, Food, Gifts People, Religion, Issues. Baseball, Soccer, Basketball ° Started by Netscape.
+World
+Catala, Dansk, Deutsch, Espatiok Frangais, Italiano, fl ACER, Nederlands, Polok, Pyccrat Svensk _ http://www.dmoz.org/
+¢ Distributes its data using
+RDF format
+¢ DMOZ shut down in 2016
+human-edited directory of the web
+
+Slide: slide_035.png
+------------------------------
+University of Southern Cal
+Open Directory - Science - Mozilla Firefox (E)K) | © open Directory - Computers: Computer Science - Mozilla Firefox
+file Edt View Hetory Bookmarks Took Hel file Edt View Hetory Bookmarks Tbok Helo
+© oven Dvectory- Science + © onen Drectory- Computers: Computer Sci. |
+¢ © 1 .dene2.org)Science ¢ © 1. .dene2 .org/Computers/Comp ie @-
+(Alafo]lZ) open directory project Aoi Search. (Alafo]lZ) open directory project Aol Search.
+sBoxtidnor | ducz bs | mpot zee [ep sea ees [ene Ub ear oe [a
+the entire arectory C7 the entire drectory z
+Top: Science (104,480) Description Top: Computers: Computer Science (2,971) Description
+‘* Academic Departinents (553) * People (271)
+© Environment (6,572) © Conferences (203) © Publications (80)
+Anomalies and Alternative Science (#80) © Math (9,541) © Directories (8) © Reference (4)
+Astronomy (595) Physics (4.281) © Organizations (71) # Research Institutes (74)
+Biology (37,072) ‘* Science in Society (680)
+© Chemistry (4,771) © Social Sciences (78, 489)
+© Computer Science@ (7,971) ‘© Technology (70,560) Axtificial Intelligence@ (1,294) Distributed Computing (225)
+Earth Sciences (6,098) © Womena (753) Antificial Life@ (230) Parallel Computing@ (367)
+~~ Computational Geometry@ (60) _* Software Fugineeringp (114)
+Computer Graphics 39) Theoretical (367)
+* Academic Departments (9) ¢ Museums (479) * Database Theory (62)
+* By Region (0) News and Media (234)
+© Chats and Forums (76) © Organizations (731)
+# Directories 27) # People (0)
+# Educational Resources (352) Publications (247) ome gorithuns (2
+Fioployment (69) # Reference (389) Conmputers Algonitiuns (29)
+© Events (54) © Research Groups and Centers (57) '* Computers: Programming (15,619)
+* Historye (346) ‘© Search Engines (2) Science: Math (9,541)
+¢ Instruments and Supplies (2,370) cience: Technology: Electrical Engineering (237)
+«+ Librarieso (€8) © Weblogs (117)
+See also
+This category in other languages:
+Selecting Category “Science” Selecting Category “Computer Science”
+Copyright © Ellis Horowitz 1999-2022
+
+Slide: slide_036.png
+------------------------------
+¢ The Internet Archive has been taking a _
+snapshot of the World Wide Web every two u Sa re
+months since 1997 — has used Apache Nutch
+¢ The results are made available through the
+Wa back Machine, INTERNET ARCHIVE
+* — Its database is approximately 4.5 petabytes (ayogenmnaenine SES
+¢ The founder is Brewster Kahle
+412 Billion web pages saved over time. vowate
+* For the past 13 years, the Internet Archive ; . .
+has been growing rapidly, most recently by iz i el
+about 100TB of data per month. . :
+¢ Their crawler surveys the web every two
+months The algorithm first performs a broad
+craw] that starts with a few "seed sites," such
+as Yahoo's directory. After snapping a shot of
+the home page, it then moves to any referable
+pages within the site until there are no more
+pages to capture. If there are any links on
+those pages, the algorithm automatically
+opens them and archives that content as well.
+Archive-It enables you to capture, manage
+
+Slide: slide_037.png
+------------------------------
+- Surface Web
+Academic Information DEEP WEB Multilingual Databases
+Medical Records Financial Records
+Government Resources
+Legal Documents
+Scientific RepOrmE Competitor Websites
+Subscription Information Social Media ee cvon-specific
+%y Repositories
+(DARK\WEB)*
+A part of the Deep Web accessible only through certain browsers such as Tor designed to
+ensure anonymity. Deep Web Technologie: zdbosinvolvement with the Dark Web.
+

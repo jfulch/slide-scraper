@@ -1,0 +1,588 @@
+Extracted Text from Deduplication Lecture Slides
+============================================================
+
+Slide: s1.png
+------------------------------
+De-Duplication — the process of identifying and avoiding essentially
+identical web pages
+The term is often used in connection with /ocker storage where only a
+single copy of a file is stored and multiple links to the single file are
+managed
+— Whether this strategy effectively saves space is not clear and.needs
+analysis for each particular application
+— However, this is not the meaning of the term that we are concerned
+about in this class
+With respect to web crawling, de-duplication essentially refers to the
+identification of identical and nearly identical web pages and indexing
+only a single version to return as a search result
+Copyright 2011-2022 Ellis Horowitz 2
+
+Slide: s2.png
+------------------------------
+* One example is the same page, referenced by different URLs
+http://espn.go.com http://www.espn.com
+«How can two URLs differ yet still point to the same page?
+* the URL’ s host name can be distinct (virtual hosts) sharing the same document folder,
+* the URL’ s protocol can be distinct (http, https), but still deliver the same document
+* the URL’ s path and/or page name can be distinct
+Copyright 2011-2022 Ellis Horowitz 3
+
+Slide: s3.png
+------------------------------
+D SCOP: Structural Classificatior
++ At one time* all 3 URLs below pointed to
+. . € © © fi Oscop.mrc-tmb.cam.ac.uk/scop/ wa
+the identical page © cscrs72Home rage © csc1571 Home Paye EG CSC1351 Home Page © Els Horowitz! Home P.. > | other bookmarks
++ Structural Classification of Proteins ‘Structural Classification of Proteins a
+—_ http://scop.mre-lmb.cam.ac.uk/scop | —
+http: Ble?
+ttp://scop.berkeley.edu/ <S
+— http://scop.protres.ru/ ‘Welcome to SCOP: Structural Classification of
+Protems.
+1.75 release (Tune 2009)
+38221 PDB Entries. 1 Literature Reference. 110800
+— The three URLs have distinct Domains. (excluding nucleic acids and theoretical models)
+‘ ‘ Folds, superfamilies, and families statistics here.
+domain names, but all redirect to Teun
+the same page List of obsolete entries and their replacements
+Anthors, Alexey G. Murzin, John-Mare Chandonia, Antonina Andreeva, Dave Howorth, Loredana Lo Conte, Bartlett
+G. Ailey, Steven E, Brenner, Tim J. P. Hubbard, and Cyrus Chothia =
+Reference: Murzin A. G., Brenner S. E., Hubbard T., Chothia C. (1995). SCOP: a structural classification of proteins
+* At least they did when I took this database for the investigation of sequences and structures. J. Mol. Biol. 247, 536-540. [PDE]
+Recent changes are described in Lo Conte L., Brenner $. E., Hubbard T.JP., Chothia C., Murzin A. (2002). SCOP
+snapshot, no longer database in 2002: refinements accommodate structural genomics. Nucl. Acid Res. 30(1), 264-267. [PDE],
+Andreeva A., Howorth D., Brenner S.E,, Hubbard T.P., Chothia C., Murzin A.G, (2004). SCOP database in 2004
+refinements integrate structure and sequence family data, Mucl. Acid Res. 32D226-D229. [PDE],
+‘Andreeva A., Howorth D., Chandonia J.-M., Brenner S-E., Hubbard TI.P., Chothia C., Mi
+Copyright 2011-2022 Ellis Horowitz 4
+
+Slide: s4.png
+------------------------------
+Another example is two web pages whose content differs slightly
+Protect ie }
+aa ~ . =a ~~ amazon your home e
+Ehe New York Times Shop smart cameras»
+The New ork Eimes —
+Tee TanCatrth Reh
+Dene
+Two copies of www.nytimes.com snapshot within a few seconds of each other;
+The pages are essentially identical except for the ads-at the top and the photo in the middle
+
+Slide: s5.png
+------------------------------
+Ble Eat ew History Bookmarks ols Helo
+€ > | E bisenvm mynescom g
+In examining a web page a
+search engine may want to
+ignore ads, navigation links
+and other elements that do not - Wake The New York Times
+specifically relate to the gee
+contents of the web page
+<<" | .
+WOME PAGE | TODAYS PAPER | vibEO | MOST POPULAR | TMES TOPICS Subseribe:Digtal/ Home Delivery | he
+Sunday, January 22, 2032 aaepM er
+ne TY | (GBP + scrote Coes Pa
+One way to do this is to delve od 1G soumcxrounenmany x wi peel
+into the structure of a web wena After Victory by Varatiosnan RIM
+page and focus on content = |: | console _uimt_c55_scrpt [DOM > | net _ Pope Spe. Po aaa
+blocks
+E.g. the Document Object
+docuent Document wn nines com
+prototype 22
+currentScript
+Model for HTML display: . ‘s oe
+web page as a tree hijerarch: ee eee ai
+oo a
+— Document «twee Tecripe bba.e.all, seripe, scrips wt2), monn]
+3 weer fate paces aaa Gea a, ARERR, HT
+Head m See
+& ctvetement boayshone
+slekcoler .
+— Body = ae
+However this is time ot ™
+beset sheepe:/ new. myeines.cou/*
+: bcalor
+consuming W body boay#iome
+charaterset ure-e"
+i chikNodes CDocumentType { constructor-DocumentType, nodellame="htmt", nodeType=19, moren 3,
+Comment { conctructor=Comment, data="(s£ TEI><t endif], lengthe2?, more. 3,
+compatode scesicompar*
+constrtor rmtDocument
+
+Slide: s6.png
+------------------------------
+¢ Mirroring is the systematic replication of web pages across hosts.
+— Mirroring is the single largest cause of duplication on the web
+¢ Hostl/o and Host2/B are mirrors iff
+For all (or most) paths p such that when
+http://Host1/ a / p exists
+http://Host2/ B / p exists as well
+with identical (or near identical) content, and vice versa.
+Copyright 2011-2022 Ellis Horowitz 7
+
+Slide: s7.png
+------------------------------
+List of countries
+281 sites in 55 regions
+the status of apache mirrors - Me
+E) CE)
+le Eat Yew Hitery Bookmarks Yahoo! Tod Hep 46.2 meutos saved @)~
+SD S DG Nits coat ranirerst =p) f=]
+the status of apache mirrors
+apace eet Apache
+dite MonJan 22.0019012007.6M Software Foundation
+last check Mon Jan 22 0019.01 2007 (GMT) http://www.apache.org/
+‘¢ How do Thecome an Apache mirror site?
+regions
+BACKUP ar at au ba be bg br bs ca ch cl en co ot oz de dk ee es
+fee my al no pl pt ro
+report
+womw eu apache org @ | hitp hours Shouts | of
+mw apache org @ | hitp hours A hows | ole
+spache mesicomar @ | hip 25.2 days how | ole
+soache xmndo.comar @ | mp 825 days Shows | ok
+apache locahost net ar @ | http 6 hours Shows ok |
+Done Gus Gi
+U FIOTOW
+
+Slide: s8.png
+------------------------------
+Index of f- Mozilla Firefox
+le Ede ow Hory Gookmarks Yahoo! Toe He 46-2mbmutee saved @)
+DS DG [Di tevitonereescon.o +] Be) r=
+Apache Software Foundation
+Distribution Directo
+Index of fist - Mozilla Firefox
+Est ew Hitory Bookmarks Yahoo! Toole He
+SD - S QB Nowitesncs prerircn-out] >]
+‘The directories inked below contain curent software releases from the Apache
+Software Foundation projects. Older non-recommended releases can be found on
+four archive site
+Li eSEsreHomen Lj CSCIS72 Hone 5 Weberanerssn Ls | N Inden of fist G+
+Index of /di
+"To find the right download for a particular project, you should start a the project's
+‘own webpage or on our project resource sting rather than browsing the Knkes
+Last nodizied Deserapeion below.
+Please do not download from apache.org! Ifyou are curently at apache.org
+@® parent directory 22-aan-2007 and would ike to browse, please instead vst a nearby minor site
+22-Jan-2007 Projects
+Site in Australia Note identical B esses o-aun-2005
+directories Fam
+Copyright 2011-2022 Ellis Horowitz Site in Argentina 9
+
+Slide: s9.png
+------------------------------
+Smarter crawling
+— Avoid returning many duplicate results to a query
+— Allow fetching from the fastest or freshest server
+Better connectivity analysis
+— By combining in-links from the multiple mirror sites to get an accurate
+PageRank (measure of importance)
+— Avoid double counting out-links
+Add redundancy in result listings
+— “If that fails you can try: <mirror>/samepath”
+Reduce Crawl Time: Crawlers need not crawl pages that are identical or near
+identical
+Ideally: given the web’ s scale and complexity, priority must be given to
+content that has not already been seen before or has recently changed
+— Saves resources (on the crawler end, as well as the remote host)
+— Increases crawler politeness
+— Reduces the analysis that a crawler will have to do later
+Copyright 2011-2022 Ellis Horowitz 10
+
+Slide: s10.png
+------------------------------
+* Clustering
+— Given a news article some people might wish to see “related articles” describing
+the same event
+¢ Data extraction
+— Given a collection of similar pages, e.g. movie reviews, a search engine can
+extract and categorize the information
+¢ Plagiarism
+— Identify pairs that seem to have significantly borrowed from each other
+¢ Spam detection
+— Spammers typically send similar emails en masse, so one can use near-similarity
+techniques to identify the spam
+¢ Duplicates within a domain
+— To identify near-duplicates arising out of revisions, modifications, copying or
+merging of documents
+Copyright 2011-2022 Ellis Horowitz ul
+
+Slide: s11.png
+------------------------------
+1. Duplicate Problem: Exact match;
+¢ Solution: compute fingerprints using cryptographic hashing
+* Useful for URL matching and also works for detecting identical
+web pages
+* Hashes can be stored in sorted order for Jog N access
+2. Near-Duplicate Problem: Approximate match
+* — Solution: compute the syntactic similarity with an edit-distance
+measure, and
+« Use a similarity threshold to detect near-duplicates
+— e.g., Similarity > 80% => Documents are “near duplicates”
+¢ The remaining slides are devoted to specific methods for
+duplicate and near duplicate detection
+Copyright 2011-2022 Ellis Horowitz 12
+
+Slide: s12.png
+------------------------------
++ A eryptographic hash function is
+a hash function which takes an input (or
+'message') and returns a fixed-size
+alphanumeric string, which is called
+the hash value (sometimes called
+a message digest, digital fingerprint,
+digest or a checksum).
+¢ The cryptographic hash function has
+four main properties:
+1. It is extremely easy (i.e. fast) to
+calculate a hash for any given data.
+2. Itis extremely computationally
+difficult to calculate an
+alphanumeric text that has a given A small change in a single word, “over” produces a major
+hash. Change in the output; see
+. https://en.wikipedia.org/wiki/Cryptographic_hash_function
+3. A small change to the text yields a
+totally different hash value.
+4. It is extremely unlikely that two
+slightly different messages will
+have the same hash.
+
+Slide: s13.png
+------------------------------
+* The MD5 (message-digest) hash function is a widely used cryptographic hash
+function producing a 128-bit (16-byte) hash value, typically expressed in text format
+as a 32 digit hexadecimal number.
+— Invented by Ron Rivest of MIT in 1991; replaced the earlier MD4
+* The SHA-1, SHA-2 hash functions are also quite popular (160 bit, 20 byte value)
+— SHA-1 was broken in 2005; using SHA-2 family of algorithms is now favored,
+see
+—_ https://en.wikipedia.org/wiki/SHA-2
+* SHA-3, released in 2015; it produces digests of size 224, 256, 384 and 512 bits
+« RIPEMD-160 — a family of cryptographic hash functions and so far has not been
+broken; produces a 160 bit (20 byte) digest
++ E.g. See Chrome, Settings, Security and Privacy, Security, Manage certificates,
+certificates, Verisign
+Copyright 2011-2022 Ellis Horowitz 14
+
+Slide: s14.png
+------------------------------
+I. Compare character by character two documents to see if they are identical
+— very time consuming !!
+2. Hash just the first few characters and compare only those documents that hash to
+the same bucket
+— But what about web pages where every page begins with <HTML>.??
+3. Use a hash function that examines the entire document
+— But this requires lots of buckets
+4. Better approach - pick some fixed random positions for all documents and make the
+hash function depend only on these;
+— This avoids the problem of a common prefix for all or most documents, yet we
+need not examine entire documents unless they fall into a bucket with another
+document
+— But we still need a lot of buckets
+5. Even better approach: Compute the cryptographic hash (SHA-2 or MDS) of each
+web page and maintain in sorted order, O(log n) to search
+Copyright 2011-2022 Ellis Horowitz 15
+
+Slide: s15.png
+------------------------------
+Produce fingerprints and test for similarity - Treat web documents as
+defined by a set of features, constituting an n-dimensional vector, and
+transform this vector into an (bit fingerprint of a small size
+— Use Simhash or Hamming Distance to compute the fingerprint
+* SimHash is an algorithm for testing how similar two sets are
+— Compare fingerprints and look for a difference in at most k bits
+— E.g. see Manku et al. WWW 2007, Detecting Near-Duplicates for Web
+Crawling, http://www2007.org/papers/paper215.pdf
+Instead of documents defined by n-vector of features, compute subsets of
+words (called shingles) and test for similarity of the sets
+— Broder et al., WWW 1997, Finding Near Duplicate Documents
+Copyright 2011-2022 Ellis Horowitz 16
+
+Slide: s16.png
+------------------------------
+1. Define a function f that captures the contents of each document in a
+number
+— E.g. hash function, signature, or a fingerprint
+Create the pair <f(doc,), ID of doc;> for all doc;
+Sort the pairs
+4. Documents that have the same f-value or an f-value within a small
+threshold are believed to be duplicates or near duplicates
+Copyright 2011-2022 Ellis Horowitz 7
+
+Slide: s17.png
+------------------------------
+* To compute similarity, we need a distance measure
+« A distance measure must satisfy 4 properties
+1. No negative distances
+2. Dixy) = 0 iffx=y
+3. D(x,y) = D(y,x) symmetric
+4. Dixy) <= D(x,z) + D(z, y) triangle inequality
++ There are several distance measures that can play a role in locating duplicate and near-
+duplicate documents
+— Euclidean distance — D([X}..-Xn], [¥1.--sYnl) = sqrt(Sum(x;-y;)*2) i=1...0
+— Jaccard distance — D(x,y) = 1 — SIM(x,y) or 1 minus the ratio of the sizes of the
+intersection and union of sets x and y
+— Cosine distance — the cosine distance between two points (two n element vectors) is the
+angle that the vectors to those points make; in the range 0 to 180 degrees
+— Edit distance — the distance between two strings is the smallest number of insertions and
+deletions of single characters that will convert one string into the other
+— Hamming distance — between two vectors is the number of components in which they
+differ (usually used on Boolean vectors)
+Copyright 2011-2022 Ellis Horowitz 18
+
+Slide: s18.png
+------------------------------
+A set is an unordered collection of objects, e.g. {a, b, c}
+Focusing on the notion of distance of two sets we define a distance d(A, B) as
+— small, if objects in A and B are close;
+— large, if objects in A and B are far apart;
+— 0, if they are the same, and finally
+— d(A, B) is in the range [0, infinity]
+Focusing on the notion of similarity we define s(A, B) as:
+— large, if the objects in A and B are close;
+— small, if the objects in A and B are far apart;
+1, if they are the same, and finally
+— s(A, B) is in the range [0, 1]
+Often we can convert between the two, as d(A, B) = 1 — s(A, B)
+Copyright 2011-2022 Ellis Horowitz 19
+
+Slide: s19.png
+------------------------------
+* Consider A = {0, 1, 2, 5, 6} and B = {0, 2, 3, 5, 7, 9}
+¢ JS(A, B) = size(A intersection B)/size(A union B)
+. = size({0, 2, 5}) / size({0, 1, 2, 3, 5, 6, 7, 9})
+° = 3/8 =0.375
+¢ Suppose we divide our items into four clusters, e.g
+~ Cc, = {0, 1, 2}
+~— €,= 13,45 perhaps
+_ C; = {5, 6} C, represents action movies, C, comedies,
+_ on - 17, 8, 9} C; documentaries, Cy horror movies
+* If Agu = {C1, C3} and Bau = {Cy, C2, C3, Cy}, then
+* ISau(A, B) = IS(Aguy Baw) =
++ size( ( {C1, C3} intersect {C1, C2, C3, C4} )/( {C1, C3} union {C1, C2, C3, C4}) )
+. =5/10 = 0.5
++ If we are going to use Jaccard similarity to determine when two web pages are near
+duplicates; we need to say what are the elements of the sets we are comparing
+Copyright 2011-2022 Ellis Horowitz 20
+
+Slide: s20.png
+------------------------------
+* Definition of Shingle:
+— acontiguous subsequence of words in a document is called a shingle;
+The 4-shingling of the phrase below produces a bag of 5 items:
+“a rose is a rose is a rose” => a set S(D,w) is defined as
+{ (a_rose_is_a), (rose_is_a_ rose), (is_a_rose_is),(a Tose is_a),
+(rose_is a rose)}
+— S(D,w) is the set of shingles of a document D of width w
+¢ Similarity Measures
+— Jaccard(A,B) (also known as Resemblance) is defined as
+size of (S(A,w) intersect S(B,w)) / size of (S(A,w) union S(B,w))
+Containment(A,B) is defined as
+size of (S(A,w) intersect S(B,w)) / size of (S(A,w))
+— 0<=Resemblance <= 1
+— 0<=Containment <= 1
+* See On the resemblance and containment of documents, Conf. on Compression and
+Complexity, DEC Research Center, 1997
+Copyright 2011-2022 Ellis Horowitz 21
+
+Slide: s21.png
+------------------------------
+* White space?
+— Should we include spaces and returns? Sometimes it makes sense, e.g.
+“plane has touch down” versus “threw a touchdown”
+(the space between “touch” and “down” is significant)
+* Capitalization?
+— Sam versus sam. Can help to distinguish proper nouns
+¢ Punctuation?
+— English is punctuated differently in the US and India; punctuation differs in articles, blogs,
+and tweets
+¢ How large should k be?
+— General rule: high enough so the probability of almost all shingles matching is low, so a
+collision is meaningful;
+* Count replicas?
+— Typically bag of words counts replicas, but shingling does not
+¢ Stop words? Typically omitted as they are so common
+Copyright 2011-2022 Ellis Horowitz 2
+
+Slide: s22.png
+------------------------------
+* Original text
+— “Tropical fish include fish found in tropical environments around the world, including
+both freshwater and salt water species”
++ All 3-shingles (there are 16 of them)
+— (Tropical fish include), (fish include fish), (include fish found), (fish found in), (found in
+tropical), (in tropical environments), (tropical environments around), (environments
+around the), (around the world), (the world including), (world including both), (including
+both freshwater), (both freshwater and), (freshwater and salt), (and salt water), (salt water
+species)
+* Hash values for the 3-shingles (sets of shingles are large, so we hash them to make them
+more manageable, and we select a subset)
+— 938, 664, 463, 822, 492, 798, 78, 969, 143, 236, 913, 908, 694, 553, 870, 779
+* Select only those hash values that are divisible by some number, e.g. here are selected
+hash values using 0 mod 4
+— 664, 492, 236, 908; these are considered the fingerprints
+* Near duplicates are found by comparing fingerprints and finding pairs with a high
+overlap
+Copyright 2011-2022 Ellis Horowitz 23
+
+Slide: s23.png
+------------------------------
+* Recall the Jaccard similarity of sets A and B, J(A,B), is defined as
+| A intersect B | /\A union B |
+¢ The Jaccard distance of sets A and B, measuring dissimilarity is defined as
+1 - J(A,B), or equivalently {(A union B) - (A intersect B)}/(A union-B)
+* We can test if two pages are near duplicate by
+1. First compute the k-shingles of the two pages
+2. Map the k-shingles into numbers (e.g. by hashing)
+3. Select a subset of the shingles to act as the fingerprints
+4. Compute the Jaccard similarity of the k-shingle fingerprints;
+¢ Ahigh Jaccard similarity (e.g. greater than 0.9), implies the pages are near
+duplicate; or
+° if (J (fingerprint(A), fingerprint(B)) ) > k, then the pages are similar;
+Copyright 2011-2022 Ellis Horowitz 24
+
+Slide: s29.png
+------------------------------
+There is another way to determine if two web pages are near duplicates
+The method is called SimHash
+It was developed by Moses Charikar and is described in his paper
+Similarity Estimation Techniques from Rounding Algorithms, STOC
+May 2002
+—_ https://www.cs.princeton.edu/courses/archive/spring04/cos598B/bib/CharikarEstim.
+pdf
+The basic idea is the same as before
+— obtain an f-bit fingerprint for each document
+— A pair of documents are near duplicate if and only if fingerprints are at most k-bits
+apart
+— But in this case instead of using permutations and probability we use SimHash
+Documents D, and D, are near duplicates iff
+Hamming-Distance(Simhash(D ,), Simhash(D,)) <= K
+Typically f= 64 and k =3
+Copyright 2011-2022 Ellis Horowitz 30
+
+Slide: s30.png
+------------------------------
+Ye a a a a — ee
+* Ahash function usually hashes different values to totally different hash values; here is an
+example
+‘the cat sat on the mat'
+‘the cat sat on a mat'
+p3 = 'we all scream for ice cream'
+pl.hash => 415542861
+p2.hash => 668720516
+p3.hash => 767429688
++ Simhash is one where similar items are hashed to similar hash values
+(by similar we mean the bitwise Hamming distance between hash values is small)
+pl.simhash => 851459198
+00110010110000000011110001111110
+p2.simhash => 847263864
+00110010100000000011100001111000
+p3.simhash => 984968088
+00111010101101010110101110011000
++ in this case we can see the hamming distance of the similar items (p1,p2)=4 is small
+whereas (p1,p3)=16 and (p2,p3)=12 are considerably larger
+Copyright 2011-2022 Ellis Horowitz 31
+
+Slide: s31.png
+------------------------------
+¢ The simhash of a phrase is calculated as follows:
+1. pick a hashsize, lets say 32 bits
+2. let V = [0] * 32 # (ie a vector of 32 zeros)
+3. break the input phrase up into shingles, e.g.
+‘the cat sat on a mat'.shingles(2) =>
+#<Set: {"th" "he" Ne mo ce" "eq" Nat" "t moot s" "Sa" “at” oe ow o"
+"on", "n " " a", “A “sy wim", *ma”, “eapry> , ’ , 3 ° ,
+4. hash each feature using a normal 32-bit hash algorithm (MD5 or SHA)
+"th" hash = -502157718 "he" hash = -369049682 ...
+5. for each hash
+if bit; of hash is set then add 1 to V[i]
+if bit; of hash is not set then subtract 1 from V{[i]
+6. simhash bit; is 1 if V[i] > 0 and 0 otherwise
+¢ Simhash is useful because if the Simhash bitwise Hamming distance of two
+phrases is low then their Jaccard coefficient is high
+Copyright 2011-2022 Ellis Horowitz 32
+
+Slide: s31b.png
+------------------------------
+Original text
+Tropical fish include fish found in tropical environments around the world,
+including both freshwater and salt water species.
+Words with weights
+tropical 2 fish 2 include 1 found 1 environments 1 around 1 world 1
+including 1 both 1 freshwater 1 salt 1 water 1 species 1
+8 bit hash values
+tropical fish
+found environments
+world including
+freshwater OO1L11110 salt
+species 11101110
+Vector V formed by summing weights
+1159-93133
+10101011 include 1
+00101101 around 1 0
+11000000 both 10101110
+10110101 water 00100101
+8-bit fingerprint formed from V
+10101111
+7142 4+1*2414-14-1414-141414-14+14-14+1
+-1*2 4-142 4-14174-14-14-14-14+-14+1414+-14-1
+[replace each 0 by -1; multiply each 1 or -1 by weight (freq), sum these for each column]
+
+Slide: s32.png
+------------------------------
+¢ In the case that two numbers have a low bitwise
+Hamming distance and the difference in their bits
+are in the lower order bits then it turns out that
+they will end up close to each other if the list is
+sorted.
+* consider the eight numbers and their bit representations if we sort them
+* 1 37586 1001001011010010 4 934 0000001110100110
+* 2 50086 1100001110100110 7 <-(this column lists hammin, 3 2648 0000101001011000 9
+* 3 2648 0000101001011000 11 distance to previous entry) 6 2650 0000101001011010 1
+* 4 934 00000011101001109 137586 10010010110100105
+© 5 40957 1001111111111101 9 8 40955 1001111111111011 6
+* 6 2650 0000101001011010 9 5 40957 1001111111111101 2
+© 7 64475 1111101111011011 7 2 50086 1100001110100110 9
+© 8 40955 1001111111111011 4 7 64475 1111101111011011 9
+notice that two pairs with very smallest hamming distance
+hdist(3,6)=1 and hdist(8,5)=2 have ended up adjacent to each other.
+Copyright 2011-2022 Ellis Horowitz 33
+
+Slide: s33.png
+------------------------------
+¢ Rather than check every combo we could just check the adjacent
+pairs of the list, each is a good candidate.
+¢ This reduces the runtime
+from n*(n-1)/2 coefficient calculations, O(n7) to
+— n fingerprints calculations O(n) +
+— asort O(n log n) +
+— n coefficient calculations O(n),
+* which is O(n log n) overall;
+*« A problem:
+— there is another pair with a low Hamming distance, /dist(4,2)=2 that
+have ended up totally apart at other ends of the list...
+— sorting only picked up the pairs that differed in their lower order bits.
+Copyright 2011-2022 Ellis Horowitz 34
+
+Slide: s34.png
+------------------------------
+¢ To get around this consider another convenient property of bitwise
+Hamming distance, a permutation of the bits of two numbers preserves
+Hamming distance
+¢ If we permute by 'rotating' the bits, i.e. bit shift left and replace lowest
+order bit with the 'lost' highest order bit we get 'new' fingerprints that
+have the same Hamming distances
+‘rotate' bits left twice if we sort again by fingerprint
+4 3736 0000111010011000 4 3736 0000111010011000
+3 10592 0010100101100000 9 2.3739 0000111010011011 2
+6 10600 0010100101101000 1 3 10592 0010100101100000 11
+119274 01001011010010105 6 10600 0010100101101000 1
+8 32750 0111111111101110 6 1 19274 0100101101001010 5
+5 32758 0111111111110110 2 8 32750 0111111111101110 6
+23739 0000111010011011 9 5 32758 0111111111110110 2
+7 61295 1110111101101111 9 7 61295 1110111101101111 6
+this time the (2,4) pair ended up adjacent
+we also identified the (3,6) and (5,8) pairs as candidates again
+Copyright 2011-2022 Ellis Horowitz 35
+

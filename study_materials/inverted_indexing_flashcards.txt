@@ -1,0 +1,63 @@
+# 🃏 Inverted Indexing - Flashcards
+
+Here are 20 flashcard pairs based on the lecture content:
+
+**1. Q: What is an inverted index?**
+A: A data structure that maps terms to documents, allowing for efficient querying.
+
+**2. Q: What is a vocabulary in the context of an inverted index?**
+A: A list of all distinct words in the text collection, in lexicographical order.
+
+**3. Q: How are terms refined in an inverted file index?**
+A: By case folding, stemming, and removing stop words.
+
+**4. Q: What is a postings list?**
+A: A list of documents that contain a particular term.
+
+**5. Q: What are the two parts of an inverted index?**
+A: The dictionary (index file) and the postings lists.
+
+**6. Q: How are postings lists typically stored?**
+A: On disk, with pointers to each list from the dictionary.
+
+**7. Q: What is case folding in text processing?**
+A: Converting all uppercase letters to lowercase.
+
+**8. Q: What is stemming in text processing?**
+A: Reducing words to their morphological roots.
+
+**9. Q: What are stop words?**
+A: Words that are so common they provide no information.
+
+**10. Q: How does an inverted index allow for efficient querying?**
+A: By storing a 0/1 vector for each term, indicating which documents it appears in.
+
+**11. Q: What is the purpose of a sparse matrix representation of an inverted index?**
+A: To efficiently store and query large datasets.
+
+**12. Q: How do you represent terms as rows in a sparse matrix?**
+A: As 0/1 vectors, where each entry indicates whether the term appears in the corresponding document.
+
+**13. Q: What is the advantage of using an inverted index over traditional querying methods?**
+A: It allows for efficient querying and storage of large datasets.
+
+**14. Q: How does an inverted index handle phrase queries?**
+A: By storing a list of documents that contain each term in the query.
+
+**15. Q: What is biwording in text processing?**
+A: Representing phrases as single units, rather than individual words.
+
+**16. Q: What is grammatical tagging in text processing?**
+A: Labeling words with their part-of-speech tags (e.g., noun, verb, adjective).
+
+**17. Q: How does an inverted index handle distributed indexing?**
+A: By storing a separate index for each node or shard in the system.
+
+**18. Q: What is N-Gram analysis in text processing?**
+A: Breaking down words into their constituent parts (e.g., prefixes, suffixes).
+
+**19. Q: How does an inverted index improve query performance?**
+A: By allowing for efficient filtering and pruning of search results.
+
+**20. Q: What is the main advantage of using an inverted index over traditional indexing methods?**
+A: It allows for efficient querying and storage of large datasets, with minimal overhead.

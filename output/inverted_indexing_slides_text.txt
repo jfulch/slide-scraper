@@ -1,0 +1,599 @@
+Extracted Text from Inverted_Indexing Lecture Slides
+============================================================
+
+Slide: s1.png
+------------------------------
+* Definition of an Inverted index
+¢ Examples of Inverted Indices
+* Representing an Inverted Index
+* Processing a Query on a Linked Inverted Index
+¢ Skip Pointers to Improve Merging
+¢ Phrase Queries
+* biwords
+* Grammatical Tagging
+« N-Grams
+¢ Distributed Indexing
+
+Slide: s2.png
+------------------------------
+« An inverted index is typically composed of a vector containing
+all distinct words of the text collection in lexicographical order
+(which is called the vocabulary) and for each word in the
+vocabulary, a list of all documents (and text positions) in which
+that word occurs
+— This is nothing more than an index that one finds at the back of a book
+¢ Terms in the inverted file index are refined:
+— Case folding: converting all uppercase letters to lower case
+— Stemming: reducing words to their morphological roots
+— Stop words: removing words that are so common they provide no
+information
+
+Slide: s3.png
+------------------------------
+j-th document, term frequency
+Document frequency a
+Index terms df
+computer 3—|__+} D,,4
+database > ++ d,3
+eee
+science 4 —+—+| D,,4 | |
+~ system J 1 ti
+Index file Postings lists
+The two parts of an inverted index. The dictionary (Index file) is usually kept in memory, with
+pointers to each postings list , which is stored on disk: The dictionary has been sorted alphabetically
+and the postings list is sorted by document ID
+
+Slide: s4.png
+------------------------------
+1 A file is a list of words by position
+to First entry is the word in position 1 (first word) —
+20 Entry A562 is th¢ word in position 4562 (4562" word)
+a(1, 4, 46 fp Sy
+entry (11, 20, 3 - <
+file (2, 38)
+list (5, 41)
+position (9, 76, 26)
+positions ( If % . : -
+word (14,A9, 24, 29, 35, 45) JI jp \ >|
+words ( oA Of y ;
+4562 (21, 27)
+The resulting INVERTED File |
+: 1-9
+vis ~
+
+Slide: s5.png
+------------------------------
+* The Query
+— Which plays of Shakespeare contain the words Brutus AND Caesar but NOT
+Calpurnia?
+* One Possible Solution
+— One could grep all of Shakespeare’s plays for Brutus and Caesar, then strip out
+lines containing Calpurnia?
+* Too Slow (for large corpora)
+* Requires lots of space
+¢ This method doesn’t allow for other operations (e.g., find the word Romans
+near countrymen) are not feasible with this approach
+
+Slide: s6.png
+------------------------------
+One way to think about an inverted index is to consider it as a sparse matrix where rows
+Represent terms and columns represent documents
+documents ————> Antony and Cleopatra Julius Caesar The Tempest
+Antony 0
+Brutus
+Caesar
+Calpurnia
+Cleopatra
+J mercy
+worser
+terms
+= 2 20 = = a
+ooo se aw ow oe
+Brutus AND Caesar but NOT Calpurnia
+Hamlet Othello © Macbeth
+0 0 1
+1 0 0
+1 1 1
+0 0 0
+0 0 0
+1 1 1
+1 1 0
+1 if contains
+word, O otherwise
+
+Slide: s7.png
+------------------------------
+* So we have a 0/1 vector for each term.
+* To answer query: take the vectors for Brutus, Caesar
+and Calpurnia (complemented) and do.a bitwise AND.
+* 110100 AND 110111 AND 101111 = 100100
+* So the two plays matching the query are: Anthony and
+Cleopatra, Hamlet
+
+Slide: s8.png
+------------------------------
+¢ Antony and Cleopatra, Act Ill, Scene ii
+* Agrippa [Aside to DOMITIUS ENOBARBUS]:
+° Why, Enobarbus,
+. When Antony found Julius Caesar dead,
+. He cried almost to roaring; and he wept
+. When at Philippi he found Brutus slain.
+Hamlet, Act Ill, Scene ii
+¢ Lord Polonius: | did enact Julius Caesar | was killed i' the Capitol;
+Brutus killed me.
+
+Slide: s9.png
+------------------------------
+* Given | million documents and 500,000 terms
+* The term x Document matrix in this case will have size 500K x 1M or half-
+a-trillion 0’s and 1’s.
+¢ But it has no more than one billion 1’s.
+— So the matrix is extremely sparse, only 0.1% of the elements are 1
+* So instead we use a data structure for an inverted index that exploits sparsity
+and then devise algorithms for query processing
+
+Slide: s10.png
+------------------------------
+For each term 7, we must store a list of all documents that contain 7.
+Linked lists are generally preferred to arrays
+— Dynamic space allocation
+— Insertion of terms into documents easy
+— However, there is space overhead of pointers, though this is not too serious
+Brutus
+Calpurnia
+Caesar
++64
+* 128
+13 P
+21>
+
+Slide: s11.png
+------------------------------
+* Documents are parsed to extract words Tem Doct
+and these are saved with the document ces
+ID i.e a sequence of (Modified token, peesar
+. was 1
+Document ID) pairs led
+capt :
+brutus 1
+Doc 1 Doc 2 ——=> killed ‘
+ie 3
+| did enact Julius So let it be with be 2
+. with. 2
+Caesar | was killed Caesar. The noble casa 2
+i' the Capitol; Brutus hath told you rs 2
+Brutus killed me. Caesar was ambitious told 2
+you 2
+ambitious 2
+
+Slide: s12.png
+------------------------------
+Term Doc #
+. . Term Doc # i
+¢ Ifthe corpus is known in \ ' ambitious __#
+b 1
+advance, then after all enact ‘ brutus 3
+4 capitol 1
+documents have been parsed the “ caesar 1
+inverted file is sorted by terms = *"** : caesar 2
+the 4 enact 1
+capitol 1 hath 1
+res : Refined list of — ! 1
+me 4 terms , 1
+so 2 r
+Initial capture of terms ————————> et z > i; z
+be 2 killed 1
+ith 5 killed 1
+¢ However, on the WWW, casa 2 lt 2
+documents are constantly being = *™*, 2 nebe 3
+added and the terms are rae 3 the 2
+. . you 2 told 2
+constantly increasing caesar 2 you 2
+was 2 was 1
+ambitious 2 was 2
+with 2
+
+Slide: s13.png
+------------------------------
+Term Doc # Term Doc #
+ambitious ambitious
+. . . be be
+¢ Multiple term entriesina = ™*s bats
+single document are caeser caoser
+merged. caesar —
+enact hath
+* Frequency information is = ™
+added. i
+Be eS ed dd es
+NNANNNANNSNASANSSSEoSaNNsanNoenNn
+NVNANNNANNENABNSONMeAaNyaaNoNnNn
+i killed
+julius let
+killed me
+killed noble
+let So
+the
+noble the
+the told
+the you
+was
+told was
+es with
+was.
+with
+Copyright Ellis Hcrowitz, 2011-2013 14
+
+Slide: s14.png
+------------------------------
+¢ The file is commonly split into a Dictionary and a Postings file
+Ss bec #
+Term Doc #
+ambitious
+brutus
+brutus
+capitol
+caesar
+caesar
+did
+enact
+hath
+julius
+killed
+let
+noble
+the
+the
+told
+you
+RVMNANNNANNANSANAaN eo NyoaoaNaonn
+Freq
+ajalalo)aojo|ofo)al oi lala loaf lalla sofas) al
+Term
+ambitious
+brutus,
+capitol
+caesar
+did
+enact
+hath
+julius
+killed
+let
+noble
+the
+told
+you
+was
+with
+Ndocs Tot Freq
+BAN Sana 44455545554 Nana 5
+NNANNNANNANSANAANBeNBANaNND
+Freq
+Baa ease nn ean enn ena
+
+Slide: s15.png
+------------------------------
+* Consider processing the query:
+Brutus AND Caesar
+— Locate Brutus in the Dictionary;
+* Retrieve its postings.
+— Locate Caesar in the Dictionary;
+* Retrieve its postings.
+— “Merge” the two postings (postings are document ids):
+274417 8 >| 16 32 | 64/-128) Brutus
+qx t{Habighbd5 Heb 13h 21 1434| Caesar
+
+Slide: s16.png
+------------------------------
+¢ Walk through the two postings simultaneously, in
+time linear in the total number of postings entries
+2/74/78 > 16 > 32> 64; 128) Brutus
+278 ex
+tHaH 3454 8h 17 42114431 | Caesar
+If the list lengths are m and n, the merge takes O(m+n)
+operations.
+
+Slide: s17.png
+------------------------------
+¢ What is the best order for query processing?
+* Consider a query that is an AND of t terms.
+* For each of the ¢ terms, get its postings, then AND
+together.
+Brutus) “——>L214 | 8] 16] 32] 64/128]
+Calpurnia |"——>L1 | 2] 3] 518 J 16] 21] 34)
+Caesar) "——>[13 [16] | | J TJ 7
+Query: Brutus AND Calpurnia AND Caesar
+
+Slide: s19.png
+------------------------------
+To speed up the merging of postings we
+use the technique of Skip Pointers
+
+Slide: s20.png
+------------------------------
+Augment postings with skip pointers (at indexing time)
+27747748 7) 16 32 +> 64 7 128
+Tm2m37rb 7817 P2131
+Why?
+To skip postings that will not figure in the
+search results.
+How?
+Where do we place skip pointers?
+
+Slide: s21.png
+------------------------------
+» 64 > 128
+Suppose we’ve stepped through the lists until we process 8
+on each list.
+When we get to 16 on the top list, we see that its
+successor is 32.
+But the skip successor of 8 on the lower list is 31, so
+we can skip ahead past the intervening postings. »
+
+Slide: s22.png
+------------------------------
++ skip pointers are added at indexing time; they are shortcuts, and they only help for AND queries and they are
+useful when the corpus is relatively static
++ there are two questions that must be answered:
++ 1. where should they be placed?
++ 2. how do the algorithms change?
+* More skips means shorter skip spans, and that we are more likely to skip. But it also means lots of
+comparisons to skip pointers, and lots of space storing skip pointers. Fewer skips means few pointer
+comparisons, but then long skip spans which means that there will be fewer. opportunities to skip.
++ — A simple heuristic for placing skips, which has been found to work well in practice, is that fora postings list
+of length P, use sgrt{P} evenly-spaced skip pointers. This heuristic possibly can be improved upon as it
+ignores any details of the distribution of query terms.
++ Building effective skip pointers is easy if an index is relatively static; it is harder if a postings list keeps
+changing because of updates. A malicious deletion strategy can render skip lists ineffective.
++ See the YouTube video
++ http:/;www.youtube.com/watch?v=tPsCQOsa7j0
+
+Slide: s24.png
+------------------------------
+¢ We want to answer queries such as “stanford
+university’’ — as a phrase
+¢ Thus the sentence “J went to university at Stanford” is
+not a match.
+— The concept of phrase queries has proven easily understood
+by users; about 10% of web queries are phrase queries
+* No longer suffices to store only
+<term : docs> entries
+
+Slide: s25.png
+------------------------------
+¢ A biword (or a 2-gram) is a consecutive pair of terms
+in some text
+* To improve phrase searching one approach is to index
+every biword in the text
+¢ For example the text “Friends, Romans, Countrymen”
+would generate the bi-words
+— friends romans
+— romans countrymen
+¢ Each of these bi-words is now a dictionary term
+
+Slide: s26.png
+------------------------------
+¢ Consequences
+— Biwords will cause an explosion in the vocabulary database
+— Queries longer than 2 words will have to be broken into
+biword segments
+¢ Example: suppose the query is the 4 word phrase
+stanford university palo alto
+The query can be broken into the Boolean query on biwords:
+stanford university AND university palo AND palo alto
+¢ Matching the query to terms in the index will work, but may
+also produce false positives (i.e. occurrences of the biwords,
+but not the full 4 word query)
+
+Slide: s27.png
+------------------------------
+¢ Store, for each term, entries of the form:
+<number of docs containing term;
+docl: position1, position? ... ;
+doc2: position1, position? ... ;
+etc.>
+
+Slide: s28.png
+------------------------------
+for each term in the vocabulary, we store postings of the form
+docID: position1, position2, ...,
+where each position is a token index in the document.
+Each posting will also usually record the term frequency
+Adopting a positional index expands required postings storage significantly,
+even if we compress position values/offsets
+Lots of documents
+Lots of occurrences,
+<be: 993427,
+1:7, 18, 33, 72, 86, 231;
+2: 3, 149;
+4:17, 191, 291, 430, 434;
+5: 363, 367, ...>
+* Nevertheless, this expands postings storage substantially
+
+Slide: s29.png
+------------------------------
+¢ Extract inverted index entries for each distinct term:
+to, be, or, not.
+* Merge their doc:position lists to enumerate all
+positions with “to be or not to be”.
+— to:
+: 2:1,17,74,222,5514 448, 6,190,429,433; 7:13,23,191; ...
+— be:
+* 1:17,195417,191,291,430,434; 5:14,19,101; ...
+« Same general method for proximity searches
+— In document 4 the word “to” appears in position 16 and the word “be”
+appears in position 17, so they are adjacent
+
+Slide: s30.png
+------------------------------
+« Among possible queries, nouns and noun phrases often appear, e.g.
+“abolition of slavery”, “renegotiation of the constitution”
+« But as seen above, related nouns can often be divided from each other by various
+function words
+* These needs can be incorporated into the biword indexing model in the following
+way:
+— First, we tokenize the text and perform part-of-speech-tagging. We can then
+group terms into nouns, including proper nouns, (N) and function words,
+including articles and prepositions, (X), among other classes.
+— Now deem any string of terms of the form NX*N to be an extended biword.
+Each such extended biword is made a term in the vocabulary.
+— Eg. “renegotiation of the constitution” is mapped to N X X N (two nouns and
+two others), so the others are ignored and the two word phrase “renegotiation
+constitution” is added to the index
+* Programs that identify a word’s part-of-speech tag are based on statistical or rule-
+based approaches and are trained using large corpora
+
+Slide: s31.png
+------------------------------
+TREC
+Frequency
+65824
+61327
+33864
+18062
+17788
+17308
+15513
+15009
+Phrase
+united states
+article type
+los angeles
+Hong kong
+North korea
+New York
+San diego
+Orange county
+Patent
+Frequency Phrase
+975362 present invention
+191625 u.s. pat
+147352 preferred embodiment
+95097 carbon atoms
+87903 group consisting
+81809 room temperature
+78458 seq id
+75850 brief description
+The phrases above were identified by POS tagging; The data above shows that common phrases
+are used more frequently in patent data as patents havea very formal style; many of the TREC
+phrases are proper nouns, whereas patent phrases are those that occur in all patents
+
+Slide: s32.png
+------------------------------
+* Generalizing from bi-words, an n-gram is any sequence of n consecutive
+words
+¢ N-grams can be identified at the time of parsing
+¢ N-grams of all lengths form a Zipf distribution with a few common phrases
+occurring very frequently and a large number occurring with frequency 1
+99 «6.
+* Common n-grams are usually made up of stop words (e.g. “and the” “there
+is”
+* For each n-gram, the inverted index will need pointers to all dictionary
+terms containing it — the “postings”
+* Therefore, the larger the value of n, the larger the amount of space required
+to hold all n-grams
+
+Slide: s33.png
+------------------------------
+* Google made available a file of n-grams derived from the web pages it
+indexed
+* http
+you.
+* Statistics for the Google n-gram sample
+* Num
+* Num
+* Num
+* Num
+* Num
+* Num
+* Num
+* Fors
+://googleresearch. blogspot.com/2006/08/all-our-n-gram-are-belong-to-
+html
+ber of tokens 1,024,908,267,229 (1 trillion, ...)
+ber of sentences 95,119,665,584
+ber of unigrams 13,588,391
+ber of bigrams 314,843,401
+ber of trigrams 977,069,902
+ber of four grams 1,313,818,354
+ber of five grams 1,176,470,663
+pecific examples of 3-gram and 4-gram data see the web page above
+
+Slide: s34.png
+------------------------------
+S. Yang et al, N-gram statistics in English and Chinese: Similarities and differences,
+ICSC, 2007, Int’! Conf. on semantic computing, 454-460
+http://static.googleusercontent.com/external_content/untrusted_dlcp/research.google
+.com/en/us/pubs/archive/33035.pdf
+They analyzed 200 million randomly sampled English and Chinese Web pages and
+concluded:
+The distribution of the unique number of n-grams is similar between English and
+Chinese, though the Chinese distribution is shifted to larger N
+The distribution indicates that on average 1.5 Chinese characters correspond to 1
+English word
+While frequency distributions of uni-grams and bi-grams are very different, the
+frequency distribution for 3-grams and 4-grams are strikingly similar
+
+Slide: s35.png
+------------------------------
+* For web-scale indexing one
+must use a distributed computing cluster
+* Individual machines are fault-prone
+— Can unpredictably slow down or fail
+* How do we exploit such a pool of machines?
+¢ Must we maintain a master machine directing the
+indexing job — considered “safe”.
+¢ Break up indexing into sets of (parallel) tasks.
+¢ Master machine assigns each task to an idle machine
+from a pool.
+
+Slide: s36.png
+------------------------------
+* One approach is to use two sets of parallel tasks
+— Parsers
+— Inverters
+¢ Break the input document corpus into splits
+— Each split is a subset of documents
+* Master assigns a split to an idle parser machine
+¢ Parser reads a document at a time and emits
+(term, doc) pairs
+* Parser writes pairs into / partitions
+* Each fora range of terms’ first letters
+— (e.g., a-f g-p, g-z)— here j=3.
+* Now to complete the index inversion
+
+Slide: s37.png
+------------------------------
+(Parser —{2t] 0421 inverter >+ gp
+fe} ° [e} fe} LSP)
+splits ° : “Cinverter + @-2|
+o / Parser —{afla-p| az a4)
+
+Slide: s38.png
+------------------------------
+* Collect all (term, doc) pairs for a partition
+* Sorts and writes to postings list
+* Each partition contains a set of postings
+
+Slide: s39.png
+------------------------------
+¢ Maintain “big” main index
+* New docs go into “small” auxiliary index
+¢ Search across both, merge results periodically
+* Deletions
+— Invalidation bit-vector for deleted docs
+— Filter docs output on a search result by this invalidation bit-
+vector
+Periodically, re-index into one main index
+
+Slide: InvIndexEx.png
+------------------------------
+Draw the inverted index that would be built for the following document collection.
+(See Figure 1.3 for an example.)
+Doc1_ new home sales top forecasts
+Doc2 home sales rise in july
+Doc3_ increase in home sales in july
+Doc4 july new home sales rise
+SOLUTION. Inverted Index: forecast->1 home->1->2->3->4 in->2->3
+increase->3 july->2->3 new->1->4 rise->2->4 sale->1->2->3->4 top->1
+

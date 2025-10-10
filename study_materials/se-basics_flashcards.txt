@@ -1,0 +1,54 @@
+# 🃏 Se-Basics - Flashcards
+
+Here are 20 flashcard pairs based on the lecture content:
+
+**Q: What is Gopher?**
+A: A TCP/IP application layer protocol for distributing, searching, and retrieving documents over the Internet.
+
+**Q: Who developed Archie in 1990?**
+A: Alan Emtage, P. Deutsch, et al of McGill Univ.
+
+**Q: What does Archie stand for?**
+A: Archives
+
+**Q: What is Veronica and Jughead used for?**
+A: Searching names of text files available through Gopher servers
+
+**Q: When was Excite developed?**
+A: February 1993 by six Stanford undergrad students
+
+**Q: How did Excite make searching more efficient?**
+A: Using statistical analysis of word relationships
+
+**Q: What is the purpose of the Architext project?**
+A: To use statistical analysis to improve search efficiency
+
+**Q: Who bought Excite in 1999?**
+A: @Home (broadband provider) for $6.5 billion
+
+**Q: When did Excite@Home file for bankruptcy?**
+A: October, 2001
+
+**Q: What is the name of the protocol that Archie uses to search files?**
+A: FTP (File Transfer Protocol)
+
+**Q: How does Veronica and Jughead differ from Archie?**
+A: They search names of text files available through Gopher servers, while Archie searches file names on FTP servers.
+
+**Q: What is the difference between a searchable directory and a sophisticated searchable directory?**
+A: A searchable directory allows basic searching, while a sophisticated searchable directory uses improved query matching and includes full-text indexing.
+
+**Q: When did the first search engines appear?**
+A: 1994 (e.g. Galaxy, Yahoo, Lycos)
+
+**Q: What is the purpose of combining results from other search engines?**
+A: To provide more comprehensive search results
+
+**Q: How does auctioning of positions work in a search engine?**
+A: It introduces ranking using content and links.
+
+**Q: What is the name of the first search engine to use commodity hardware for indexing?**
+A: (No specific answer, but this could be a question about one of the early search engines)
+
+**Q: When did Google appear as a search engine?**
+A: 1998

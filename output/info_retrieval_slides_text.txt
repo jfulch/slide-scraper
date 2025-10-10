@@ -1,0 +1,603 @@
+Extracted Text from Info_Retrieval Lecture Slides
+============================================================
+
+Slide: s1.png
+------------------------------
+¢ Information retrieval (IR) has been a computer science subject for many
+decades
+— Traditionally it deals with the indexing of a given set of textual
+documents and the retrieval of relevant documents given a query
+¢ Searching for pages on the World Wide Web has become the “killer app.”
+* There has been a great deal of research on
+— How to index a set of documents (a corpus)
+— How to efficiently retrieve relevant documents
+* Jurafsky and Manning have an excellent video introducing the subject of
+Information Retrieval;
+* — http://csci572.com/movies/01_IntroIR.mp4 (9 minutes)
+[alt. link: use the ‘quick intro' YouTube one below!]
+
+Slide: s2.png
+------------------------------
+. Docl
+2. Doc2
+3. Doc3
+
+Slide: s3.png
+------------------------------
+* 1960-70 s:
+— Initial exploration of text retrieval systems for “small”
+corpora of scientific abstracts, and law and business
+documents.
+— Development of the basic Boolean and vector-space models
+of retrieval.
+— Prof. Salton and his students at Cornell University were the
+leading researchers in the area.
+
+Slide: s4.png
+------------------------------
+* 1980 s:
+— Creation of large document database systems, many run
+by companies:
+* Lexis-Nexis, http://www.lexisnexis.com/
+— information to legal, corporate, government and academic markets,
+and publishes legal, tax and regulatory information
+* Dialog, http://www.dialog.com/
+— data from more than 1.4 billion unique records of key information.
+* MEDLINE, http://www.medlineplus.gov/
+— National Library of Medicine health information
+
+Slide: s5.png
+------------------------------
+* 1990 s:
+— Searching FTP’ able documents on the Internet
+* Archie
+* WAIS
+— After the World Wide Web is invented, search engines
+appear
+« Lycos
+* Yahoo
+* Altavista
+
+Slide: s6.png
+------------------------------
+* 1990 s continued:
+— Organized Competitions
+¢ NIST TREC (Text REtrieval Conferences, http://trec.nist.gov/)
+* Sponsored by National Institute of Standards and Technology, NIST
+— Several New Types of IR Systems are Developed
+1. Recommender Systems: computer programs which attempt to predict items
+(movies, music, books, news, web pages) that a user may be interested in,
+given some information about the user's profile.
+— Often implemented as a collaborative filtering algorithm, examples include:
+» YouTube, perhaps the largest scale such system in existence
+» https://static.googleusercontent.com/media/research.google.com/en//pubs/are
+hive/45530.pdf
+» Amazon’ s recommendation system, see
+https://stackoverflow.com/questions/2323768/how-does-the-amazon-
+recommendation-feature-work
+» http://rejoiner.com/resources/amazon-recommendations-secret-selling-
+online/
+2. Automated Text Categorization & Clustering Systems
+— Useful for grouping news articles
+
+Slide: s7.png
+------------------------------
+* 2000 s
+— Link analysis for Web Search
+* Google started this
+— Extension to retrieval of multimedia: images, music, video
+* It is much harder to index multimedia artifacts
+— Question Answering
+* Question answering systems return an actual answer rather than a
+ranked list of documents
+* Since 1999 TREC has had a Question/Answer track, see
+http://trec.nist.gov/data/qa.html
+
+Slide: s8.png
+------------------------------
+* Database Management
+¢ Library and Information Science
+¢ Artificial Intelligence
+¢ Natural Language Processing
+¢ Machine Learning
+* Data Science
+
+Slide: s9.png
+------------------------------
+Focused on structured data stored in relational
+tables rather than free-form text
+Focused on efficient processing of well-defined
+queries in a formal language (SQL)
+Clearer semantics for both data and queries
+Web pages are mostly unstructured, though the
+Document Object Model (DOM) can provide
+some clues
+
+Slide: s10.png
+------------------------------
+Focused on the human user aspects of
+information retrieval (human-computer
+interaction, user interface, visualization).
+Concerned with effective categorization of
+human knowledge.
+Concerned with citation analysis and
+bibliometrics (structure of information).
+Recent work on digital libraries brings it closer
+to Computer Science & IR.
+
+Slide: s11.png
+------------------------------
+Focused on the representation of knowledge, reasoning, and
+intelligent action.
+Formalisms for representing knowledge and queries:
+— First-order Predicate Logic — a formal system that uses quantified
+variables over a specified domain of discourse
+— Bayesian Networks — a directed acyclic graph model that represents
+a set of random variables and their dependencies
+¢ E.g. A Bayesian Network that represents the probabilistic
+relationships between diseases and symptoms
+Recent work on web ontologies and intelligent information agents
+brings it closer to IR
+— Web Ontology Language OWL is a family of knowledge
+representation languages for authoring ontologies
+— See https://www.w3.org/OWL/
+
+Slide: s12.png
+------------------------------
+Focused on the
+syntactic, semantic, and
+pragmatic analysis of
+natural language text
+and discourse.
+Ability to analyze
+syntax (phrase
+structure) and
+semantics allows
+retrieval based on
+meaning rather than
+keywords
+NLP now uses vast
+amounts of web pages
+as data to run statistical
+and machine learning
+models to infer meaning
+Natural Language Understanding
+Extractive Summarisation
+Natural Language Processing
+Entity Recognition
+NLP
+Natural Language Generation
+Abstractive Text Summarization
+
+Slide: s13.png
+------------------------------
+* A branch of Artificial Intelligence concerned with algorithms that
+allow computers to evolve their behavior based on empirical data
+* Focused on the development of computational systems that
+improve their performance with experience
+* Two major subtypes of machine learning are:
+— Automated classification of examples based on learning concepts
+from labeled training examples (supervised learning).
+— Automated methods for clustering unlabeled examples into
+meaningful groups (unsupervised learning)
+* Machine learning is distinct from data mining, which focuses on
+the discovery of previously unknown properties of the given data
+— Data mining is akin to query analysis and ranking
+
+Slide: s14.png
+------------------------------
+¢ “Data science is an inter-disciplinary field that uses scientific methods,
+processes, algorithms and systems to extract knowledge and insights from
+many structural and unstructured data. Data science is related to data mining,
+machine learning and big data.” wikipedia
+* A data scientist is someone who knows how to extract meaning from and
+interpret data, which requires both tools and methods from statistics and
+machine learning, as well as human review. They spend.a lot of time in the
+process of collecting and cleaning data, because data is never clean
+* For fun watch The Beauty of Data Visualization
+¢ https://www.youtube.com/watch?v=5Zg-C8AAIGg (18 min)
+
+Slide: s15.png
+------------------------------
+Simplest notion of relevance is that the query string appears
+verbatim in the document.
+— Slightly less strict notion is that the words in the query appear
+frequently in the document, in any order (this is like viewing the
+document as a bag of words).
+But that may not retrieve relevant documents that include
+synonymous terms.
+— “restaurant” vs. “café”
+— “PRC” vs. “China”
+And it may retrieve irrelevant documents that include ambiguous
+terms.
+— “bat” (baseball vs. mammal)
+— “Apple” (company vs. fruit)
+— “bit” (unit of data vs. act of eating)
+
+Slide: s16.png
+------------------------------
+¢ Goes beyond using just keyword matching, instead
+— Takes into account the meaning of the words used
+— Takes into account the order of words in the query
+— Adapts to the user based on direct or indirect feedback
+— Takes into account the authority of the source
+
+Slide: s17.png
+------------------------------
+Logical View
+- User needs are part of the i
+- User feedback is provided
+- Queries initiate a search SK,
+the index and docs are retrie
+- Aranking furstion orders th
+results
+Start with a text database; it is indexed; a user interface permits query operations which cause
+a search on the Index; matched documents are retrieved and ranked
+
+Slide: s18.png
+------------------------------
+Parsing forms index words (tokens) and includes:
+— Stopword removal
+* See http://www.ranks.nl/stopwords for google stopwords
+— Stemming: reducing a word to its root
+* More about this later
+Indexing constructs an inverted index of word to
+document pointers.
+Searching retrieves documents that contain a given query
+token from the inverted index.
+Ranking scores all retrieved documents according to a
+relevance metric.
+
+Slide: s19.png
+------------------------------
+WN Re
+A retrieval model specifies the details of:
+— Document representation
+— Query representation
+— Retrieval function
+Determines a notion of relevance.
+Notion of relevance can be binary or continuous (i.e. ranked
+retrieval)
+Three major Information Retrieval Models are:
+. Boolean models (set theoretic) (Chapter 1 in Manning et al)
+. Vector space models (statistical/algebraic) (chapter 2 in Manning eral)
+. Probabilistic models (Chapter 11 in Manning et al)
+
+Slide: s20.png
+------------------------------
+Strip unwanted characters/markup (e.g. HTML tags,
+punctuation, page numbers, etc.).
+Break into tokens (keywords) separating out
+whitespace.
+Stem tokens to “root” words
+‘Stemming and Lenmaisaton
+Remove common stopwords (e.g. a, the, it, etc.).
+Detect common phrases (possibly using a domain
+specific dictionary).
+Build inverted index (keyword > list of docs
+containing it).
+
+Slide: s21.png
+------------------------------
+« A document is represented as a set of keywords.
+* Queries are Boolean expressions of keywords, connected by AND,
+OR, and NOT, including the use of brackets to indicate scope
+* Here is a sample Boolean query with explicit AND, OR, NOT
+operators
+— [[Rio & Brazil] | [Hilo & Hawaii]] & hotel & !Hilton]
+Google Advanced
+Search;
+Note inclusion of
+AND, OR, NOT
+operators
+Google
+Advanced Search
+Find pages with.
+all these words: ia
+this exact word of phrase
+any ofthese words:
+one of these words:
+numbers ranging fom:
+
+Slide: s22.png
+------------------------------
+¢ Popular retrieval model because:
+— Easy to understand for simple queries.
+— Clean formalism.
+* Boolean models can be extended to include ranking
+* Reasonably efficient implementations possible for
+normal queries.
+
+Slide: s23.png
+------------------------------
+¢ Very rigid: AND means all; OR means any
+¢ Difficult to express complex user requests
+¢ Difficult to control the number of documents retrieved
+— All matched documents will be returned
+¢ Difficult to rank output
+— All matched documents logically satisfy the query
+¢ Difficult to perform relevance feedback
+— Ifa document is identified by the user as relevant or
+irrelevant, how should the query be modified?
+
+Slide: s24.png
+------------------------------
+¢ The simple query “Lincoln”
+— Too many matches including Lincoln cars and places named Lincoln as
+well as Abraham Lincoln
+* More detailed query “President AND Lincoln”
+— Returns documents that discuss the President of Ford Motor company
+that makes the Lincoln car
+¢ Even more detailed query “president AND Lincoln AND NOT
+(automobile OR car)”
+— Better, but the use of NOT will remove a document about President
+Lincoln that says “Lincoln’ s body departs Washington in a nine car
+funeral train”
+¢ Perhaps try
+— President AND lincoln AND biography AND life AND birthplace AND gettysburg AND
+NOT (automobile OR car), but too many ANDs can lead to nothing, so
+— President AND lincoln AND (biography OR life OR birthplace OR gettysburg) AND NOT
+(automobile OR car)
+
+Slide: s25.png
+------------------------------
+Assume ft distinct terms remain after preprocessing; call
+them index terms or the vocabulary
+These “orthogonal” terms form a vector space
+size of the vocabulary = Dimension = ¢ = |vocabulary|
+A document D; is represented by a vector of index terms
+Dy = dip dig, 1 did
+Where d,, represents the weight of the j-th term in the i doc
+— but how is the weight computed?
+Both documents and queries are expressed as
+t-dimensional vectors
+
+Slide: s26.png
+------------------------------
+Vocabulary consists of 3 terms
+T; with weights the coefficients
+There are two documents, D, and
+D,; there is one query, Q
+Example:
+D,=3T,+7T)+ T;
+= 0T, + OT, + 2T. ~
+Oe OT, + OTe + eT sr,
+Q=0T, + 0T;+2T;
+«Is D, or D, more similar to Q?
+*How to measure the degree of
+similarity? Distance? Angle?
+Projection?
+
+Slide: s27.png
+------------------------------
+¢ A collection of n documents can be represented in the
+vector space model by a term-document matrix.
+¢ An entry in the matrix corresponds to the “weight” of a
+term in the document; zero means the term has no
+significance in the document or it simply doesn’t exist in
+the document; but we still need a way to compute the
+weight
+T, T, ... T
+Di Wy Wa. Wa
+Dry Wy Wy + | We,
+D, Win Won -+s - Wy
+
+Slide: s28.png
+------------------------------
+¢ One way to compute the weight is to use the term’s
+frequency in the document
+¢ Assumption: the more frequent terms in a document are
+more important, i.e. more indicative of the topic.
+Ji = frequency of term 7 in document j
+¢ May want to normalize term frequency (tf) across the
+entire corpus:
+ff, =f /maxtfis
+
+Slide: s29.png
+------------------------------
+¢ Terms that appear in many different documents are less
+indicative of overall topic
+df; = document frequency of term i
+= number of documents containing termi
+of course df; is always <= N (total number of documents)
+idf, = inverse document frequency of term i,
+= log, (W/ df)
+(N: total number of documents)
+¢ An indication of a term’s discrimination power
+¢ Log is used to dampen the effect relative to tf
+
+Slide: s30.png
+------------------------------
+term df;
+Calpurnia 1
+animal 100
+Sunday 1,000
+fly 10,000
+under 100,000
+the 1,000,000
+idf, = log 1) (N/Af),
+there is one idf value
+idf,
+log(1,000,000/1)=6
+orm NW
+N= 1,000,000
+for each term tina collection
+
+Slide: s31.png
+------------------------------
+A typical combined term importance indicator
+is tf-idf weightin 1g ( note: it is often written with a hyphen, but the
+hyphen is NOT a minus sign; some people replace the hyphen with a dot):
+Wi = tf; -idf; = (1 + log tf;)* log, (N/ df)
+A term occurring frequently in the document but rarely in the rest
+of the collection is given high weight.
+Many other ways of determining term weights have been proposed.
+Experimentally, ¢fidf has been found to work well
+Given a query q, then we score the query against a document d
+using the formula
+Score (q, d) =>\( Uf-idf, q) where tis ing Vd
+
+Slide: s32.png
+------------------------------
+Given a document containing 3 terms with given
+frequencies:
+A(3), B(2), C1)
+Assume collection contains 10,000 documents and
+document frequencies of these 3 terms are:
+A(50), B(1300), C(250)
+Then:
+A: tf=3/3; idf =1log(10000/50) = 5.3; tf.idf = 5.3
+B: tf =2/3; idf =log(10000/1300) = 2.0; tf.idf = 1.3
+C: tf=1/3; idf = 1og(10000/250) = 3.7; | tf.idf = 1.2
+
+Slide: s33.png
+------------------------------
+¢ Distance between vectors d, and d, is captured by
+the cosine of the angle x between them.
+* Note — this is a similarity measure, not a distance
+measure
+ts d
+
+Slide: s34.png
+------------------------------
+¢ A similarity measure is a function that computes
+the degree of similarity between two vectors
+— Look back at the previous lecture slides for the
+definition of similarity
+¢ Using a similarity measure between the query
+and each document has positive aspects:
+— It is possible to rank the retrieved documents in the order
+of presumed relevance.
+— It is possible to enforce a certain threshold so that the
+size of the retrieved set can be controlled.
+
+Slide: s35.png
+------------------------------
+A vector can be normalized (given a length of 1) by
+dividing each of its components by the vector's
+length
+This maps vectors onto the unit circle:
+Then, d|=,| "W,) =1
+Longer documents don’t get more weight
+For normalized vectors, the cosine is simply the dot
+product: - oo f }
+cos(d ,,d,)=d,-d,
+
+Slide: s36.png
+------------------------------
+* Similarity between vectors for the document d; and query
+q can be computed as the vector inner product:
+sim dq) = dsq = yy ‘Wig
+i=l
+where w;, is the weight of term iin document j and w,,
+is the weight of term 7 in the query
+¢ For binary vectors, the inner product is the number of
+matched query terms in the document (size of intersection)
+(Hamming distance)
+¢ For weighted term vectors, it is the sum of the products of
+the weights of the matched terms.
+
+Slide: s37.png
+------------------------------
+e So
+. > om Ry es
+° ne wr or PP <9)
+Binary: oS Ss we
+~D=14 1, 1 1, 0 Size of vector = size of vocabulary = 7
+1, 0,
+0 means corresponding term not found in
+- Q=1, 0, 1,0, 0, 1, document or query
+similarity(D, Q) =3 (the inner product)
+Weighted:
+D, =2T, + 3T,+5T;,
+D,=3T,+7T, + 1T;
+Q=0T,+0T,+ 2T;
+sim(D, , Q) = 2*0 + 3*0 + 5*2 = 10
+sim(D, , Q) = 3*0 + 7*0 + 1*2 = 2
+
+Slide: s38.png
+------------------------------
+* Cosine similarity measures the cosine of the angle
+between two vectors
+* We compute the inner product normalized by the
+vector lengths
+-G Sowy: Wig)
+gy \q| (swe Wig
+CosSim(d, q) =
+D, =2T, +3T,+5T; CosSim(D, , Q) = 10 / W(4+9425)(04044) = 0.81
+D,=3T,+7T,+1T; CosSim(D, , Q)= 2 / VO+49+1)(0+0+44) = 0.13
+Q=0T, +0T,+2T,
+D, is 6 times better than D, using cosine similarity but only 5 times better using
+inner product.
+
+Slide: s39.png
+------------------------------
+1. Convert all documents in collection D to ¢/idf weighted
+vectors, the j” document denoted by d;, for keywords in
+vocabulary V ,
+2. Convert each query to a ¢f/idf weighted vector q
+3. For each din D do
+Compute score s;= cosSim(d; q)
+4. Sort documents by decreasing score
+5. Present top ranked documents to the user
+Time complexity: O(/V|:|D|) Bad for large V & D!
+[V| = 10,000; |D| = 100,000; |V|-|D| = 1,000,000,000
+
+Slide: s40.png
+------------------------------
+* Ranking consists of computing the & docs in the corpus
+“nearest” to the query => k largest query-doc cosines.
+* To do efficient ranking one must:
+— Compute a single cosine efficiently.
+— Choose the k largest cosine values efficiently.
+
+Slide: s42.png
+------------------------------
+Represent the query as a weighted ¢f-idf vector
+represent each document as a weighted ¢fidf vector
+compute the cosine similarity score for the query
+vector and each document vector that contains the
+query term
+Rank documents with respect to the query by score
+Return the top k (e.g. k=10) to the user
+
+Slide: s43.png
+------------------------------
+¢ Preprocess: Pre-compute, for each term, its k
+nearest docs.
+— (Treat each term as a 1-term query)
+— lots of preprocessing.
+— Result: “preferred list” for each term.
+¢ Search:
+— For a¢-term query, take the union of their ¢ preferred
+lists — call this set S.
+— Compute cosines from the query to only the docs in S,
+and choose top k.
+
+Slide: s44.png
+------------------------------
+Simple, mathematically based approach.
+Considers both local (¢/) and global (idf) word
+occurrence frequencies.
+Provides partial matching and ranked results.
+Tends to work quite well in practice despite
+obvious weaknesses.
+Allows efficient implementation for large
+document collections.
+
+Slide: s45.png
+------------------------------
+Missing semantic information (e.g. word sense).
+Missing syntactic information (e.g. phrase structure, word
+order, proximity information).
+Assumption of term independence
+Lacks the control of a Boolean model (e.g., requiring a
+term to appear in a document).
+— Given a two-term query “A B”, may prefer a document
+containing A frequently but not B, over a document that
+contains both A and B, but both less frequently.
+
+Slide: UAC.png
+------------------------------
+O:=-2é
+
