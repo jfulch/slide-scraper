@@ -1,0 +1,1657 @@
+CSCI 572 - MIDTERM STUDY GUIDE - QUICK TOPIC REVIEW
+============================================================
+
+DEDUPLICATION
+----------------------------------------
+KEY CONCEPTS:
+• 1. **De-Duplication** -  (process of identifying and avoiding essentially identical web pages)
+• 2. **Locker Storage** -  (strategy where only single copy of file is stored with multiple links to the single file)
+• 1. **Deduplication**:  - The process of removing duplicate copies of data or URLs while maintaining their unique identities.
+• 2. **Virtual hosts**:  - A feature that allows multiple hostnames to share the same document folder, but have different domain names.
+• 3. **URL structure**:  - The components of a URL (protocol, hostname, path, page name) can be distinct yet still point to the same page.
+• Deduplication: removing duplicate data or records to improve efficiency and reduce storage needs.
+• Data Duplication
+• Deduplication (concept of removing duplicate data)
+• Similarity between web pages (differing slightly)
+• Deduplication (not explicitly mentioned in this slide, but relevant to the topic)
+• * Mirroring ()
+• Apache mirrors
+• Deduplication ( implied by the context of the slide)
+• **Deduplication**: Not explicitly mentioned in the text, but implied to be related to finding software releases from Apache Software Foundation.
+• *  **Deduplication**: Avoiding or minimizing duplicate results in crawling
+• *  **Smarter Crawling**: Optimizing crawling to reduce resources and increase politeness
+• *  **Better Connectivity Analysis**: Combining in-links from multiple mirror sites for accurate PageRank
+• **Deduplication**: The process of identifying and removing duplicate or near-duplicate data.
+• *  Duplicate Problem: Exact match vs. Near-Duplicate Problem: Approximate match
+• *  Cryptographic hashing for exact match detection
+• *  Syntactic similarity with edit-distance measure for near-duplicate detection
+• Cryptographic hash function
+• Input Digest (a fixed-size alphanumeric string)
+• Hash value (also known as message digest, digital fingerprint, or checksum)
+• Properties of a cryptographic hash function:
+• **Cryptographic hash functions**: widely used for data deduplication and security.
+• **Message-digest (MD) hash function**: produces a fixed-size string of characters that represents the original input data.
+• **SHA-1**, **SHA-2**, and **SHA-3** families: types of cryptographic hash functions with different digest sizes.
+• **RIPEMD-160**: family of cryptographic hash functions that produces 160-bit digests.
+• *  **Deduplication**: process of identifying and eliminating duplicate documents
+• *  **Hash function**: a one-way function that takes input data and produces a fixed-size output, known as a hash value or digest
+• *  **Bucketing**: dividing documents into groups based on their hash values
+• Deduplication
+• Hash function
+• Signature
+• Fingerprint
+• Near duplicates
+• Distance measure must satisfy 4 properties:
+• * Sets as unordered collections of objects (e.g., {a, b, c})
+• * Distance between sets (d(A, B))
+• * Similarity between sets (s(A, B))
+• * Jaccard similarity
+• * Clustering
+• **Shingle**: a contiguous subsequence of words in a document
+• **Similarity Measures**: Jaccard(A,B), Containment(A,B)
+• **Resemblance**: similarity measure between two documents (0 <= Resemblance <= 1)
+• *  Deduplication: a process of finding near duplicates in a large dataset
+• *  Tropical fish example: used to illustrate deduplication concept, not essential for exam
+• *  3-shingles: sets of three consecutive words used as a basis for deduplication
+• *  Deduplication
+• *  Jaccard similarity of sets
+• *  Jaccard distance of sets
+• SimHash is a method for determining near duplicates of web pages.
+• Near duplicates are determined by an f-bit fingerprint, where a pair of documents are near duplicates if their fingerprints are at most k-bits apart.
+• 1. **** Ahash function: usually hashes different values to totally different hash values
+• 2. **** Simhash: a type of hashing where similar items are hashed to similar hash values (measured by bitwise Hamming distance)
+• 3. **** Bitwise Hamming distance: a measure of the similarity between two hash values
+• 1. **Simhash**: A technique for calculating a similarity score between two phrases
+• 2. The concept of simhash is useful for determining the similarity between two phrases
+• Deduplication: process of identifying and removing duplicate data or items.
+• **Deduplication**: The process of removing duplicate values from a list by sorting.
+• *  **Deduplication**: reducing runtime by checking adjacent pairs of a list instead of all combinations
+• *  **Adjacent pair approach**: improves efficiency by focusing on nearby elements
+• * Bitwise Hamming distance preserves its value under permutation of bits
+• * Sorting by fingerprint can be used to identify pairs of identical elements
+
+DEFINITIONS:
+• 1. **De-Duplication** -  (identifying and eliminating duplicate web pages)
+• 2. **Locker Storage** -  (storage strategy for maintaining a single copy of a file)
+• 1. **Virtual hosts**:  - A method for hosting multiple websites on a single server, where each website has its own domain name and is accessible through different hostnames.
+• 2. **Deduplication**:  - The process of eliminating duplicate data or URLs while preserving their unique characteristics.
+• **SCOP (Structural Classification of Proteins)**: a database that classifies proteins based on their structural characteristics.
+• **Domain**: a unit of protein structure that performs a specific function.
+• **Fold**: a common three-dimensional structure found in multiple proteins.
+• **Superfamily**: a group of related folds with similar structures.
+• **Family**: a group of related superfamilies with similar structures.
+• Deduplication: The process of identifying and eliminating duplicate copies of data.
+• Snapshot: A copy of a webpage at a particular point in time.
+• **Document Object Model (DOM)**: a tree-based structure for representing an HTML document
+• * Mirroring: systematic replication of web pages across hosts ()
+• Apache mirrors: a collection of servers that mirror or replicate content from a central server (implied by the context)
+• Regions: geographic areas where Apache mirrors are located (listed in the "regions" section)
+• *  **PageRank (measure of importance)**: A measure of a webpage's importance based on its in-links
+• *  **Mirror Sites**: Copies of websites hosted on different servers
+• *  **Clustering**: Grouping similar documents together.
+• *  **Plagiarism detection**: Identifying pairs of documents that have significantly borrowed from each other.
+• *  **Spam detection**: Using near-similarity techniques to identify spam emails.
+• *  Duplicate Problem: A problem where duplicate data needs to be identified.
+• *  Near-Duplicate Problem: A problem where approximate matching is required, e.g., detecting similar documents.
+• *  Cryptographic hashing: A technique used for generating unique digital fingerprints of data.
+• Cryptographic hash function: A hash function that takes an input (message) and returns a fixed-size alphanumeric string (hash value)
+• Hash value: Also known as message digest, digital fingerprint, or checksum
+• Input Digest: A fixed-size alphanumeric string resulting from a cryptographic hash function
+• **MD5 (message-digest)**: a widely used cryptographic hash function producing a 128-bit (16-byte) hash value.
+• **SHA-1**: a type of cryptographic hash function producing a 160-bit (20-byte) hash value.
+• **SHA-2**: a family of algorithms that produce digests of size 224, 256, 384, and 512 bits.
+• Distance measure: a method to compute similarity between two objects or documents.
+• Euclidean distance: a type of distance measure that calculates the straight-line distance between two points in n-dimensional space.
+• Jaccard distance: a type of distance measure that calculates the ratio of the sizes of the intersection and union of sets.
+• Cosine distance: a type of distance measure that calculates the angle between two vectors.
+• Edit distance: a type of distance measure that calculates the minimum number of insertions and deletions needed to transform one string into another.
+• Hamming distance: a type of distance measure that calculates the number of components in which two Boolean vectors differ.
+• * d(A, B) = distance between two sets A and B
+• * s(A, B) = similarity between two sets A and B
+• * Intersection: size of intersection between two sets / size of union
+• * Union: size of intersection between two sets / size of union  (same as above, but note that it's not a standard definition)
+• **Shingle Set (S(D,w))**: a set of shingles for a document D with width w
+• **Jaccard(A,B)**: similarity measure defined as size of (S(A,w) intersect S(B,w)) / size of (S(A,w) union S(B,w))
+• **Containment(A,B)**: similarity measure defined as size of (S(A,w) intersect S(B,w)) / size of (S(A,w))
+• 1.  **Shingle**: a fixed-size substring of a document
+• 2.  **Collision**: when two different documents match each other's shingles (exact wording preserved)
+• 3.  **Stop words**: common words that are typically omitted in deduplication
+• *  Hash value: a unique numerical representation of a string or sequence
+• *  Fingerprints: selected hash values that are considered representative of the original data
+• *  Jaccard similarity (J(A,B)) = |A ∩ B| / |A ∪ B|
+• *  Jaccard distance = 1 - J(A,B)
+• *  k-shingles
+• *  Fingerprint
+• **SimHash**: a method developed by Moses Charikar for determining near duplicates of web pages.
+• **f-bit fingerprint**: a fingerprint obtained for each document using the SimHash method.
+• **k-bits apart**: a measure of the distance between two fingerprints, where a pair of documents are near duplicates if their fingerprints are at most k-bits apart.
+• 1. **** Ahash function: a type of hash function that produces unique hash values for different inputs
+• 2. **** Simhash: a type of hashing that measures similarity between items using bitwise Hamming distance
+• 1. **Shingles**: Breaking down an input phrase into smaller sub-phrases (features)
+• 2. **Hash function**: A mathematical function that takes a feature as input and produces a fixed-size hash value
+• 3. **Bitwise Hamming distance**: The number of positions at which two binary strings differ
+• 8-bit hash values: a way to represent text as a binary number using 8 bits (0s and 1s).
+• Fingerprint formed from 8-bit hash values: a unique representation of the original text.
+• Weights: frequencies or importance of each word in the original text.
+• **Bitwise Hamming Distance (hdist)**: A measure of the difference between two numbers represented in binary, calculated as the number of positions at which the corresponding bits are different.
+• *  **Hamming distance**: the number of positions at which two strings are different (implied by "low Hamming distance")
+• * Bitwise Hamming distance: a measure of the number of different bits between two numbers
+• * Permutation: rearrangement of bits or elements in a specific order
+• * Rotating bits: shifting bits left and replacing lowest order bit with highest order bit
+
+FORMULAS/ALGORITHMS:
+• *  **O(log n)**: time complexity for searching in sorted order (Note: no actual formula or equation is given in this content)
+• Euclidean distance: D([X}..-Xn], [¥1.--sYnl) = sqrt(Sum(x;-y;)*2) i=1...0
+• Jaccard distance: D(x,y) = 1 — SIM(x,y)
+• Cosine distance: (usually represented as an angle between 0 and 180 degrees)
+• * d(A, B) = 0 if A and B are the same
+• * d(A, B) ∈ [0, ∞] (distance is in the range [0, infinity])
+• * s(A, B) = 1 if A and B are the same
+• * s(A, B) ∈ [0, 1] (similarity is in the range [0, 1])
+• * d(A, B) = 1 - s(A, B) (relationship between distance and similarity)
+• * JS(A, B) = size( intersection A ∩ B )/size( union A ∪ B )
+• * SISau(A, B) = IS(A∪B) = size( ( {C1, C3} intersect {C1, C2, C3, C4} )/( {C1, C3} union {C1, C2, C3, C4})
+• **Jaccard(A,B) = size of (S(A,w) intersect S(B,w)) / size of (S(A,w) union S(B,w))**
+• **Containment(A,B) = size of (S(A,w) intersect S(B,w)) / size of (S(A,w))**
+• *  Jaccard similarity (J(A,B)) = |A ∩ B| / |A ∪ B|
+• *  Jaccard distance = 1 - J(A,B) or {(union B) - (intersect B)}/(union-B)
+• Documents D1 and D2 are near duplicates iff Hamming-Distance(Simhash(D1), Simhash(D2)) ≤ κ
+• 1. V[i] = 1 if bit i of hash is set, otherwise V[i] = -1
+• 2. simhash bit i is 1 if V[i] > 0, otherwise it is 0
+• Replace each 0 by -1; multiply each 1 or -1 by weight (freq), sum these for each column:
+• *  **O(n*(n-1)/2)**: original runtime calculation for checking all combinations
+• *  **O(log n) + O(n) + O(log n)**: improved runtime calculation using adjacent pair approach
+
+
+INFO RETRIEVAL
+----------------------------------------
+KEY CONCEPTS:
+• 1. **** Information Retrieval (IR) deals with indexing textual documents and retrieving relevant documents given a query.
+• 2. **** Searching for pages on the World Wide Web has become a primary application of IR.
+• 1. **KEY CONCEPTS** : Information Retrieval
+• + Boolean model of retrieval
+• + Vector-space model of retrieval
+• + Prof. Salton and his students' research at Cornell University
+• * **Creation of large document database systems**
+• * Searching FTP'able documents on the Internet
+• * Archie
+• * WAIS
+• * Lycos
+• * Yahoo
+• * Altavista
+• *  Recommender Systems: computer programs that attempt to predict items users may be interested in, given some information about their profile.
+• *  Automated Text Categorization & Clustering Systems: useful for grouping news articles.
+• *  Link analysis for Web Search
+• *  Extension to retrieval of multimedia (images, music, video)
+• *  Question Answering systems that return an actual answer rather than a ranked list of documents
+• *  Information retrieval (IR) - process of searching for and retrieving relevant information from a large collection
+• *  Data analysis - process of extracting insights and patterns from data
+• *  Machine learning models - algorithms that enable systems to learn from data without being explicitly programmed
+• * Focused on structured data stored in relational tables rather than free-form text
+• * Efficient processing of well-defined queries in formal language (SQL)
+• * Clearer semantics for both data and queries
+• + Human user aspects of interaction ()
+• + User interface ()
+• + Visualization ()
+• + Effective categorization of human knowledge ()
+• + Citation analysis ()
+• + Bibliometrics ()
+• + Digital libraries ()
+• *  Representation of knowledge, reasoning, and intelligent action
+• *  Formalisms for representing knowledge and queries
+• *  Integration with web ontologies and intelligent information agents
+• *  **Syntactic analysis**: focuses on syntax (phrase structure) in Natural Language Processing
+• *  **Semantic analysis**: focuses on semantics to retrieve meaning based on natural language text
+• *  **Pragmatic analysis**: analyzes the relationship between language and context
+• *  **Extractive Summarization**: a method of summarizing text by extracting key information
+• *  **Abstractive Text Summarization**: a method of summarizing text by generating new content
+• 1. **Machine Learning**  - a branch of Artificial Intelligence that allows computers to evolve their behavior based on empirical data
+• 2. Machine learning is focused on developing computational systems that improve their performance with experience
+• 1. **** Data science is an inter-disciplinary field that uses scientific methods, processes, algorithms, and systems to extract knowledge and insights from various types of data.
+• 2. **** Data science is related to data mining, machine learning, and big data.
+• **Notion of Relevance**: Simplest notion of relevance is that the query string appears verbatim in the document.
+• * Goes beyond using just keyword matching
+• * Takes into account the meaning of the words used
+• * Adapts to the user based on direct or indirect feedback
+• *  Indexing: The process of creating an index from a text database to enable fast search operations.
+• *  Search Initiation: Queries are used to initiate a search on the indexed documents.
+• * Parsing forms index words (tokens)
+• * Stopword removal
+• * Stemming
+• * Retrieval model specifies details of document representation, query representation, and retrieval function
+• * Determines notion of relevance
+• * Three major types of retrieval models: Boolean, Vector Space, and Probabilistic
+• **Text Preprocessing**: The process of preparing text data for information retrieval.
+• **Inverted Index**: A data structure that maps keywords to documents they appear in.
+• *  Document representation as a set of keywords
+• *  Boolean queries as expressions of keywords connected by AND, OR, and NOT operators
+• *  Scope indication using brackets
+• Popular retrieval model
+• Boolean models can be extended to include ranking
+• Reasonably efficient implementations possible for normal queries
+• *  Rigid Boolean query model
+• *  Difficulty in expressing complex user requests
+• * Information retrieval challenges: too many matches for simple queries (e.g., "Lincoln")
+• * Importance of query refinement for accurate results
+• *  **Vector Space**: A set of "orthogonal" terms (index terms or vocabulary) that form a vector space.
+• *  **Dimension**: The size of the vocabulary, equal to the number of index terms.
+• **Vocabulary**: consists of 3 terms (T)
+• **Term weights**: coefficients
+• **Documents**: D1 and D2
+• **Query**: Q = 0T + 0T + 2T
+• * Term frequency in a document (more frequent terms are more important)
+• * Normalizing term frequency across the entire corpus
+• Terms that appear in many different documents are less indicative of overall topic.
+• * Term frequency (df)
+• * Inverse Document Frequency (idf)
+• *  Combined term importance indicator
+• *  TF-IDF (Term Frequency-Inverse Document Frequency) weight
+• *  Query-document scoring
+• * **Term Frequency (tf)**: represents the frequency of a term in a document
+• * **Inverse Document Frequency (idf)**: measures the rarity of a term across the entire collection
+• * Cosine of the angle between vectors is a similarity measure (not distance measure)
+• * Similarity measure
+• * Normalizing vectors (  )
+• * Unit circle (  )
+• * **Similarity between vectors for the document d; and query q can be computed as the vector inner product** ()
+• *  Similarity between vectors for documents and queries
+• *  Vector inner product for computing similarity
+• * **** Vector space model
+• * **** Binary vector representation
+• * **** Weighted vector representation
+• **Cosine Similarity**: measures the cosine of the angle between two vectors
+• **Vector Lengths**: normalization factor in Cosine Similarity calculation ( Dj = sqrt(Dwj^2) )
+• **Inner Product**: a measure of similarity between two vectors
+• **Vector Space Model**: a method for representing documents and queries as vectors in a high-dimensional space.
+• *  Ranking: computing the documents in the corpus "nearest" to the query
+• * Representing query and documents as weighted vectors:
+• Preprocessing
+• Preferred list
+• Cosine similarity
+• *  Mathematically based approach
+• *  Combination of local and global word occurrence frequencies
+• * Missing semantic information (e.g. word sense)
+• * Missing syntactic information (e.g. phrase structure, word order, proximity information)
+
+DEFINITIONS:
+• 1. **** Corpus: A set of documents to be indexed.
+• 2. **** Indexing: The process of creating an organized system of information from a corpus.
+• - Publishes legal, tax and regulatory information for legal, corporate, government and academic markets
+• - Contains data from more than 1.4 billion unique records of key information
+• - National Library of Medicine health information database
+• * FTP'able documents: Documents that can be accessed via File Transfer Protocol (FTP)
+• * Archie: A search engine developed in 1990 to index and search FTP sites
+• * WAIS: An information retrieval system that uses a database of articles and documents
+• *  TREC (Text REtrieval Conferences): a series of organized competitions sponsored by NIST to evaluate IR systems.
+• *  Collaborative filtering algorithm: an approach used in recommender systems to predict user preferences based on the behavior of similar users.
+• * Document Object Model (DOM): provides some clues about web page structure
+• -  Human user aspects: The focus on how humans interact with information systems.
+• -  User interface: The means by which users interact with a system or application.
+• -  Visualization: The use of visual elements to represent and communicate information.
+• *  **First-order Predicate Logic**: a formal system that uses quantified variables over a specified domain of discourse
+• *  **Bayesian Networks**: directed acyclic graph model that represents a set of random variables and their dependencies
+• *  **Web Ontology Language (OWL)**: a family of knowledge representation languages for authoring ontologies
+• *  **Entity Recognition**: the process of identifying specific entities in natural language text (e.g. people, places, organizations)
+• *  **Natural Language Processing (NLP)**: a field of study that focuses on the interaction between computers and human language
+• *  **Natural Language Generation (NLG)**: the process of generating human-like language from a computer system
+• 1. **Supervised Learning**  - automated classification of examples based on learning concepts from labeled training examples
+• 2. **Unsupervised Learning**  - automated methods for clustering unlabeled examples into meaningful groups
+• 3. **Data Mining**  - the discovery of previously unknown properties of given data
+• 1. **** A data scientist is someone who knows how to extract meaning from and interpret data.
+• 2. **** The role of a data scientist requires both tools and methods from statistics and machine learning, as well as human review.
+• None explicitly stated
+• *  Text Database: A collection of unstructured text data that is used as input for information retrieval systems.
+• *  User Interface: The part of the system that allows users to interact with the search engine, submit queries, and view results.
+• * Inverted index
+• * Query token
+• * Relevance metric
+• * Binary relevance: a binary (yes/no) notion of relevance
+• * Continuous relevance: ranked retrieval, where documents are ranked in order of relevance
+• * Set theoretic model: Boolean model (chapter 1 in Manning et al)
+• * Statistical/algebraic model: Vector Space model (chapter 2 in Manning et al)
+• * Chapter 11 in Manning et al refers to Probabilistic models
+• **Tokenization**: Breaking down text into individual words or tokens.
+• **Stemming**: Reducing words to their root form (e.g. "running" becomes "run").
+• **Stopwords**: Common words that do not carry much meaning, such as "a", "the", etc.
+• *  Keyword: a word representing a document
+• *  Query: a request for information, expressed as a Boolean expression of keywords
+• *  AND operator: combines two or more keywords to search for documents containing all specified keywords
+• *  OR operator: combines two or more keywords to search for documents containing at least one of the specified keywords
+• *  NOT operator: excludes specific keyword from search results
+• *  AND: means all; OR: means any (in the context of Boolean queries)
+• *  **Index Terms**: Distinct terms remaining after preprocessing.
+• *  **Vocabulary**: Set of index terms.
+• *  **Document Vector**: A vector representing a document in the vector space, with each element being the weight of an index term.
+• **Vocabulary**: a set of terms used to represent documents or queries
+• **Term weights**: numerical values assigned to each term in the vocabulary
+• **Document**: a unit of information represented as a set of weighted terms
+• **Query**: a request for information, represented as a set of weighted terms
+• * tf: term frequency in a document (number of times a term appears in a document)
+• *  df; = document frequency of term
+• *  = number of documents containing term i
+• *  N: total number of documents
+• +  df; = document frequency of term
+• +  = number of documents containing term i
+• +  N: total number of documents
+• * df: document frequency, number of documents containing a term
+• * idf: inverse document frequency, measures importance of a term in the collection
+• Note that I didn't mark any of these examples as [EXAMPLE] since they are not concrete examples, but rather illustrative cases. Instead, I categorized them under .
+• *  tf-idf: a method for calculating the importance of a term in a document
+• *  N/df: the number of documents divided by the frequency of the term (denominator)
+• *  IDF: Inverse Document Frequency, a measure of how rare a term is across all documents
+• * Term Frequency (tf): ratio of the frequency of a term in a document to the total number of terms in the document
+• * Inverse Document Frequency (idf): logarithm of the ratio of the total number of documents to the number of documents containing the term
+• * Distance between vectors d, and d, captured by cosine of the angle between them
+• * A similarity measure is a function that computes the degree of similarity between two vectors
+• * For binary vectors, the inner product is the number of matched query terms in the document (size of intersection) (Hamming distance) ()
+• * For weighted term vectors, it is the sum of the products of the weights of the matched terms. ()
+• *  Binary vectors: vectors where each element is either 0 or 1 (representing matched or non-matched terms)
+• *  Weighted term vectors: vectors where each element represents the weight of a term
+• *  Hamming distance: the number of matched query terms in the document
+• * **** o: term in the document or query (denoted by 1 if present, 0 if not)
+• * **** S: size of vocabulary (number of unique terms)
+• None extracted, but note that "Cosine Similarity" and "Vector Lengths" are key concepts with implications for understanding the definition.
+• **idf (Inverse Document Frequency)**: a measure of how rare a word is in the document collection.
+• **cosSim (Cosine Similarity)**: a measure of similarity between two vectors, used to compute the score of each document.
+• * **Weighted vector**: A vector where each component represents the importance of a particular feature or term, often calculated using techniques like TF-IDF.
+• * Term independence: the assumption that terms in a query are independent of each other
+
+FORMULAS/ALGORITHMS:
+• *  **Dv = (di1, d12, ..., dim)**: Document D represented as a vector of index terms, where di is the weight of the j-th term in the document.
+• idf, = log, (W/ df)
+• +  idf, = log, (W/ df)
+• * idf = log(N/df) , where N is the total number of documents (1,000,000)
+• *  w = (1 + log(tf))*log(N/df)
+• Note that there are no mathematical formulas or step-by-step algorithms in this content, so I did not mark anything as  or [ALGORITHM]. However, the properties and procedures mentioned may be useful to study for the midterm exam.
+• * a|~ = √(a_1^2 + ... + a_n^2) (  ) - implied formula for calculating vector length
+• * cos(θ)=d⋅d' / (√(d^2) \* √(d'^2)) (  ) - explicit cosine formula
+• +  sim(d,q) = dsq = ∑ w_id \* w_qi
+• *  sim(d,q) = dsq = ∑ w_id \* w_qi
+• *  (for binary vectors) Hamming distance: size of intersection between query and document terms
+• * **** Size of vector = size of vocabulary = 7
+• * **** similarity(D, Q) = inner product of D and Q vectors
+• * **** sim(D, , Q) = weighted sum of term frequencies
+• CosSim(d, q) = (d · q) / (√(d^2) * √(q^2))
+• dj = sqrt(Dwj^2)
+• CosSim(D1, Q) = 10 / V(4+9+25)(0+0+44) = 0.81
+• CosSim(D2, Q) = 2 / V(9+4941)(040+44) = 0.13
+
+
+INVERTED INDEXING
+----------------------------------------
+KEY CONCEPTS:
+• *  Inverted index: a data structure used to improve search efficiency
+• *  Linked Inverted Index: an extension of inverted indexing that links words with their occurrences
+• *  Distributed Indexing: a technique for scaling inverted indexes across multiple machines
+• * Inverted index is a data structure composed of a vocabulary (vector) containing distinct words in lexicographical order
+• * Vocabulary includes lists of documents and text positions where each word occurs
+• 1. **** Inverted Indexing: A data structure used for efficient text search.
+• 2. **** Dictionary (Index File): The part of an inverted index that stores terms in alphabetical order with pointers to their postings lists.
+• 3. **** Postings List: The part of an inverted index that stores a list of document IDs where a term appears.
+• * Inverted indexing
+• * List of words by position
+• * List of positions by word
+• 1. ** Inverted Index**: Considered as a sparse matrix where rows represent terms and columns represent documents.
+• 2. ** Sparse Matrix**: Used to represent an inverted index, where most entries are zero.
+• * Inverted indexing ()
+• * Bitwise AND operation in inverted indexing ()
+• *  Indexing: The process of creating a data structure that allows for efficient retrieval of specific information from a large dataset.
+• * Inverted indexing ()
+• * Sparsity of term-document matrix ()
+• Inverted Indexing: Storing a list of all documents that contain a specific term.
+• Inverted Indexing: A data structure used to store words and their corresponding documents.
+• 1. **Inverted Indexing**: An index data structure for efficient information retrieval
+• 2. Understanding of a corpus: Knowledge of the document collection before parsing
+• **KEY CONCEPTS: **
+• 1. **Inverted Index**: A data structure that stores a list of documents containing each unique term ()
+• 2. Importance of efficient indexing for search queries ()
+• **Inverted Indexing**: a data structure used to index and store terms in a document collection.
+• **Dictionary file**: contains a list of unique terms (index entries) with their corresponding frequencies and document numbers.
+• **Postings file**: contains the locations where each term appears in the documents, along with the frequency information.
+• + Inverted Indexing
+• + Dictionary (inverted index)
+• + Postings (document ids)
+• * Inverted indexing ()
+• **Inverted Indexing**: The process of storing and retrieving documents based on their indices, allowing for efficient querying.
+• **Query Processing**: The process of evaluating a query to retrieve relevant documents from the index.
+• *  **Inverted Indexing**: not mentioned explicitly, but related to the technique described
+• *  **Skip Pointers**: main idea discussed in this slide
+• - **Skip pointers**:
+• - **Posting augmentation**:
+• *  Inverted Indexing
+• *  Posting lists
+• *  Successor (in the context of postings)
+• *  Skip successor (of a posting on a lower list)
+• 1.  **Skip Pointers**: shortcuts added at indexing time to help with AND queries
+• 2.  **Static Corpus**: when the corpus is relatively static, skip pointers are more useful
+• 3.  **Posting List Length (P)**: the length of a postings list affects the placement of skip pointers
+• * Inverted indexing
+• * Phrase queries
+• +  Biword (or 2-gram) concept: consecutive pair of terms in a text
+• +  Indexing biwords to improve phrase searching
+• 1. Inverted Indexing
+• 2. Biwords
+• Inverted Indexing: a data structure used to store and retrieve documents based on their terms.
+• * ** Inverted Indexing**: Storing postings of the form docID: position1, position2, ..., where each position is a token index in the document.
+• * ** Positional Index**: Expanding required postings storage significantly, even if we compress position values/offsets.
+• * Inverted indexing: a method for extracting and merging doc:position lists for multiple terms ()
+• * Proximity searches: searching for adjacent words in a document ()
+• * Frequency analysis in patent data*
+• 1. N-grams are sequences of consecutive words
+• 2. N-grams can be identified at the time of parsing
+• 3. The inverted index will need pointers to all dictionary terms containing an n-gram (postings)
+• *  Inverted Indexing: A technique used to speed up information retrieval by storing an index of words in a document along with their locations.
+• *  N-grams: A sequence of n items (e.g., words, characters) from a given text.
+• 1.  **Inverted Indexing**: The concept of inverted indexing is not explicitly mentioned in this slide, but it can be inferred from the context.
+• 2.  **N-gram statistics**: The study focuses on analyzing n-grams (sequences of characters or words) in English and Chinese texts.
+• *  **Distributed Computing Cluster**: A pool of machines used for web-scale indexing to improve efficiency and reliability.
+• *  **Fault-tolerance**: The ability of individual machines in a distributed cluster to handle unpredictable slowdowns or failures.
+• Inverted Indexing
+• Parallel tasks (Parsers and Inverters)
+• Document corpus splitting
+• Inverted Indexing
+• Posting (refer to sign "assign")
+• * Inverted indexing
+• *  Inverted indexing: a method for searching across multiple indices
+• *  Main index vs. auxiliary index: maintaining two separate indices for efficient search and updates
+• *  Big main index vs. small auxiliary index: trade-off between space and search efficiency
+• 1. **** Inverted Indexing: a data structure used to efficiently store and retrieve information from a document collection.
+
+DEFINITIONS:
+• *  Inverted index: an index data structure used to store the location(s) of each word in a document collection
+• *  Linked Inverted Index: an extension of inverted indexing that stores pointers to linked words with their occurrences
+• *  Skip Pointers: pointers that allow for efficient merging of sorted lists
+• * Case folding: converting all uppercase letters to lowercase
+• * Stemming: reducing words to their morphological roots
+• * Stop words: words that are so common they provide no information
+• 1. **** Term Frequency: Not explicitly defined, but implied as the frequency of a term in a particular document (e.g., "ae" has a certain frequency in the system 1 document).
+• 2. **** Document Frequency (df): The number of documents that contain a particular term.
+• 3. **** Inverted Index: A data structure that stores terms and their corresponding postings lists.
+• * *Inverted file*: A list of positions by word
+• * Each entry in the inverted file represents a word and its corresponding positions
+• 1. ** Term**: A single word or phrase in a document (e.g., "Antony", "Brutus", etc.)
+• 2. ** Document**: A unit of text that is indexed by the inverted index (e.g., "Antony and Cleopatra", "Julius Caesar", etc.)
+• + Complemented vector (implied as "complemented" in the text) (): a vector that has been modified to represent the absence of certain terms.
+• * Term-document matrix: a matrix representing the presence or absence of terms in documents ()
+• Linked lists: Data structures that allow for dynamic space allocation and easy insertion of terms into documents.
+• Inverted indexing: A technique used to efficiently store and retrieve information in search engines and databases.
+• [PRIORITY] HIGH for Inverted Indexing concept and  Linked lists
+• **Document ID**: Unique identifier assigned to each document.
+• **Modified Token**: Modified form of a word, e.g., "Caesar" becomes "caesar".
+• **Sequence of (Modified token, Document ID) pairs**: A list of tuples containing the modified word and its corresponding document ID.
+• 1. Inverted File: A sorted list of terms with their corresponding documents
+• **DEFINITIONS: **
+• 1. **Term**: A word or phrase in a document ()
+• 2. **Document Frequency (DF)**: The number of documents containing a particular term ()
+• 3. **Term Frequency (TF)**: The frequency of a term within a document ()
+• **Term Frequency (TF)**: the number of times a term appears in a single document.
+• **Document Frequency (DF)**: the number of documents that contain a particular term.
+• **Inverted Index**: a data structure used to efficiently retrieve the locations and frequencies of terms in a document collection.
+• + Dictionary: a data structure that stores words and their corresponding postings
+• + Postings: the document ids associated with a word in the dictionary
+• *  **Postings**: A collection of document IDs that contain a specific term.
+• *  **AND Operator**: A logical operator that combines two or more terms, returning only documents that contain all specified terms.
+• *  Inverted Indexing: A data structure that stores references to words in documents, allowing for efficient retrieval.
+• *  Posting lists: Lists of postings that contain specific word or phrase occurrences.
+• *  Successor (in the context of postings): The next posting after a given posting.
+• 1.  **Skip Pointers**: shortcuts that help for AND queries and are useful when the corpus is relatively static
+• 2.  **Posting List**: a list of documents containing a particular term
+• * Biword (or 2-gram):  A consecutive pair of terms in a text
+• * Dictionary term:  Each bi-word is treated as a single dictionary term
+• 1. Vocabulary database : a collection of words or phrases used in indexing
+• 2. Boolean query on biwords : a search query broken down into smaller segments (biwords)
+• *  **Inverted Entry**: an entry in the inverted index containing information about a specific term, including:
+• * ** Posting**: A record of the occurrences of a term in a document, including its frequency and positions.
+• * ** Token index**: The index of a token (word) within a document.
+• * POS tagging: Part-of-Speech tagging, a process of automatically assigning grammatical categories to words in a text*
+• 1. N-grams: any sequence of consecutive words
+• 2. Postings: pointers to all dictionary terms containing a given n-gram
+• *  Token: An individual item in a dataset (e.g., word, character).
+• *  Bigram: A sequence of two items (e.g., words).
+• *  Trigram: A sequence of three items (e.g., words).
+• *  Four-gram: A sequence of four items (e.g., words).
+• 1.  **N-gram**: A sequence of n items (characters, words, etc.) from a text.
+• 2.  **Uni-gram**, **Bi-gram**, **3-gram**, **4-gram**: Specific types of n-grams with different lengths.
+• *  **Master Machine**: A central machine that directs the indexing job and assigns tasks to idle machines in the pool.
+• *  **Indexing Job**: The process of creating an inverted index for efficient searching and retrieval of data.
+• Parser: reads documents and emits (term, doc) pairs
+• Inverter: complements the parser to complete index inversion
+• Split: a subset of documents assigned to an idle parser machine
+• Posting: a data structure that stores the locations of words in a document
+• Inverted Index: an index data structure used for fast and efficient searching of text documents
+• * Partition: a subset of documents or terms (not explicitly defined, but implied)
+• *  Invalidating bit-vector: a data structure used to mark deleted documents in the auxiliary index
+• 1. **** Inverted Index: a mapping of keywords or phrases in a document collection to the documents that contain them.
+• 2. **** Document Collection: a set of documents that are being indexed and searched.
+
+FORMULAS/ALGORITHMS:
+• Note that there are no mathematical formulas or algorithms in the provided content, so I couldn't mark any as  or [ALGORITHM]. The priority ratings are subjective and based on the assumption that a midterm exam would focus on understanding how an inverted index is created and used.
+• * 110100 AND 110111 AND 101111 = 100100 ()
+• * The size of the term-document matrix is approximately 500K x 1M = half-trillion elements, but with no more than one billion 1's ()
+• Note that there are no mathematical formulas or equations related to inverted indexing in this content, so I did not mark any as .
+• **FORMULAS/EQUATIONS: **
+• * O(m+n) operations for merge ()
+• Note that I did not mark any of the content as  since there are no mathematical formulas presented.
+• Note that the mathematical formulas are minimal in this content, so there is no  category.
+
+
+QUERYING
+----------------------------------------
+KEY CONCEPTS:
+• *  Query language processing
+• *  Boolean operators (AND, BUT NOT)
+• *  Search engine functionality (returns unexpected results)
+• Boolean query
+• Advanced Search page
+• ANDing ( logical operator)
+• ORing (logical operator)
+• NOTing (logical operator)
+• *  **Search Engine Query**: Understanding how search engines process queries is crucial in querying.
+• *  Implicit AND: when searching for multiple keywords at once, Google/Bing will automatically search for pages that contain ALL of your keywords.
+• *  Searching for phrases in Google requires putting the phrase in quotes.
+• *  Using the exact phrase within quotes will show pages that contain the exact phrase, not just the individual words.
+• *  General principles of electricity supply systems
+• *  Law of electricity (no clear definition provided)
+• *  Basic principle of electric generator
+• *  Theory of electromagnetism (implied through discussion on magnetism and electromotive force)
+• Querying: searching for pages that contain words similar to search terms
+• Word Variations or Automatic Stemming: feature of Google that finds pages with similar words (e.g. "child" and "children")
+• *  Google favors results that have search terms near each other
+• *  Google gives higher priority to pages with terms in the same order as the query
+• *  Google is NOT case sensitive
+• *  Case sensitivity in querying (e.g., "bush" vs. "Bush")
+• 1. **Querying**:  - The process of retrieving data from a database or system.
+• 2. **Database Management**:  - A field that deals with storing, organizing, and managing large amounts of data in databases.
+• 3. **Disney+**:  - A streaming service provided by The Walt Disney Company.
+• * Boolean OR operator
+• * Precedence of Boolean operators (OR > AND)
+• * All query terms are implicitly ANDed
+• * OR has higher precedence than AND
+• *  Full-word wildcard query
+• *  Google search functionality for exact phrases
+• *  Use of quotes to search for exact phrases
+• *  Stop words and their effect on search queries
+• *  Query modifiers Search
+• *  Search Operators
+• * Restricting search results to specific file types using filetype:
+• * Understanding that the "dot" in file extension is optional
+• * `inanchor` operator restricts results to pages containing specific query terms in anchor text or links
+• * `allinanchor` operator restricts results to pages containing all specified query terms in anchor text on links
+• *  Query types: By text, URLs, and titles
+• *  Importance of searching body text only
+• * Intitle: operator restricts search results to documents containing a particular word in its title.
+• * Restricting search results to documents containing a particular word in its URL using `inurl:*` and `inurl:disney` ()
+• *  Restricting search results to a specific site using `site:` operator
+• *  Importance of exact matching between `site:` and domain
+• *  Using site: in conjunction with another search term or phrase.
+• * Deepfaking the Mind
+• * Brain-Computer Interfaces (BCIs)
+• * Related lists web pages that are "similar" to a specified web page
+• * Querying  (note: this may not be explicitly stated in the slide, but it's implied as the topic of discussion)
+• *  Google's information retrieval system (implying the concept of a search engine)
+• *  Specific information about particular web pages (suggesting the idea of searching for specific data)
+• * Querying with specific keywords can trigger special processing in search engines
+• * Special processing in search engines for specific keyword queries, e.g., "stocks:"
+• *  Google operators: special symbols used to refine search results
+• *  Using math expressions in searches (e.g., 12 + 34+ 10 * (150/ 7))
+• *  Utilizing dictionary definitions in searches (e.g., define:antidisestablishmentarianism)
+• *  Tracking numbers and airline flight numbers for specific search results
+• **KEY CONCEPTS **
+• 1. **Google Phonebook Operators**:  - Different types of Google phonebook search operators.
+• 2. **Privacy Violations**:  - Concerns raised about Google phonebook feature.
+• **Statistical models**: The lecture mentions that Google built a statistical model with the help of teachers to classify reading levels.
+• **Reading level classification**: The feature is based on classifying webpages into different reading levels using statistical models.
+• *  Google introduced the Wonder Wheel in 2009, a flash-based interface that provided possible interpretations for search queries.
+• *  The Wonder Wheel was removed in 2011 but restored in 2012 with a renaming of the "wheel of possible interpretations".
+• *  In 2014, Google re-focused the Wonder Wheel to help advertisers choose keywords.
+• *  Google Code Search was a free beta product that allowed web users to search for open-source code on the internet.
+• *  It used a regular expression engine to search for code in various formats, including tar.gz, CVS, and Subversion.
+• *  The service employed a methodology that combined trigram indexing with a custom-built regular expression engine.
+• *  It supported POSIX extended regular expression syntax.
+• **Patent search**: The process of searching for patents using various parameters.
+• *  Google Books: a digital database of scanned books and magazines
+• *  Optical Character Recognition (OCR): process of converting scanned texts to digital text
+• *  Copyright violations: potential issue with scanning and storing copyrighted materials
+• *  Editing errors: OCR process may introduce many errors into scanned texts
+• Querying
+• Full View
+• Snippet View
+• Limited View
+• Querying: HIGH (Understanding querying concepts is crucial for exam)
+• *  Dynamic character grouping
+• *  Consistency contains toporapic moos (Note: This appears to be a typo or unclear concept, but I'll keep it as is)
+• * Relevance Feedback
+• * Query Expansion
+• * Peer-to-peer processing ()
+• * Feedback mechanism for relevance of retrieved documents ()
+• * Query processing on peer-to-peer networks ()
+• **Enhanced Related Searches**: Google has improved its related searches feature to provide more relevant results.
+• *  Querying
+• *  Search engines (Yahoo!, Bing)
+• *  Related searches
+• **Query Optimization**: The process of improving the performance of a query by optimizing its execution plan.
+• * Auto-completion is a form of relevance feedback
+• * Predicting word or phrase that the user wants to type in without actually typing it in completely
+• *  **Autocomplete**: Google's feature that provides suggestions based on user input
+• *  **Experimental feature**: Auto-complete was initially an experimental feature in 2004
+• * Autocomplete feature in Google search
+• * Intellisense or suggestion feature in Google search
+• 1. **Autocomplete feature**  - The ability of a search engine to display results for a partially typed query, including links to related searches.
+• *  Auto-complete suggestions
+• *  Limitations of auto-complete systems (e.g., running out of alternatives)
+• * Querying and search results (mark with )
+• * Search engine algorithms and ranking systems (mark with )
+• + Query: A request for information submitted to a search engine (implied by )
+• + Search result: The output provided by a search engine in response to a query (implied by )
+• 1. **Auto-Completion**: Bing's use of previous queries to make suggestions before user enters a single character
+• 2. **Querying**: Process of searching for information on a search engine like Bing
+• *  **Querying**: Bing will offer results using corrected spelling and include a link for the user to correct their query
+• *  **Search Engine Results**: Displaying multiple sources, including images, videos, and links
+• *  Statistical measure for evaluating processes that produce lists of possible responses to samples of queries
+• *  Mean Reciprocal Rank (MRR) is a statistical measure
+
+DEFINITIONS:
+• Query box: A text field in a web search engine where users can enter keywords or phrases to initiate a search.
+• Boolean query: a search method that allows users to enter specific keywords and operators to refine their search results
+• *  **SOY cose som** ( acronym or term not explicitly defined)
+• *  **Google apple orchard computer**: Example of a query
+• *  AND operator: used to combine two or more keywords in a search query (e.g., "disney AND disneyland AND pirates").
+• *  Electromotive force (EMF) - "The pressure that is put on free electrons that causes them to flow"
+• *  Magnetism
+• *  Electric generator
+• Stop Words: common words like "the," "and," etc. that are ignored in searches
+• *  Case sensitivity: Google's ability to treat uppercase and lowercase letters the same way
+• *  None explicitly stated
+• 1. **Streaming Service**:  - A type of service that provides access to content on-demand over the internet.
+• 2. **Database**:  - A collection of organized data stored in a way that allows for efficient retrieval and manipulation.
+• * Boolean OR: an operator used to combine keywords in a search query, allowing for multiple possible matches
+• * OR always in all caps
+• * Implicit ANDing: The default behavior of search engines to treat all query terms as ANDed, unless specified otherwise
+• * Precedence: The order in which operations or operators are performed in a query
+• *  **Wildcard**: a symbol used in search queries to represent one or more characters (e.g. +)
+• *  **Stop word**: a common word that is ignored by the search engine (e.g. "the", "and")
+• *  daterange: Service - no definition provided ( likely a search operator)
+• *  filetype: allinanchor:, allintext:, allintitle:, allinurl:, cache:, define:, jnanchor: - no clear definition, appears to be list of search operators
+• * filetype: restricts search results to files with a specific suffix
+• * Filetype: should not have spaces between filetype and the file extension
+• * Optional inclusion of the dot (.) in file extensions
+• * Anchor text: the text on links to a page
+• *  Intext: A query type that searches for the exact phrase within the body text (e.g., "Pirates of the Caribbean")
+• * intitle: - an operator that restricts search results to documents containing a particular word in its title.
+• *  `site:` operator - restricts search results to a specific website or domain
+• *  Domain - the name of a website (e.g. google.com, cs.stanford.edu)
+• * None in this specific content, but it's worth noting that "web cache" is a term related to web searching and caching. However, since there are no specific definitions provided, I won't mark it as .
+• * Qos: aan + There can be no space between related: and the URL.
+• * "Related:" is a search operator that lists web pages similar to a specified page
+• * Stock ticker symbols
+• *  Antidisestablishmentarianism: a term used to demonstrate the limits of the English language
+• *  Tracking number: a unique code provided by shipping companies like FedEx or UPS
+• **DEFINITIONS **
+• 1. **Phonebook:**  - Searches the entire Google phonebook.
+• 2. **rphonebook:**  - Searches residential listings only.
+• 3. **bphonebook:**  - Searches business listings only.
+• **Statistical model**: A mathematical representation of a system or process that uses statistical methods to make predictions or classify data.
+• **Reading level**: The complexity or difficulty of written content, often measured by factors such as vocabulary, sentence structure, and grammar.
+• *  Trigram index: A method of indexing data to enable fast searching.
+• *  Regular expression engine: A software component that searches for patterns in text or code using regular expressions.
+• *  POSIX extended regular expression syntax: A standard for regular expressions used in Unix-like operating systems.
+• *  OCR: Optical Character Recognition, the process of recognizing and extracting text from images or scans
+• Querying: The process of searching for specific information in a database or repository.
+• Full View: A mode of viewing search results that displays the entire content of each result.
+• Snippet View: A mode of viewing search results that displays a brief summary or excerpt of each result.
+• Limited View: A mode of viewing search results that restricts the amount of information displayed for each result.
+• Full View, Snippet View, and Limited View: MEDIUM (Knowledge of these modes is important but not as critical as querying concepts)
+• *  Google Scholar: freely accessible search engine that indexes the full text or metadata of scholarly literature
+• * Peer-to-peer processing: "a way to utilize peer-to-peer networking for distributed computing" ()
+• * Distributed computing: not explicitly defined, but implied as a concept related to peer-to-peer processing ()
+• **Category-based search**: Searching for a category, such as "rock bands" or "german cars", to get related searches and top members.
+• **Index**: A data structure that enables fast lookup, insertion, and deletion of data in a database.
+• * Auto-completion: predicting word or phrase that the user wants to type in without actually typing it in completely
+• * Relevance feedback: a form of auto-completion
+• *  **Autocomplete**: A feature that predicts the next character or word a user is likely to type
+• 1. **Related search**: A search that is suggested by the autocomplete feature based on the user's input.
+• *  None explicitly stated, but implied concepts include:
+• 1. **Bing Auto-Completion**: Bing's feature that suggests possible queries or keywords based on previous searches and the user's input
+• 2. **Previous Queries**: Searches made by users that are stored and used to make suggestions for future queries
+• *  Reciprocal rank: the multiplicative inverse of the rank of the first correct answer
+
+FORMULAS/ALGORITHMS:
+• *  12 + 34+ 10 * (150/ 7) = 260.285714 (example math expression)
+• Note: There are no mathematical formulas or equations in this content, so there's no need to mark any with .
+• None
+• *  MRR = ∑(1/rank) / n, where n is the number of queries and rank is the reciprocal rank of each query response
+
+
+SE-BASICS
+----------------------------------------
+KEY CONCEPTS:
+• 1. KEY CONCEPTS:
+• *  **Evolution of Search Engines**: The development of search engines from 1991 to present day
+• *  **Non-Web Search Engines**: Early search engines that were not web-based (Gopher, Archie, Veronica)
+• *  **Web-Based Search Engines**: Transition to web-based search engines in the mid-to-late 1990s
+• * The Internet's early search tools were developed in the late 1980s and early 1990s
+• * Archie, Veronica, and Jughead were three major search tools that emerged during this period
+• * The Gopher protocol was a TCP/IP application layer protocol designed for distributing, searching, and retrieving documents over the Internet
+• *  Statistical analysis of word relationships to make searching more efficient
+• *  Use of statistical analysis in search software development
+• * World Wide Web Wanderer (marked as )
+• * Potential for general-purpose WWW search engine (marked as )
+• *  ALIWEB (Archie-Like Indexing of the Web) - a Web search engine created in 1993
+• *  Importance of meta information in indexing web pages
+• **AltaVista**: A significant search engine in the early days of the web.
+• **Natural Language Queries**: Allowing users to search using everyday language, rather than specific keywords or syntax.
+• **Advanced Searching Techniques**: Features that enable more precise and effective searching, such as filtering and sorting results.
+• Lycos search engine
+• Ranked relevance retrieval
+• Prefix matching
+• Word proximity bonuses
+• *  **Hierarchical listing**: A way to organize links into a topical hierarchy
+• *  **Portal**: A website that acts as an entry point for other websites or services (e.g. Email, Finance, Groups)
+• *  **Search feature**: A way to search through all of the links on the Yahoo homepage
+• LookSmart was a search engine that competed with Yahoo! Directory in terms of inclusion rates.
+• Pay-per-click (PPC) business model, where listed sites pay a flat fee per click.
+• *  Inktomi Corporation: A search engine company that came into existence in 1996
+• *  Hotbot: The search engine developed by Inktomi
+• *  Paid inclusion model: A business model where websites pay a fee to guarantee display on certain search terms
+• * Natural language search engine
+• * Human editors matching search queries
+• * Subject Specific Popularity
+• * Google is a play on the word Googol, which refers to 1 followed by 100 zeros ()
+• * A googol is bigger than the number of atoms in the universe ()
+• * Algorithmic Yahoo
+• * Search Era Lycos
+• * Paid Search Era
+• *  Search Engine Basic Behavior
+• *  Providing access to heterogeneous, distributed information that is publicly available on the World Wide Web
+• *  Information comes in many different formats
+• *  Most of the information has not been screened for accuracy
+• *  The World Wide Web as a source of new opportunities in marketing
+• Search engine: program designed to help find information stored on computer systems.
+• * The User  (element 1)
+• * The Web  (element 2)
+• * The Crawler/Spider  (element 3)
+• * The Indexer  (element 4)
+• * The Query Processor  (element 6)
+• *  **Spider (a.k.a. crawler/robot)**: builds corpus
+• *  **Indexer**: creates inverted indexes
+• *  **Query processor**: serves query results
+• * Distributed content creation and linking
+• * Truth, lies, obsolete information, contradictions on the web
+• * Diverse user backgrounds and training methods
+• * Users' difficulty in distinguishing between search bar and URL address field
+• * Importance of key results being at or near the top due to users rarely using scroll bars
+• * Diverse access methodologies (high bandwidth connectivity, mobile limitations)
+• * Poor comprehension of syntax in current search engines
+• Note that some content might overlap between categories. For instance, "Diverse user backgrounds and training methods" could be both a  and a [PRIORITY] item. However, I've tried to categorize each point according to its primary significance for studying.
+• *  **Types of user intentions** (Informational, Navigational, Transactional)
+• 1. Query processing involves more than just matching query terms with document terms
+• 2. Semantic analysis of queries is a crucial step in search engine functionality
+• *  - User interface customization (e.g., "moar Nsagauavesane")
+• *  Search Engine Basics (SEB) - a fundamental concept in understanding how search engines work
+• *  Google - one of the most popular search engines
+• *  Las Vegas is the most populous city in the U.S. state of Nevada.
+• *  Las Vegas is officially known as the City of Las Vegas and has a population.
+• *  The official website for Las Vegas travel information is VEGAS.com.
+• *  Las Vegas has various hotels, shows, casinos, restaurants, maps, and attractions.
+• *  Hotel website structure: main pages include map, address, phone number, price of room, photos, features & amenities, directions, make reservation, special offers.
+• *  Online booking process: includes searching hotel website, selecting dates, and making a reservation.
+• *  Google Web History: a feature that allows users to view their search history
+• *  Personalization of search results: only the user can see their own search history
+• * Google's dominance in the search engine revenue market
+• * Baidu, Yahoo, and Bing's revenue trends over the years
+• * Google's dominance in search engine market
+• * Anti-Trust violations
+• * Importance of maintaining a large index of the web
+
+DEFINITIONS:
+• 2. DEFINITIONS:
+• *  **Indexing**: The process of creating a database of web pages for searching
+• *  **Query Matching**: The process of matching user queries with relevant web pages
+• * FTP (File Transfer Protocol) - an anonymous method of transferring files over the internet
+• * Archie - a tool that assembled lists of files available on many FTP servers
+• * Veronica - a search tool for text files available through Gopher servers
+• * Jughead - a search tool for text files available through Gopher servers (not explicitly defined in the slide, but implied)
+• * The Gopher protocol - a TCP/IP application layer protocol designed for distributing, searching, and retrieving documents over the Internet
+• * Web crawler: A Perl-based program that crawled the web and collected URLs (marked as )
+• *  Crawling: collecting data from web pages
+• *  Bandwidth: the amount of data transferred over a network
+• *  ALIWEB: an alternative to traditional Web search engines that uses user-submitted meta information for indexing
+• **Overture**: A company that owned AltaVista and was later acquired by Yahoo!.
+• **Yahoo! Search**: The search engine developed by Yahoo! using some of the technology from AltaVista.
+• PPC (Pay-Per-Click): A business model where advertisers pay for each ad click on their site.
+• Syndication: The practice of distributing content, such as paid listings, to multiple websites or portals.
+• *  Spam sites: Websites that are considered irrelevant or unwanted content
+• Web search engine: searches for information on the public Web.
+• Enterprise search engines: searches on intranets (internal corporate networks).
+• Personal search engines: searches individual personal computers.
+• * Crawler/Spider : Software program that traverses the web, discovers new pages, and updates existing indexes
+• * Indexer : Component responsible for creating and maintaining search indexes
+• * Query Processor : Module that processes user queries, retrieves relevant documents, and generates ranked results
+• *  **Corpus**: a collection of web pages built by the spider
+• *  **Inverted index**: an index created by the indexer to speed up queries
+• * Semi-structured data storage in tables
+• * Structured data storage in databases (NS)
+• * Scale of larger than previous text corpora
+• *  **Informational intent**: want to learn about something (~40%)
+• *  **Navigational intent**: want to go to that page (~25%)
+• *  **Transactional intent**: want to do something (web-mediated) (~35%)
+• 1. Stop words: unnecessary words filtered from the query (e.g. "the", "and")
+• *  Actor - a person who performs in plays, films, or television shows
+• *  Filmmaker - a person who creates and produces films
+• *  Golden Globe Awards - awards given to recognize excellence in film and television
+
+FORMULAS/ALGORITHMS:
+• 3. FORMULAS/EQUATIONS:
+• Note: Since there are no mathematical formulas, I didn't mark any as .
+
+
+SE-EVALUATION
+----------------------------------------
+KEY CONCEPTS:
+• Search Engine Evaluation
+• Information Retrieval (IR)
+• Query Understanding
+• Ranking Algorithms
+• *  Evaluation metrics for search engines
+• *  Search result quality guidelines
+• *  Using log files for evaluation
+• *  Elements of good search results
+• *  Search Engine Evaluation
+• 1. Measuring search engine quality
+• 2. Importance of evaluating search engines
+• Relevant vs. Irrelevant information
+• True Positive (tp), False Positive (fp), True Negative (tn), and False Negative (fn)
+• Precision, Recall, and Accuracy as measures of classification performance
+• Set of relevant documents
+• Set of retrieved documents
+• Precision and Recall metrics
+• 1. **Recall vs. Precision**: High recall can lead to low precision ()
+• 2. The relationship between precision and number of documents retrieved: "precision decreases as the number of docs retrieved (or recall) increases" ()
+• * There are three Pythagorean means: arithmetic mean, geometric mean, harmonic mean
+• * These means are useful in analyzing data, with each having different applications and interpretations
+• 1. **** F-score (or F-measure): a harmonic mean of precision and recall used to evaluate algorithms and systems
+• 2. **** Harmonic mean: emphasizes the importance of small values, unlike arithmetic mean which is affected by outliers
+• **Recall**: The ratio of relevant items retrieved to all relevant items.
+• **Precision**: The ratio of relevant items retrieved to all items retrieved.
+• **Relevant documents**: Documents that are actually relevant to the query or task at hand.
+• * Ranking #1 and #2:
+• * Recall and Precision:
+• * Average precision across multiple queries for relevant documents (  )
+• * Ranking #1 docs: average precision calculation (  )
+• 1. **Mean Average Precision (MAP)** : A measure of the effectiveness of a search system that averages the average precision scores for each query.
+• Information Retrieval Evaluation
+• Recall and Precision metrics for evaluating search results
+• * Mean Average Precision (MAP)
+• 1. **** Average over large document collection: The idea of using a large collection of documents to determine relevance.
+• 2. **** Query ensembles: Using multiple queries or search terms to assess relevance.
+• 3. **** Human relevance assessments: Assessing the relevance of search results based on human judgment.
+• 1. **** Discounted Cumulative Gain (DCG) is a measure that penalizes highly relevant documents appearing lower in search result lists.
+• 2. **** Graded Relevance value is reduced logarithmically proportional to the position of the result.
+• **Discounting in Document Ranking**: We want high weights for high-ranked documents because searchers are likely to inspect them, and low weights for low-ranked documents.
+• * Information Retrieval evaluation measures (e.g., Precision, Recall, F-score)
+• * Gridded results display vs. sequential scanning of results
+• * Different types of metrics (Binary, Graded, Cumulative)
+• 1. **** Search engines have test collections of queries and hand-ranked results
+• 2. **** Recall is difficult to measure on the web
+• 3. **** Precision at top positions (e.g., top 10) is a common evaluation metric
+• 1.  Google relies on raters to evaluate search results and search experience. (HIGH)
+• 2.  Data generated by raters is statistically analyzed to give a view of the quality of search results and search experience. (HIGH)
+• 3.  Ability to measure the effect of proposed changes to Google's search algorithms is crucial. (MEDIUM)
+• 1. **Search Quality Evaluator Guidelines**  - The document provides guidelines for evaluators to rate search results.
+• 2. **Rating Scale Categories**  - There are six categories used to evaluate search result relevance.
+• * : Method for evaluating search result quality (HIGH)
+• * : Method for testing search algorithm changes on a small scale (MEDIUM)
+• * : Final evaluation and release of improved search results (HIGH)
+• * A/B testing is comparing two versions of a web page to see which one performs better ()
+• * Single innovation test ()
+• **Using user clicks for evaluation**: This concept highlights the idea that user interactions (clicks) can be used to assess website performance, usability, and overall effectiveness.
+• * Conference on Information and Knowledge Management (CIKM)
+• * International forum for presentation and discussion of research on information and knowledge management
+• *  **Information and Knowledge Management**: Provides an international forum for presentation and discussion of research on information and knowledge management.
+• *  **CIKM Conference**: A conference that brings together researchers to present and discuss research on information and knowledge management.
+• * Query log files used for both tuning and evaluating search engines
+• * Query logs contain various techniques such as query suggestion
+• * Clicks are not relevance judgments
+• 1. **Display Improvements** () - The concept of improving search results display to provide more relevant information to users.
+• 2. **autocomplete anticipations** () - A feature that suggests possible search queries based on a user's input.
+• 3. **Extensions to More Data** () - The idea of incorporating additional data sources into search results, such as books, news, images, patents, and air schedules.
+• 4. **Featured Snippets** () - A summary of the most relevant information from a webpage, displayed at the top of the search results page.
+• 5. **Knowledge Graph** () - A knowledge base that provides additional information about entities such as people, places, and organizations.
+• * Comparison of web search engines (marked as )
+
+DEFINITIONS:
+• **Evaluation metrics**: Measures used to assess the performance of a search engine, e.g., precision, recall, F1-score.
+• **Relevance**: The degree to which a document is relevant to a user's query.
+• **Precision**: The ratio of true positives (relevant documents) to total number of retrieved documents.
+• *  Precision/recall: Measures of relevance and recall in information retrieval
+• *  Mean Average Precision (MAP): A metric to evaluate the ranking quality of a search engine
+• *  Harmonic Mean (HM) and Measure: Metrics for evaluating multiple performance measures
+• 1. **Precision**: # (relevant items retrieved) divided by #(all retrieved items)
+• 2. **Recall**: # (relevant items retrieved) divided by #(all relevant items)
+• **True Positive (tp)**: Correctly identified relevant information
+• **False Positive (fp)**: Incorrectly identified irrelevant information
+• **True Negative (tn)**: Correctly identified irrelevant information
+• **False Negative (fn)**: Incorrectly identified relevant information
+• Relevant documents: a set of documents that are relevant to the search query (implied, not explicitly stated)
+• Retrieved documents: a set of documents returned by the search system or algorithm (implied, not explicitly stated)
+• 1. **Recall**: Not explicitly defined, but implied as a measure of how well a system retrieves relevant documents ()
+• 2. **Precision**: Not explicitly defined, but implied as a measure of how accurate the retrieved documents are ()
+• * Arithmetic mean: not explicitly defined, but mentioned as a well-known concept
+• * Geometric mean: the nth root of the product of numbers
+• * Harmonic mean: strongly tends toward the least element of the list, making it useful in search engine results analysis
+• 1. **** Precision: (no definition provided, but mentioned as one of the components of F-score)
+• 2. **** Recall: (no definition provided, but mentioned as one of the components of F-score)
+• 3. **** F-measure: a measure that combines precision and recall
+• 4. **** F-score: another name for the F-measure
+• **Recall (#/6)**: The number of relevant documents retrieved out of a total of 6 (example used in the slide).
+• **Precision (#/4)**: The number of relevant documents retrieved out of a total of 4 (example used in the slide).
+• * Precision: not explicitly defined, but implied as the ratio of relevant documents to total documents (  )
+• * Recall: not explicitly defined, but implied as the ratio of relevant documents retrieved to total relevant documents (  )
+• 1. **Average Precision (AveP(q))** : The area under the precision-recall curve, representing the ratio of relevant documents to total documents at different recall levels.
+• 2. **Relevance Judgments** : Assessments of which documents are relevant to a particular query.
+• **Recall**: The proportion of relevant documents retrieved out of all relevant documents ( exact formula not provided )
+• **Precision**: The proportion of relevant documents retrieved out of all documents retrieved ( exact formula not provided )
+• * Assuming precision of zero for a relevant document that never gets retrieved is "reasonable"
+• 1. **** Binary assessment: An assessment that categorizes search results as relevant or not relevant (no nuance).
+• 2. **** Heavily skewed by collection/authorship: A result that is biased towards a particular collection of documents or author.
+• 1. **** DCG: Discounted Cumulative Gain
+• 2. **** CG (Cumulative Gain): The sum of graded relevance values of search results.
+• 3. **** rel_i (Graded Relevance): The graded relevance value of the result at position i.
+• **Rank**: The position of a document in the search results.
+• **Discount factor**: A value used to divide the relevance grade, commonly chosen as log2(rank + 1).
+• * Binary Precision (P): "The relevance of the top-ranked result"
+• * Average Precision (AP): "Relevance to user scanning low-rank results sequentially"
+• * Graded Cumulative Gain (CG): "Information gain from a set of results"
+• * Discount Cumulative Gain (DCG): "Information gain with positional weighting"
+• * Normalized DCG (nDCG): "How close the results are to the best possible"
+• 1. **** Recall: ability of a search engine to retrieve all relevant documents from a collection
+• 2. **** Precision: measure of how accurate the search results are, often calculated at the top positions (e.g., top 10)
+• 1.  Raters: Individuals who evaluate search results and search experience.
+• 2.  General Guidelines: Overarching principles used by raters to evaluate search results.
+• 1. **Vital**  - A special rating category that requires further review (Section 4.1 of the Rating Guidelines).
+• 2. **Useful**  - A page that is very helpful for most users.
+• 3. **Relevant**  - A page that is helpful for many or some users.
+• 4. **Slightly Relevant**  - A page that is somewhat related to the query, but not very helpful for most users.
+• 5. **Off-Topic or Useless**  - A page that is helpful for very few or no users.
+• 6. **Unrateable**  - A page that cannot be evaluated (Section 4.6 of the Rating Guidelines).
+• * Variants: Two different versions of a web page being compared in an A/B test ()
+• *  **CIKM (Conference on Information and Knowledge Management)**: An international forum for presentation and discussion of research on information and knowledge management.
+• *  **CIKM Conference**: A conference that provides an international forum for presentation and discussion of research on information and knowledge management.
+• * Query log files: records of user interactions with a search engine, including queries submitted, results clicked on, and timestamps
+• * Correlation between clicks and relevance judgments
+• 1. **Autocomplete** () - A feature that suggests possible search queries based on a user's input.
+• 2. **Directions** () - A type of search result that provides directions to a location.
+• 3. **Knowledge Graph traffic** () - The information provided by the Knowledge Graph, such as entity relationships and attributes.
+
+FORMULAS/ALGORITHMS:
+• *  Mean Average Precision (MAP): P(R|q) = 1/N ∑ [p(r) * rel(r)] where N is the number of relevant documents, p(r) is the precision at rank r, and rel(r) is the relevance of the document at rank r
+• *  Harmonic Mean (HM): HM = 2 * MAP * Precision
+• Precision = tp / (tp + fp)
+• Recall = tp / (tp + fn)
+• Accuracy = (tp + tn) / (tp + fp + fn + tn)
+• Precision = |A| / (|A| + |AN B|)
+• Recall = |A| / |AN B|
+• * Geometric mean formula: nth-root( product of numbers ) = √[n] (product of numbers)
+• * Formula for harmonic mean calculation: (1/number 1 + 1/number 2 + ... + 1/number n) / (n-1) = 1/(sum of reciprocals / (n-1))
+• 1. **** F = 2RP / (R + P): formula for calculating F-score
+• 2. **** Fg = ((α+1)RP / (R + αP)): more general form of F-measure with parameter α
+• **Recall = # Relevant items Retrieved / Total # Relevant Items**
+• **Precision = # Relevant items Retrieved / Total # Items Retrieved**
+• * (Ranking #1): (1.0 + 0.67 + 0.75 + 0.8 + 0.83 + 0.6) /6 = 0.78
+• * (Ranking #2): (0.5 + 0.4+0.5 + 0.57 + 0.56 + 0.6) /6 = 0.52
+• Reca 0.2 02 04 04 04 06 06 06 08 1.0 5 +.4+.43)/8 = 0.55 (  )
+• 1. **MAP Formula** : MAP = (1/n) \* Σ AveP(q)
+• Recall = number of relevant documents retrieved / total number of relevant documents
+• Precision = number of relevant documents retrieved / total number of documents retrieved
+• 1. **** pcG = ∑ rel_i / log2(i+1) - log2(j+1)
+• 2. **** DCG, = ∑ (rel_i / log2(z+1)) for z=0 to i-1
+• **Discount factor calculation**: log2(rank + 1)
+• **Weighting formula**: (weight) = (relevance grade) / (discount factor)
+
+
+TEXT PROCESSING
+----------------------------------------
+KEY CONCEPTS:
+• Information Retrieval (IR) vs. text classification
+• Standing queries: periodic search for new relevant documents
+• Relevant vs. not relevant classification
+• **Tokenization**: The process of breaking down text into individual tokens or words (implied in the first tweet by @Robertoross)
+• **Natural Language Processing (NLP)**: A field of study that focuses on interactions between computers and human language (mentioned in various parts of the email)
+• - Real estate investment ()
+• - No-money-down property purchase ()
+• +  Real estate investment
+• +  No-money-down property purchase
+• **Representation of Text Documents**: How to represent text documents in a way that can be processed by computers.
+• **Bag of Words**: A type of high-dimensional space used to represent text documents.
+• **Classification Functions**: Also known as "classifiers", these are functions that determine the category of a document.
+• 1. **Test language**
+• 2. **Data: Cet proof** (likely referring to "CET" or "Certification")
+• 3. **Artificial Intelligence (AI)**
+• 4. **Multimedia, Machine Learning, Programming, and Intelligence**
+• Rule-based classifiers
+• Hand-coded rule-based classifiers
+• Text processing
+• * Hand-coded rule-based classifiers
+• **Text Classification**: The process of assigning a class label to a document based on its content.
+• **Supervised Learning**: requires hand-classified training data
+• **No Free Lunch**: implies that each learning method has its own strengths and weaknesses
+• **Mixture of Methods**: commercial systems often use a combination of different machine learning methods
+• *  Supervised learning classifiers can use various features in text processing
+• *  Bag of words view of documents
+• * Text collections have a large number of features
+• * Selection can make particular classifiers feasible
+• * Reduces training time
+• * Makes runtime models smaller and faster
+• * Can improve generalization (performance)
+• 1.  **Simplest Feature Selection Method**: The most common terms can be used for feature selection with no particular foundation.
+• 2.  **Well-Estimatable Terms**: Words that can be well-estimated are often available as evidence.
+• Naive Bayes has found a home in spam filtering
+• Spam filters often use features beyond just words
+• Document as a vector
+• High-dimensional vector space
+• Classification in high-dimensional space
+• * Vector space classification
+• * Labeled set of points (equivalently, vectors)
+• * Documents in the same class form contiguous region of space
+• * Documents from different classes don't overlap (much)
+• Text classification or categorization
+• +  Text categorization ( Government, Science, Arts)
+• *  Centroid: the vector space representation of a set of documents
+• *  Rocchio forms a simple representative for each class: the centroid/prototype
+• *  Classification: nearest prototype/centroid
+• *  kNN (k-Nearest Neighbor) algorithm
+• *  Classification of documents using nearest neighbors
+• **Voronoi Diagram**: A way of partitioning a plane into regions based on proximity to points.
+• * **Just store the labeled training examples**
+• * **kNN (k-Nearest Neighbors)**
+• * **Contiguity hypothesis**
+• *  1-Nearest Neighbor (1NN) algorithm
+• *  Robustness of k-Nearest Neighbors algorithm
+• *  No feature selection necessary
+• *  Scales well with large number of classes
+
+DEFINITIONS:
+• IR: Information Retrieval
+• Text classification: classification of documents as relevant or not relevant
+• Standing queries: periodic search for new documents on a specific topic
+• **Parser**: A component of NLP that attempts to assign a syntactic structure to a given input sentence (mentioned in the second tweet by @Robertoross)
+• **Tagger**: A component of NLP that assigns a part-of-speech tag to each word in a sentence (mentioned in the second tweet by @Robertoross)
+• **Document Representation**: The way in which text documents are represented in a computer.
+• **Bag of Words Space**: A high-dimensional space where each dimension represents a word in the vocabulary.
+• **Classification Function**: A function that takes a document as input and outputs its category.
+• 1. **NA intelligence** ( likely referring to "Natural Language Processing" or "NLP")
+• 2. **Temporal semantics collection**
+• 3. **Optimization network**
+• *  Manual classification: Used by original Yahoo! Directory, Looksmart, about.com, ODP, PubMed
+• IDE (Integrated Development Environment): a software tool for writing rules for hand-coded rule-based classifiers.
+• **Document**: A piece of text that is being classified.
+• **Class (C)**: A fixed set of categories or labels that documents can be assigned to (e.g. Cp, Cy, ..., Cf).
+• **Training Set**: A collection of labeled documents used to train a classifier.
+• **Naive Bayes**: a simple and common supervised learning algorithm
+• **k-Nearest Neighbors (k-NN)**: a simple and powerful supervised learning algorithm
+• **Support-vector machines (SVMs)**: a newer and generally more powerful supervised learning algorithm
+• *  Feature (in supervised learning): any sort of characteristic used to describe a document or text
+• *  URL, email address, punctuation, capitalization, dictionaries, network features: examples of features that can be used in text processing
+• 1.  **Feature Selection**: The process of selecting a subset of relevant features from the original set of features.
+• Spam filtering (no definition provided)
+• *  Vector: each document is represented by one component for each term (word)
+• *  Dimensionality: 10,000+ dimensions or even 100,000+
+• + "Documents" can be considered as : Input data points or instances in the text classification problem
+• + "Classes" can be considered as : Categories or labels assigned to documents (e.g., spam/not spam, positive/negative review)
+• Government
+• Sci (Science)
+• Arts
+• Copyright Ellis Horowitz 2011-2012
+• *  **D**: the set of all documents that belong to class
+• *  Centroid/Prototype: A simple representative formed by Rocchio for each class
+• *  k-neighborhood: The set of the k-nearest neighbors to a document d
+• **Copyright**: Ownership or rights over original work (relevant for the Voronoi diagram citation).
+• * **Testing instance** (an example to be classified)
+• * **Database D** (a set of labeled training examples)
+• *  Atypical example: a single example that is significantly different from the others in its category.
+• *  Noise: an error in the category label of a single training example.
+
+FORMULAS/ALGORITHMS:
+• Note that there are no mathematical formulas (algorithms or equations) in the given content, so there is no  category.
+• *  P(c|d) ≈ #(c)/ for larger k (Note: P(c|d) represents the probability of class c given document d, and #(c) is the number of documents in class c)
+
+
+WEB CRAWLING
+----------------------------------------
+KEY CONCEPTS:
+• * Categorize them accordingly with the corresponding marks (, [DEFINITION], [FORMULA], [ALGORITHM], [EXAMPLE], and [PRIORITY])
+• *  Web crawler: a computer program that visits web pages in an organized way
+• *  Web crawlers are sometimes called spiders or robots
+• *  Importance of understanding web crawlers for web crawling
+• 1. **Quality in web crawling**: finding the "Best" pages first
+• 2. **Efficiency in web crawling**: avoiding duplication or near duplication
+• 3. **Etiquette in web crawling**: behaving politely to not disturb website performance
+• Web Crawling
+• Seed pages (known pages to start with)
+• Fetching and parsing web pages
+• Database storage of crawled pages
+• *  Web crawling
+• *  Indexes
+• 1.  - Crawling the entire web is not feasible with one machine (distributed processing)
+• 2.  - Handling/Avoiding malicious pages
+• 3.  - Latency/bandwidth to remote servers can vary widely
+• Protocol for web crawler limitations
+• Robots.txt file defines crawling permissions
+• **robots.txt directives**: rules that control which pages a robot can crawl on a website
+• **User-agent**: identifies the type of robot visiting the domain (e.g., Slurp)
+• **Disallow**: specifies URLs that should not be crawled
+• *  Robots.txt files
+• *  User-agent directives
+• 1. **Determining bias to search engines from robots.txt **
+• 2. **Favored and disfavored robots **
+• 3. **Robot names in robots.txt files **
+• 4. **Association between robot names and AP(r) values **
+• +  BREADTH-FIRST SEARCH: A web crawling algorithm that examines all pages at a given level before moving on to the next level.
+• **Depth-first Search**: A traversal algorithm used to explore a graph or tree data structure.
+• Web Wide Crawl
+• PageRank algorithm developed by Google for determining page value
+• Breadth-First Search (BFS) crawling brings in high-quality pages early
+• * Web crawling process
+• * Crawling a webpage involves downloading its contents and extracting links to other relevant pages
+• How new links are added to the queue determines the search strategy
+• Search strategies can be breadth-first (FIFO) or depth-first (LIFO)
+• Focused crawlers direct their search towards "interesting" pages
+• Heuristic ordering of URLs in the queue can improve crawling efficiency
+• *  The web is a graph, not a tree, which means that links can be bidirectional and cyclic.
+• *  An Accrawler must efficiently index URLs as well as already visited pages.
+• *  To determine if a URL has already been seen, the crawler must store URLs in a standard format and develop a fast way to check if the URL has already been seen.
+• Finding all links in a page and extracting URLs is crucial for web crawling.
+• * URLs are often long and storing all unique URLs can require large amounts of storage space
+• * Hashing on host/domain name to determine uniqueness
+• * Trie data structure for efficient lookup
+• * Delta-encoded text file for compact storage
+• **Tries**: A data structure that can store multiple "words" with the same prefix.
+• *  **URL Normalization**: The process of standardizing URLs to eliminate variations.
+• *  URL Normalization
+• *  Scheme and host components of a URL are case-insensitive
+• *  Percent-encoding triplet is case-insensitive
+• *  Default port (port 80 for the "http" scheme) can be removed from or added to a URL
+• Spider Trap: A situation where a crawler re-visits the same page over and over again.
+• Session ID Management: The use of unique IDs to keep track of visitors, often used in J2EE, ASP, .NET, and PHP.
+• URL Length Monitoring: A technique to avoid spider traps by monitoring the length of URLs and stopping if it gets too long.
+• * First generation of spam web pages (use of repeated terms)
+• * Second generation of spam web pages (cloaking)
+• * Third generation of spam web pages (doorway pages)
+• **DNS Caching Server**: A server that stores DNS responses to reduce the number of requests made to the DNS resolver.
+• **UDP for DNS**: The use of User Datagram Protocol (UDP) for transmitting DNS requests and responses.
+• **Parallel Threads Waiting**: The ability of a web crawler to perform multiple tasks concurrently using parallel threads.
+• Measuring and tuning a crawler for peak performance involves improving URL parsing speed, network bandwidth speed, and fault tolerance.
+• DNS lookup implementation
+• DNS caching server
+• * Network delay in downloading individual pages is a bottleneck in web crawling
+• * Having multiple threads running in parallel can improve throughput
+• * A thread of execution is the smallest sequence of programmed instructions that can be managed independently by the scheduler
+• *  **Centralized crawler control**: a system where one main crawler controls multiple parallel crawlers running on a LAN
+• *  **Distributed crawling**: a system where multiple crawlers run on widely distributed machines with or without cross communication
+• *  Distributed crawlers must periodically update master index
+• * **Scalability**: ability to handle large-scale web-crawls
+• * **Network-load dispersion and reduction**: distributing network load by dividing the web into regions
+• * **** Three strategies for web crawling: Independent, Dynamic assignment, Static assignment
+• Inter-partition links
+• Handling inter-partition links in web crawling
+• Firewall mode, Cross-over mode, Exchange mode for handling inter-partition links
+• *  Exchange mode limitations
+• *  Batch communication
+• *  Replication in web crawling
+• *  URL-hash based partitioning
+• *  Site-hash based partitioning
+• *  Hierarchical partitioning (e.g., by TLD)
+• *  Firewall crawlers and their benefits
+• *  Cross-over approach for 100% quality
+• + Combination of policies for Web crawler behavior
+• + Selection policy
+• + Re-visit policy
+• + Politeness policy
+• + Parallelization policy
+• *  **Dynamic Web**: The web is dynamic, with many new pages, updated pages, deleted pages, etc.
+• *  **Page Update Tracking**: Periodically check crawled pages for updates and deletions to maintain freshness.
+• 1. **** Steady crawler: runs continuously without pause
+• 2. **** Shadowing: implies new set of pages are collected and stored separately
+• 3. **** In-place updating: updates index current by replacing old versions with new ones
+• 4. **** Multiple crawlers: typically used by search engines to improve crawling efficiency
+• * Re-visiting policies ()
+• * Uniform policy ()
+• * Proportional policy ()
+• * Average freshness ()
+• * Cho and Garcia-Molina's result that uniform policy outperforms proportional policy in terms of average freshness ()
+• * Sitemap is a list of pages accessible to crawlers
+• * Helps search engine crawlers find pages on the site
+• Use consistent, fully-qualified URLs to ensure Google crawls your site correctly.
+• Sitemaps can be posted anywhere on your site but only affect descendants of the parent directory.
+• Session IDs should not be included in sitemap URLs.
+• * Multiple crawlers used by Google (e.g., Googlebot, AdsBot)
+• * Different types of crawlers for specific tasks (e.g., images, news, video)
+• * Importance of understanding how Googlebot sees a website
+• 1. **Multiple Crawlers Used by Google**  (HIGH)
+• 3. **Importance of Understanding How Googlebot Sees a Website**  (HIGH)
+• * Googlebot cannot see within Flash files, audio/video tracks, and content within programs
+• * Many versions of Googlebot are run on multiple machines located near the site they are indexing
+• * Importance of creating an empty robots.txt file to prevent "File not found" in website error log
+• **Web Crawling**: The process of automatically scanning and indexing web pages to gather information.
+• **IP Address Verification**: Verifying the IP address of a web crawler to ensure it is legitimate.
+• *  Crawl rate: The number of requests per second Googlebot makes to a site when crawling it.
+• *  Googlebot must understand and execute JavaScript code to extract meaningful features from web pages.
+• *  Browsers render HTML hierarchy, but also include transformations via CSS and JavaScript.
+
+DEFINITIONS:
+• *  Googlebot: Google's crawler
+• *  Yahoo! Slurp: Yahoo's former web crawler (now retired)
+• *  Bingbot, Adidxbot, MSNbot, MSNBotMedia, BingPreview: Bing's five crawlers
+• 1. **Coverage**: percentage of the web that should be covered
+• 2. **Relative Coverage**: comparison of coverage between competitors
+• Queue: a data structure that holds URLs to be fetched
+• Fetch: retrieving a web page from the internet
+• Parse: analyzing the content of a web page
+• *  Unseen Web
+• *  Seed URLs
+• *  Frontier (of crawled pages)
+• 1.  - Spider traps: dynamically generated pages that can trap crawlers
+• 2.  - Robots.txt stipulations: rules set by webmasters to control crawling behavior
+• 3.  - Politeness: avoiding hitting a server too often
+• Robotstxt.org: a protocol that defines limitations for web crawlers
+• Robots.txt file: a file placed in the root directory to announce crawling requests
+• Crawling: the process of a web crawler visiting and retrieving data from websites
+• **robots.txt file**: a text file placed in the root directory of a website to control crawling
+• **Allow**: specifies URLs that can be crawled (opposite of Disallow)
+• **User-agent directive**: a rule that applies to a specific type of robot
+• *  Robots.txt file: a text file placed at the root of a website's domain that contains instructions for web crawlers
+• *  User-agent: a software program that acts on behalf of a user, such as a web crawler
+• 1. **AP(r)**: Not explicitly defined, but it appears to be a measure or score associated with each robot name (e.g., -0.0291).
+• 2. **robot.txt**: A file used by web servers to communicate with crawlers and spiders about which parts of the website should not be crawled.
+• +  Level: The hierarchical structure of web pages, where each page has a level (e.g., level 0 for the starting page, level 1 for its direct neighbors, etc.)
+• **At each step move to page down the tree**: This phrase describes the behavior of the Depth-first Search algorithm, where it moves down one level in the tree at each iteration.
+• PageRank: an algorithm for determining the value of a page
+• BFS (Breadth-First Search): a graph traversal algorithm that visits nodes level by level
+• * Queue (Q): a data structure used to hold URLs to be crawled, with the front of the queue being the next URL to be processed
+• * Inverted index: an index that maps words or phrases to their corresponding documents or webpages
+• *  Accrawler: A type of web crawler that efficiently indexes URLs as well as already visited pages.
+• *  Web graph: The structure of links between web pages, which is bidirectional and cyclic.
+• *  **Relative URL**: A URL that must be completed to form a complete absolute URL.
+• *  **Absolute URL**: A complete URL that can be used as is, without any additional processing.
+• * **Terabyte (TB)**: 1 trillion bytes = 1,000 GB
+• * **Petabyte (PB)**: 1 million terabytes = 1,000 TB
+• * **Trie data structure**: a compact digital trie, or prefix tree, used to store and retrieve strings
+• * **Delta-encoded text file**: a method of storing URLs as the difference between consecutive URLs
+• **Endmarker symbol**: A special character ($), used to indicate the end of a word.
+• **Viterbi algorithm**: Not explicitly defined, but mentioned as having time complexity O(NK).
+• *  **Hash**: A unique string of characters generated from a URL, used to identify it.
+• *  **Canonicalization**: The process of selecting a single, preferred version of a URL when there are multiple variations.
+• *  Scheme: refers to the protocol used in a URL (e.g., http, https)
+• *  Host: refers to the domain name or IP address of a website
+• *  Percent-encoding triplet: a sequence of characters preceded by a percentage sign (%)
+• Spider Trap: A situation where a crawler re-visits the same page over and over again due to unique IDs in URLs.
+• Session ID: A unique identifier used to keep track of visitors.
+• * Keyword stuffing: using high frequency of repeated terms to score high on search engines
+• * Cloaking: technique used by spammers to return different page to crawlers than users
+• * Doorway page: a page designed to rank highly for certain keywords but returns commercial page when browser requests it
+• **DNS Resolver**: A process that resolves domain names to IP addresses.
+• **Client-Server Architecture**: The design pattern where a client requests and receives data from a server.
+• **Caching**: Storing frequently accessed data in a temporary storage area to reduce the number of requests made to the original source.
+• *  Refresh Strategies: the frequency at which the crawling process is restarted.
+• *  Duplicate pages: pages that have been previously crawled and do not need to be recrawled.
+• *  Mirror sites: websites that contain identical or similar content as another website.
+• DNS lookup: the process of resolving domain names to IP addresses
+• DNS caching: storing previously resolved IP-domain name mappings for future use
+• Pre-fetching client: making DNS resolution requests while parsing a page
+• UDP (User Datagram Protocol): a protocol used for DNS resolution
+• * Thread: the smallest sequence of programmed instructions that can be managed independently by the scheduler
+• * Process: a component of which threads are part
+• *  **Parallel crawler**: a process that consists of multiple crawling processes communicating via local network (intra-site parallel crawler)
+• *  Incremental update: generally "cheap" due to compression and differential updates
+• * **** Independent strategy: "no coordination, every process follows its extracted links"
+• * **** Dynamic assignment: "a central coordinator dynamically divides the web into small partitions and assigns each partition to a process"
+• * **** Static assignment: "Web is partitioned and assigned without central coordinator before the crawl starts"
+• Inter-partition links: Links between different partitions in a web crawling system
+• Firewall mode: A method of handling inter-partition links where the process does not follow them
+• Cross-over mode: A method of handling inter-partition links where the process follows them and discovers more pages
+• Exchange mode: A method of handling inter-partition links where processes exchange URLs
+• *  Exchange mode: a method of communication in web crawling where processes exchange information
+• *  Batch communication: sending multiple URLs at once from one process to another
+• *  Replication: duplicating popular URLs at each process to reduce exchange overhead
+• + Selection policy: states which pages to download
+• + Re-visit policy: states when to check for changes to the pages
+• + Politeness policy: states how to avoid overloading websites
+• + Parallelization policy: states how to coordinate distributed web crawlers
+• *  **LastModified indicator**: A timestamp indicating the last time a page was modified.
+• 1. **** Shadowing: a method of collecting and storing new pages separately from the current database
+• 2. **** In-place updating: updating the index by replacing old versions with new ones without separating them
+• * Uniform policy: re-visiting all pages with the same frequency, regardless of change rate ()
+• * Proportional policy: re-visiting pages more often based on their estimated change frequency ()
+• * Sitemap: A list of pages of a web site accessible to crawlers
+• * XML (Extensible Markup Language): Used as the standard for representing sitemaps
+• Fully-qualified URL: A URL that includes the domain name and path (e.g., https://example.com/path/to/page).
+• **Reverse DNS Lookup**: A process of looking up an IP address in the DNS system to retrieve its corresponding domain name.
+• **Forward DNS Lookup**: A process of looking up a domain name in the DNS system to retrieve its corresponding IP address.
+• *  Recrawl: Requesting Google to crawl new or updated content on a site.
+• *  Googlebot: A program that crawls the web for Google search engine.
+• *  Googlebot: a search engine's software agent that crawls the web and indexes content.
+• *  DOM (Document Object Model): a hierarchical representation of an HTML document.
+
+FORMULAS/ALGORITHMS:
+• Note that there are no mathematical formulas or algorithms in this content, so there is no  or [ALGORITHM] category.
+• Note that there are no mathematical formulas or examples in this content, so the categories  and [EXAMPLE] remain empty. However, since this algorithm is a key concept in web crawling, it's essential to focus on understanding how it works and applying it correctly.
+• **Search time for trie**: O(K)
+• **Search time for binary search tree**: O(K \* log N)
+• * No formulas or equations are explicitly stated, so no  label.
+
+
+WEB SERVING BASICS
+----------------------------------------
+KEY CONCEPTS:
+• *  Web Trends
+• *  Measurements
+• + The web has undergone significant changes over the last 30+ years
+• + Understanding the different dimensions of the web is crucial for building a web search engine today
+• + Scale, complexity, and growth are important factors to consider
+• * The internet is used by a significant portion of the world's population ()
+• * The internet penetration rate can be expressed as a percentage of the total population ()
+• 1. Global Internet Properties () - refers to popular websites with a global reach
+• 2. China's growing influence on the internet ()
+• 3. Top 10 Internet Properties by Global Monthly Unique Visitors ()
+• Mobile internet users growth rate in China
+• Year-over-year (Y/Y) growth comparison
+• 1. **** China Mobile Internet Usage Leaders: Tencent, Alibaba, Baidu dominate 71% of mobile time spent
+• 2. **** Share of Mobile Time Spent: WeChat leads with ~200 minutes per user, average QQ
+• * The amount of global digital information created and shared is increasing exponentially
+• * Digital info has grown 9x in five years to nearly 2 zettabytes in 2011, per IDC.
+• * The growth of photo sharing remains robust despite new platforms emerging
+• * Photos uploaded and shared daily number is doubling every year (since 2005-2014)
+• Online Video & Entertainment
+• Hours of video uploaded to YouTube every minute (as a key metric)
+• Growth rate of online video content between 2014 and 2020
+• *  Mobile devices (excluding tablets) generate a significant portion of global website traffic.
+• *  The percentage of mobile device-generated traffic has consistently hovered around 50% since 2017.
+• 1. **** Tablet growth is more rapid than smartphone growth, specifically iPad growth is ~3x iPhone growth.
+• 2. **** The rate of tablet adoption (iPad) vs. smartphone adoption (iPhone) can be compared using cumulative unit shipments.
+• * Product Finding = Often Starts @ Search (Amazon + Google...)
+• *  Technology Cycles: refers to the pattern of technological innovation and adoption in computing devices
+• *  10-Year Cycle: a common trend where new technologies tend to last about 10 years before being replaced or surpassed
+• 1. Re-Imagination of Computing Operating Systems ()
+• 2. Global Market Share of Personal Computing Platforms by Operating System Shipments ()
+• Market Share of Cloud Hosting Providers
+• Leading Cloud Hosting Providers (Microsoft Azure, Alibaba Group, Google Cloud Platform, etc.)
+• * Amazon Web Services (AWS) is leading the cloud charge
+• * Cloud Revenue Re-Accelerating
+• * Volume Effects
+• *  Voice-related commands have increased significantly since 2008 after the launch of iPhone and Google Voice Search.
+• *  Voice-Based Mobile Platform Front-Ends: The idea that voice can replace typing in mobile interactions
+• *  Natural / Conversational Language: The use of natural language processing (NLP) to understand user requests
+• *  Voice assistants (e.g., Amazon Echo)
+• * Growth in number of users connected
+• * Transition from desktop/laptop use to mobile
+• * Move away from server farms to cloud computing
+• * Decreased dominance of Microsoft Windows
+• * The World Wide Web is dynamic and hard to describe accurately over time
+• *  The total number of websites on the internet (approximately 1.7 billion)
+• *  The popularity of different web servers (Apache, nginx, Microsoft IIS)
+• *  The percentage of inactive/parked websites (around 75%)
+• * The number of websites in the world has been growing rapidly over the years ()
+• * Websites growth rate from 1991 to 2021 is significant ()
+• * Domain Count Statistics for TLDs (TLD = Top-Level Domains)
+• * The importance of having a record count that represents all domains known about, which is usually more accurate than other sources
+• **KEY CONCEPTS **
+• 1. **Language diversity**: Estimated 40,000 languages created by humans, with only 6,000-9,000 still in use.
+• 2. **Internet language shift**: Decline of English as primary language among internet users from 80% to 40%.
+• **Web Serving Basics**: The fundamental principles of serving web content.
+• **Java Applet/Servlet**: Java-based components used to extend the functionality of web servers.
+• * Content types have a wide range (16,000 to 51,000)
+• * Parsing content types is necessary for various applications
+• *  The Web has approximately 86 billion websites
+• *  The distribution of websites across TLDs (e.g., .com) is uneven, with 72% in .com
+• *  The number of web pages is estimated to be around 30 trillion unique URLs
+• *  HTML, PDF, Word, Excel, PPT, and others are examples of content types
+• *  The Web graph follows a power law distribution for in-degree and out-degree
+• + The Web has approximately 86 billion websites ()
+• + Distribution of websites across TLDs is uneven ()
+• + Number of web pages estimated to be around 30 trillion unique URLs ()
+• + HTML, PDF, Word, Excel, PPT, and others are examples of content types ()
+• + Storage required to hold a single snapshot of the Web: 100 petabytes ()
+• Human editors were used by Yahoo! in the past to assemble large directories.
+• The European Car Webzine focuses on prestige marques, includes articles, web broadcasting, screen savers, dealer business & economy.
+• 1. **ODP - Open Directory Project**:  A collaborative effort to organize the web (HIGH)
+• 2. **Ontology**:  A systematic arrangement of concepts or entities in a particular field or domain (MEDIUM)
+• 3. **Distributed directory**:  A system where data is stored and managed across multiple locations or servers (MEDIUM)
+• 4. **RDF format**:  A standard format for representing data on the web using resource description framework (LOW)
+• *  Open Directory - a online directory of web content
+• *  Mozilla Firefox - a web browser
+• * The Internet Archive's snapshot of the World Wide Web
+• * Apache Nutch
+• * Wayback Machine
+• * Crawler algorithm
+• 1. **** Multilingual Databases: Databases that store information in multiple languages to cater to diverse user needs.
+• 2. **** Deep Web: A part of the internet that is not indexed by search engines and can only be accessed through specific browsers or tools, designed for anonymity (e.g., Tor).
+• 3. **** Dark Web: A subset of the Deep Web, often associated with illicit activities.
+• 4. **** Government Resources: Information stored in databases that are restricted to authorized personnel or require special access.
+
+DEFINITIONS:
+• * Internet penetration rate: The percentage of people in a region who use the internet ()
+• * Region: A geographic area such as North America, Europe and Central Asia, etc. ()
+• 1. Baidu - Chinese search engine ()
+• 2. Tencent - Chinese holding company of internet properties ()
+• 3. Sohu.com Inc. - Chinese online media and community service provider ()
+• 4. comScore - a company that tracks website traffic and user behavior ()
+• Y/Y growth rate: a measure of change from one year to another, calculated as the percentage increase or decrease over the same period.
+• 1. **** WeChat: a messaging and social media app in China
+• 2. **** Tencent Video: an online video streaming service owned by Tencent
+• 3. **** Baidu Browser: a web browser developed by Baidu
+• 4. **** AliPay: a mobile payment platform owned by Alibaba
+• * Zettabyte: 1 zettabyte = 1,024 exabytes
+• * Exabyte: 1 exabyte = 1,024 petabytes
+• * Petabyte: 1 petabyte = 1,024 terabytes
+• * Terabyte: 1 terabyte = 1,024 gigabytes
+• *  StatCounter: A tool used to track and analyze website traffic data (not explicitly defined, but implied)
+• 1. **** Cumulative unit shipments: the total number of units shipped over a certain period of time (in this case, 12 quarters).
+• 2. **** Post-launch: referring to the period after a product is launched in the market.
+• *  Mainframe: an early type of computer that served as a centralized system for processing data and applications
+• *  Mini: refers to the miniaturization of computers in the 1970s, which led to smaller and more portable devices
+• *  Personal Desktop: a type of computer designed for individual use, popularized in the 1980s
+• *  Internet Mobile: refers to the shift towards mobile internet access and computing devices (smartphones, tablets)
+• 1. Wintel ()
+• 2. Amiga ()
+• 3. TRS-80 ()
+• * S3: AWS' storage product, used as a proxy for AWS scale/growth
+• * TLD: Top-Level Domain (e.g. .com, .tk, etc.)
+• **DEFINITIONS **
+• 1. **Content languages for websites**: Refers to the primary language used on a website.
+• 2. **Primary language**: The language in which most content is written on a website or spoken by its users.
+• **HTML (Hypertext Markup Language)**: A standard markup language used to create structure and content on the web.
+• * Apache Tika toolkit: detects and extracts metadata and text content from documents using existing parser libraries
+• * Indexing technology: used to organize and retrieve data efficiently (e.g., Lucene, Solr)
+• *  TLD (Top-Level Domain): e.g., .com, .org, etc.
+• *  In-degree and out-degree distribution: refers to the number of incoming and outgoing links in a network
+• + Languages in which documents are written: English (55%), French, German, Spanish, Chinese ()
+• Yahoo! Directory Search Results: a list of search results from Yahoo!'s directory.
+• Umbrella organization for car sharing companies in Europe: an organization that oversees and coordinates the activities of car sharing companies in Europe.
+• 1. **Open Directory Project (ODP)**:  A collaborative effort to organize the web, started by Netscape (HIGH)
+• 2. **Distributed directory**:  A system where data is stored and managed across multiple locations or servers (MEDIUM)
+• *  Science category in the Open Directory (104,420 entries)
+• *  Computers: Computer Science category in the Open Directory (2,971 entries)
+• * Petabytes: a unit of digital information storage (approximately 1 petabyte = 1,000 terabytes)
+• * Seed sites: initial websites used as starting points for web crawling
+• 1. **** Deep Web Technologies: Refers to the technologies used to access and navigate the Deep Web.
+• 2. **** Tor: A browser designed for anonymity, used to access the Deep Web.
+• 3. **** Dark Web: A subset of the Deep Web characterized by illicit activities.
+
+FORMULAS/ALGORITHMS:
+• Note that there are no mathematical formulas or algorithms in this content, so I did not mark anything with  or [ALGORITHM].
+
+
+YOUTUBE
+----------------------------------------
+KEY CONCEPTS:
+• 1.  **Video Search Engine**: A web-based search engine that crawls the web primarily for video content. (Slide 1)
+• 2.  **Indexing of Video Content**: The process of acquiring metadata associated with a video, such as author, title, creation date, duration, coding quality, tags, description, subtitles, and transcription.
+• 3.  **Ranking of Videos**: The process of ordering videos under a query based on relevance, user preferences, date of upload, number of views, or user rating.
+• +  Video search engines
+• +  Web-wide video search engine
+• +  All-content search engine
+• +  Integrated universal search engine for science-oriented videos
+• * Video hosting is highly concentrated on a small number of websites due to large file sizes involved
+• * YouTube.com has become the defacto site for uploading videos
+• *  Subscription video on demand services (e.g., Hulu, Netflix)
+• *  Ownership structure of Hulu (jointly owned by major media companies)
+• **Video Subtitling Services**: There are three main types of video subtitling services: open caption, closed caption, and SDH (Subtitles for the Deaf and Hard of Hearing).
+• **Speech Recognition**: used to extract phrases from audio transcripts for better indexing.
+• **Text Recognition**: uses OCR on video slides to detect words.
+• *  YouTube is a video hosting website
+• *  The site allows users to upload, view, rate, share, add to favorites, report, and comment on videos
+• *  Google acquired YouTube in 2006 for $1.65 billion
+• * YouTube is a search engine ()
+• * YouTube processes more than 3 billion searches per month ()
+• * YouTube is transforming and has surpassed other search engines like Bing ()
+• 1. **** YouTube traffic growth rate: 60 hours of video uploaded every minute
+• 2. **** Large-scale data storage capacity: estimated to be 1 sextillion gigabytes
+• YouTube's major hurdles (beyond crawling, indexing, and ranking)
+• *  YouTube requires a registered user to upload videos
+• *  Channels include thumbnails of uploaded videos, members subscribed, favorite videos, friends' lists
+• *  Having 1 million subscribers as a YouTuber can earn between $300,000 - $2 million per year
+• *  To be in the top 1000 YouTubers, you must have approximately 1.8 million subscribers
+• *  YouTube captures videos
+• *  Upload process on YouTube (making a video live)
+• *  Video management on YouTube (adding more videos, custom thumbnail)
+• *  Video/Audio quality
+• *  Encoding into streamable file format for faster video/audio quality
+• **Monetization**: YouTube allows creators to specify how they want to be monetized (paid promotions, sponsorships, etc.)
+• **Age Restrictions**: YouTube enables age restrictions on videos, allowing creators to control who can view their content
+• **License and Ownership**: The Standard YouTube License governs the use of licensed content on the platform
+• 1. **YouTube Search Algorithm**
+• 2. **Vevo**
+• Computer Science Education: The importance of computer science education and its challenges.
+• Online Resources for Learning: The role of online platforms like YouTube in providing educational resources for computer science students.
+• + FEATURES
+• 1.  **FILTERS**: YouTube's search filters
+• 2.  **FEATURES ALGORITHMS**: Mentioned but not explicitly explained
+• YouTube uses a set of metrics to rank search results
+• Video quality, metadata, views, likes, shares, links, subtitles/closed captions are all ranking factors
+• *  YouTube supports multiple video formats for uploading (MOV, MP4, AVI, WMV, FLV, 3GP, MPEGPS, WebM)
+• *  Aspect Ratio matters when uploading videos to YouTube
+• *  Video file size limit on YouTube is 128GB
+• *  Default video length limit on YouTube is 15 minutes (can be extended)
+• *  YouTube videos are played in the browser, assuming it supports HTML5
+• *  No native support for running YouTube videos on some devices (e.g. Apple products), requires separate app or transcoding
+• *  Different video standards used by various devices (e.g. H.264)
+• *  Computer algorithms play a crucial role in YouTube's recommendation system to maximize watch time.
+• * OUTube Recommendation Algorithm ()
+• * Query ()
+• * Selection ()
+• Association Rule Mining
+• Co-visitation counts
+• Relatedness (r(vi,vj))
+• Normalization function (f(v; vj))
+• * Video-rich snippet
+• * YouTube's dominance in video-rich snippets
+• A Content Distribution Network (CDN) consists of a large set of content servers and means for dynamically selecting servers based on knowledge of the location of the user and possibly the content being requested.
+• +  Identifying billions of videos
+• +  Efficiently delivering video to desktop/mobile device
+• YouTube Video Cache Locations
+• Geographical distribution of video content
+• **Video Transcoding**: The technique of converting video into multiple different formats and resolutions to make it playable across different devices and bandwidths.
+• **Content Distribution Network (CDN)**: A system that sends transcoded copies of videos to various locations for faster playback.
+• [DEFINITION] **Video Transcoding**:
+• [DEFINITION] **Content Distribution Network (CDN)**:
+• *  **DNS Resolution**: Local DNS server resolves domain name (www.youtube.com) to IP address
+• *  **YouTube Video Delivery Process**: 4-step process for delivering YouTube video:
+• *  YouTube video delivery system design consists of three components: flat video ID space, multi-layered logical server organization, and 3-tiered physical cache hierarchy.
+• *  Video ID space is "flat" and has five "anycast namespaces" (with two unicast namespaces).
+• *  Complicated re-direction scheme to find the nearest data center to serve the video
+• *  Minimizing Round Trip Time (RTT)
+• *  YouTube CDN (Content Delivery Network)
+• *  YouTube had no way of making money in its early days
+• *  YouTube's infrastructure was expensive to maintain
+• *  Copyright infringement issues led to lawsuits against YouTube
+• *  Content ID: a fingerprint database of copyrighted content used by YouTube
+• *  Copyright infringement detection: the process of identifying and addressing copyright violations on YouTube
+• 1. **** Content ID is based on audio and video samples uploaded by rights holders to YouTube. (Slide 33)
+• 2. **** Video processing involves transcoding into multiple formats, including HTML5, H.264, WebM VP8, HD, non-HD, and others.
+• 3. **** Content ID uses a spectrogram-based approach for audio identification.
+• *  Acoustic Fingerprint: A unique representation of an audio signal
+• *  Spectrogram: Time-frequency graph representing three dimensions of audio (frequency, amplitude, and time)
+• **Content ID**: A system used by YouTube to automatically resolve copyright issues related to sound recordings.
+• **Hashing algorithm**: The process of identifying unique digital fingerprints to detect copyrighted content on YouTube.
+• *  Exponential growth of storage capacity
+• *  Kryder's Law (not explicitly defined)
+• *  Storage needs of YouTube
+• *  Data compression and re-encoding for storage efficiency
+• *  Scalability of data storage in cloud-based platforms like YouTube
+• 1. **Content Delivery Network (CDN)** : The backbone of YouTube's rapid content delivery.
+• 2. **Load Balancer** : Efficiently distributes incoming requests across multiple servers.
+• 3. **Transcoding Servers** : Converts and optimizes video files into various formats.
+• 4. **Metadata Database** : Stores crucial metadata associated with videos.
+• 5. **Content Delivery Network (CDN)** as the backbone of YouTube's rapid content delivery, ensuring seamless streaming for users worldwide.
+• 1. **** YouTube System Design: Understanding the architecture of a large-scale video sharing platform like YouTube is crucial for this topic.
+• 2. **** Content Delivery Network (CDN): A distributed network of servers that cache and serve content to users based on their geographical location.
+• 3. **** Load Balancer: A mechanism that distributes incoming traffic across multiple web servers to improve responsiveness, reliability, and scalability.
+• 4. **** Media Storage (S3): Amazon Simple Storage Service is a cloud-based object storage system for storing large amounts of data.
+
+DEFINITIONS:
+• 1.  **Metadata**: Data associated with a video, such as author, title, creation date, duration, coding quality, tags, description, subtitles, and transcription.
+• 2.  **Video Recognition**: The process of identifying and extracting metadata from a video.
+• +  CastTV: A web-wide video search engine founded in 2006 (no longer existing)
+• +  Munax: An all-content search engine that powers both nationwide and worldwide search engines with video search
+• +  ScienceStage: An integrated universal search engine for science-oriented videos
+• *  Subscription video on demand service: a service that allows users to access content for a fee
+• *  Major media companies: large corporations involved in the production and distribution of media content (e.g., Disney, Comcast)
+• **SRT**: stands for “SubRip Subtitle” file, a common subtitle/caption file format in text format.
+• *  Video hosting website: a platform that stores and delivers video content (not explicitly defined in the text, but implied)
+• *  Web traffic analysis company: a company that analyzes online traffic patterns (specifically mentioned as Alexa Internet)
+• *  Content Distribution Network (CDN): a system for distributing videos worldwide
+• *  ContentID system: YouTube's monetization system
+• *  Registered user: a user who has created an account on YouTube to upload videos
+• *  Channel: a type of account on YouTube that includes uploaded video thumbnails, subscribed members, favorite videos, and friends' lists
+• *  YouTuber: an individual with a YouTube channel
+• *  Upload status: current state of uploaded video (Select language >)
+• **Syndication**: The process of reusing or redistributing content (audio/video) on other platforms
+• **Captioning**: Adding text to videos for accessibility and comprehension
+• **Embedding**: Incorporating YouTube videos into external websites or platforms
+• 1. **Vevo**: A video hosting service that specializes in music videos
+• View Count: A measure of the number of views a video has received on YouTube.
+• Ranking Algorithm: The method used by YouTube to determine the order and visibility of search results.
+• Meta Data: video titles, descriptions, tags that are core ranking factors
+• HD (High Definition) videos rank higher than low quality videos
+• *  Aspect ratio: the ratio of width to height of a video
+• *  YouTube Search: A feature that returns search results based on user queries.
+• * None explicitly mentioned, but "query" can be considered a definition:  A query is likely referring to the user's search or request for video recommendations.
+• **Co-visitation count**: Number of times two videos are co-watched.
+• **Relatedness (r(vi,vj))**: Measure of how related two videos are, based on co-visitation counts.
+• **Normalization function (f(v; vj))**: Function that takes into account the global popularity of both seed and candidate videos.
+• * Video-rich snippet
+• * Web search
+• CDN: Content Distribution Network
+• Server: A computer that provides services or resources to other computers over a network
+• * Unique identifier assigned by YouTube:  A fixed-length, 11 character string, base 64 identifier
+• **Metadata**: Additional information about a video, such as its title, description, and tags.
+• *  **DNS (Domain Name System)**: System for translating domain names into IP addresses
+• *  **HTTP GET Request**: Type of request sent to a server to retrieve data
+• *  **Front-end Web Server**: Server that handles requests and delivers web content
+• *  Anycast namespace: a mechanism that allows packets to be sent to one of multiple destinations.
+• *  Unicast namespace: a mechanism that allows packets to be sent to a single destination.
+• *  CDN (Content Delivery Network): a system of distributed servers that store and deliver content to users based on geographic proximity
+• *  RTT (Round Trip Time): the time it takes for data to travel from a user's device to a server and back
+• *  Fingerprinting: a technique used to identify unique characteristics of digital content, such as videos or audio files
+• 1. **** Content ID: A system used by YouTube to identify copyright infringement.
+• 2. **** Transcoding: The process of converting video into multiple formats.
+• 3. **** Spectrogram: A visual representation of audio frequencies over time.
+• *  Digitized audio signal: An audio signal converted into a digital format
+• *  Amplitude: The magnitude or strength of a sound wave
+• **Finite-state transducers**: A mathematical model used for computing hash functions, suggested as the proprietary method used by YouTube (referring to Eugene Weinstein and Pedro J. Moreno's 2007 ICASSP paper).
+• *  None mentioned, but Kryder's Law is linked to a Wikipedia article for further information.
+• *  TB (Terabyte): a unit of digital information storage, equivalent to 1 trillion bytes (TB = 1,000 GB)
+• *  PB (PetaByte): a unit of digital information storage, equivalent to 1 quadrillion bytes (PB = 1,000 TB)
+• 1. **Load Balancer**: A network device that distributes incoming requests across multiple servers to optimize performance and prevent bottlenecks.
+• 2. **Transcoding Server**: A server that converts and optimizes video files into various formats, accommodating diverse user devices and network conditions.
+• 1. **** CDN: A network of servers that cache and serve content to users based on their geographical location.
+• 2. **** Load Balancer: A mechanism that distributes incoming traffic across multiple web servers to improve responsiveness, reliability, and scalability.
+• 3. **** Transcoding Servers: Specialized servers that convert video formats for smooth playback on different devices.
+
+FORMULAS/ALGORITHMS:
+• Note that there are no mathematical formulas in the provided content, so I did not mark any as .
+• r(vi,vj) = cij / √(ci × cj)
+• *  24TB * 4x (for profiles) * 365 days = 35PB/year
+• *  86MB * 4 (for profiles) * 1,000,000,000 = 320PB
+
+

@@ -1,0 +1,23 @@
+{
+  "metadata": {
+    "total_lectures": 10,
+    "total_slides_processed": 374,
+    "total_concepts": 910,
+    "total_definitions": 599,
+    "total_formulas": 84,
+    "total_algorithms": 207,
+    "lectures_covered": [
+      "deduplication",
+      "info_retrieval",
+      "inverted_indexing",
+      "querying",
+      "se-basics",
+      "se-evaluation",
+      "text_processing",
+      "web_crawling",
+      "web_serving_basics",
+      "youtube"
+    ]
+  },
+  "note": "Complete content data was successfully processed - Word document contains full details"
+}
