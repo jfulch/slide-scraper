@@ -18,6 +18,13 @@ This project provides a complete workflow for processing lecture materials:
 - **Multiple Formats**: Generates study materials in PDF, Word, and plain text formats
 - **Lecture Organization**: Processes entire lecture folders with proper slide sequencing
 
+### 🤖 **AI-Powered Study Materials (`study_extractor.py`)**
+- **Content Extraction**: Uses local AI to extract key concepts, definitions, and facts
+- **Smart Flashcards**: Generates Q&A pairs for active recall and memorization
+- **Cheat Sheets**: Creates condensed 1-page reference guides for quick review
+- **Study Organization**: Structures content specifically for learning and exam preparation
+- **Batch Processing**: Generate study materials for all lectures automatically
+
 ## Requirements
 
 Install all dependencies:
@@ -32,6 +39,14 @@ brew install tesseract
 
 # Ubuntu/Debian
 sudo apt-get install tesseract-ocr
+```
+
+For AI-powered study materials, install and set up Ollama:
+```bash
+# macOS
+brew install ollama
+ollama pull llama3.1:8b
+pip install ollama
 ```
 
 ## 🚀 Quick Start
@@ -50,15 +65,25 @@ python extract.py "https://bytes.usc.edu/cs572/f25-6-AIR/lectures/Web/Characteri
 # Converts 31 PDF pages to high-quality images
 ```
 
-### Step 2: Convert to Study Materials
+### Step 2: Extract Text from Slides
 
 ```bash
-# Generate all formats (recommended)
+# Generate searchable text documents
 python read_slides.py se-basics --output-format all
+python process_all.py  # Process all lectures at once
 
 # Or choose specific formats
 python read_slides.py querying --output-format pdf
-python read_slides.py lecture-name --output-format docx
+```
+
+### Step 3: Create AI Study Materials
+
+```bash
+# Generate comprehensive study materials with AI
+python study_extractor.py se-basics
+python study_extractor.py --all  # Process all lectures
+
+# Creates flashcards, cheat sheets, and study content
 ```
 
 ### 📋 Complete Workflow Example
@@ -67,29 +92,36 @@ python read_slides.py lecture-name --output-format docx
 # 1. Download slides from any source
 python extract.py "https://example.com/lecture.pdf" "my-lecture"
 
-# 2. Convert to searchable documents
+# 2. Extract text from slides  
 python read_slides.py my-lecture --output-format all
 
-# 3. Study materials are ready in output/ folder!
+# 3. Generate AI-powered study materials
+python study_extractor.py my-lecture
+
+# 4. Everything ready for studying!
 ```
 
 ## Output Structure
 
 ```
-slides/
+slides/                 # Downloaded slide images
 ├── se-basics/          # PDF-converted slides
 │   ├── slide_001.png
-│   ├── slide_002.png
 │   └── ...
 └── querying/           # HTML presentation slides
     ├── s1.png
-    ├── s2.png
     └── ...
 
-output/
-├── se-basics_slides_text.txt   # Plain text
-├── se-basics_slides_text.pdf   # PDF document
-└── se-basics_slides_text.docx  # Word document
+output/                 # OCR-extracted text
+├── se-basics_slides_text.txt
+├── se-basics_slides_text.pdf
+└── se-basics_slides_text.docx
+
+study_materials/        # AI-generated study materials  
+├── se-basics_study_content.md    # Key concepts & definitions
+├── se-basics_flashcards.txt      # Q&A for memorization
+├── se-basics_cheat_sheet.txt     # Quick reference guide
+└── ...
 ```
 
 ## 🌟 Key Features
@@ -110,6 +142,7 @@ output/
 - 📄 **Plain Text** (`.txt`) - Easy to search and copy
 - 📑 **PDF Documents** (`.pdf`) - Professional formatting for printing
 - 📝 **Word Documents** (`.docx`) - Editable for notes and annotations
+- 🤖 **AI Study Materials** - Flashcards, cheat sheets, and organized content
 - 🔄 **Batch Processing** - Process entire lecture folders at once
 
 ### ⚡ **Quality & Performance**
@@ -120,6 +153,19 @@ output/
 
 ## 🎯 Perfect For
 - 📖 Creating searchable study guides from lecture slides
-- 🔍 Finding specific topics across multiple lectures
+- 🔍 Finding specific topics across multiple lectures  
 - 📝 Preparing annotated notes for exams
 - 📚 Building a personal knowledge base of course materials
+- 🧠 Active recall study sessions with AI-generated flashcards
+- 📋 Quick exam prep with condensed cheat sheets
+- 🎓 Comprehensive content mastery with structured study materials
+
+## 🚀 Available Scripts
+
+| Script | Purpose | Example |
+|--------|---------|---------|
+| `extract.py` | Download slides from URLs | `python extract.py <url> <name>` |
+| `read_slides.py` | Extract text via OCR | `python read_slides.py <lecture> --output-format txt` |
+| `process_all.py` | Batch OCR processing | `python process_all.py` |
+| `study_extractor.py` | AI study materials | `python study_extractor.py <lecture>` |
+| `quick_study_guide.py` | Alternative AI analysis | `python quick_study_guide.py <lecture>` |
