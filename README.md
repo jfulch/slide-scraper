@@ -32,6 +32,13 @@ This project provides a complete workflow for processing lecture materials:
 - **Exam Focused**: Specifically designed to ensure nothing is missed for midterm preparation
 - **Statistical Overview**: Tracks and reports exactly what content was extracted from each lecture
 
+### 🤖 **Course Content Q&A System (`course_qa_system.py`)**
+- **RAG-Based AI**: Ask questions about your course materials and get answers based on your actual content
+- **Semantic Search**: Uses advanced embeddings to find relevant content across all lectures
+- **Interactive Chat**: Natural language Q&A interface powered by local AI (Ollama)
+- **Source Attribution**: Shows which course materials were used to generate each answer
+- **Comprehensive Database**: Searches through 2000+ content entries from all processed lectures
+
 ## Requirements
 
 Install all dependencies:
@@ -48,12 +55,15 @@ brew install tesseract
 sudo apt-get install tesseract-ocr
 ```
 
-For AI-powered study materials, install and set up Ollama:
+For AI-powered study materials and Q&A system, install and set up Ollama:
 ```bash
 # macOS
 brew install ollama
 ollama pull llama3.1:8b
 pip install ollama
+
+# For Q&A system, also install:
+pip install sentence-transformers scikit-learn numpy
 ```
 
 ## 🚀 Quick Start
@@ -83,10 +93,16 @@ python process_all.py  # Process all lectures at once
 python read_slides.py querying --output-format pdf
 ```
 
-### Step 3: Create AI Study Materials
+### Step 3: Create AI Study Materials & Q&A System
 
 ```bash
-# Generate comprehensive study materials with AI
+# Generate comprehensive midterm study guide
+python midterm_study_guide.py
+
+# Create interactive Q&A system for asking questions
+python course_qa_system.py
+
+# Or generate individual lecture study materials
 python study_extractor.py se-basics
 python study_extractor.py --all  # Process all lectures
 
@@ -185,4 +201,6 @@ midterm_guide/          # Comprehensive midterm study guide
 | `study_extractor.py` | AI study materials | `python study_extractor.py <lecture>` |
 | `quick_study_guide.py` | Alternative AI analysis | `python quick_study_guide.py <lecture>` |
 | `midterm_study_guide.py` | **Comprehensive midterm guide** | `python midterm_study_guide.py` |
+| `course_qa_system.py` | **Interactive Q&A with course content** | `python course_qa_system.py` |
 | `study_guide_helper.py` | Study guide navigation | `python study_guide_helper.py` |
+| `qa_demo.py` | Q&A system demonstration | `python qa_demo.py` |
