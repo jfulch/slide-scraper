@@ -20,6 +20,11 @@ from sentence_transformers import SentenceTransformer
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
 import pickle
+import warnings
+
+# Suppress sklearn warnings about divide by zero in embeddings
+warnings.filterwarnings('ignore', category=RuntimeWarning, module='sklearn')
+np.seterr(divide='ignore', invalid='ignore')
 
 class CourseQASystem:
     def __init__(self):
@@ -191,24 +196,34 @@ class CourseQASystem:
             print("❌ Embeddings not built. Run build_embeddings() first.")
             return []
         
-        # Generate query embedding
-        query_embedding = self.embeddings_model.encode([query])
-        
-        # Calculate similarities
-        similarities = cosine_similarity(query_embedding, self.content_embeddings)[0]
-        
-        # Get top matches
-        top_indices = np.argsort(similarities)[-top_k:][::-1]
-        
-        results = []
-        for idx in top_indices:
-            if similarities[idx] > 0.1:  # Minimum similarity threshold
-                results.append({
-                    'content': self.content_database[idx],
-                    'similarity': similarities[idx]
-                })
-        
-        return results
+        try:
+            # Generate query embedding
+            query_embedding = self.embeddings_model.encode([query], show_progress_bar=False)
+            
+            # Calculate similarities with error handling
+            with warnings.catch_warnings():
+                warnings.simplefilter("ignore")
+                similarities = cosine_similarity(query_embedding, self.content_embeddings)[0]
+            
+            # Handle any NaN or infinite values
+            similarities = np.nan_to_num(similarities, nan=0.0, posinf=0.0, neginf=0.0)
+            
+            # Get top matches
+            top_indices = np.argsort(similarities)[-top_k:][::-1]
+            
+            results = []
+            for idx in top_indices:
+                if similarities[idx] > 0.1:  # Minimum similarity threshold
+                    results.append({
+                        'content': self.content_database[idx],
+                        'similarity': float(similarities[idx])  # Convert to Python float
+                    })
+            
+            return results
+            
+        except Exception as e:
+            print(f"❌ Error in similarity search: {e}")
+            return []
 
     def answer_question(self, question, use_context=True):
         """Generate an answer using AI with relevant course content"""
@@ -275,7 +290,9 @@ Please note that this answer is not based on the specific course content."""
         
         while True:
             try:
-                question = input("\n💭 Your question: ").strip()
+                # Clear display and show prompt
+                print("\n" + "-" * 60)
+                question = input("💭 Your question: ").strip()
                 
                 if question.lower() in ['quit', 'exit', 'q']:
                     print("\n🎓 Happy studying! Good luck with your coursework! 📚")
@@ -289,17 +306,21 @@ Please note that this answer is not based on the specific course content."""
                     print("Please enter a question.")
                     continue
                 
+                # Show the question being processed
+                print(f"\n🔍 Processing: {question[:100]}{'...' if len(question) > 100 else ''}")
                 print("🔍 Searching course content...")
+                
                 result = self.answer_question(question)
                 
                 print(f"\n📖 Answer:")
-                print("-" * 40)
+                print("=" * 50)
                 print(result['answer'])
+                print("=" * 50)
                 
                 if result['has_context']:
-                    print(f"\n💡 Based on {result['sources_used']} relevant course content sections")
+                    print(f"💡 Based on {result['sources_used']} relevant course content sections")
                 else:
-                    print(f"\n⚠️  Answer not based on specific course content")
+                    print(f"⚠️  Answer not based on specific course content")
                 
             except KeyboardInterrupt:
                 print("\n\n🎓 Happy studying! Good luck with your coursework! 📚")
